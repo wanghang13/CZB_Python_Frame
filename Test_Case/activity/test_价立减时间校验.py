@@ -15,6 +15,7 @@ from Common.RequestsSend import SendRequests
 from Common.Log import TestLog
 from Common.Initial import Initials
 from Common import globalparam
+# print(i)
 
 reportPath = globalparam.report_path 
 # 读取和写入的表格名称
