@@ -3,11 +3,12 @@
 # 作者：杭仔
 # ***************************************
 # -*- coding:UTF-8 -*-
-import sys,os
-sys.path.append(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
+
 import requests
 import unittest
 import warnings
+import sys,os
+sys.path.append(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
 from Common import ddt_new
 from Common.Read_File import ExcelUtil
 from Common.RequestsSend import SendRequests
@@ -19,7 +20,7 @@ reportPath = globalparam.report_path
 # 读取和写入的表格名称
 # sheet_name = globalparam.sheet_basic
 excel_name = 'Test_Case.xlsx'
-sheet_name = "Sheet2" 
+sheet_name = "Sheet3" 
 excelPath = os.path.join(globalparam.prj_path, 'Test_File', excel_name)
 # print(excelPath,reportPath,sheet_name)
 # 读取测试用例
