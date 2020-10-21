@@ -4,5 +4,8 @@
     "cSpell.words": [
         "wirte",
         "xlsx"
-    ]
+    ],
+    "python.linting.banditEnabled": false,
+    "python.linting.pylintEnabled": true,
+    "python.linting.enabled": true
 }
