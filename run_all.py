@@ -7,6 +7,5 @@ if __name__ == "__main__":
     # for case in case_name:
     #     os.system('pytest Test_Case/'+case)
 
-    # os.system('pytest Test_Case/test_run.py')
     os.system('pytest Test_Case/activity')
     # pytest.main()
