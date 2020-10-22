@@ -9,6 +9,15 @@ import os
 prj_path = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # 日志路径
 log_path = os.path.join(prj_path, 'Test_Report')
+# 测试报告存放路径
+report_dir = os.path.join(prj_path, "Test_Report")
+
+# Allure测试报告存放路径
+allure_dir = os.path.join(report_dir, "allure")
+
+# Allure_Plus测试报告存放路径
+allure_plus_dir = os.path.join(report_dir, "allure_plus")
+
 # 测试报告路径
 report_path = os.path.join(prj_path, 'Test_Report', '测试用例执行结果.xlsx')
 # 测试数据路径
@@ -18,8 +27,7 @@ data_path_file = os.path.join(prj_path, 'Test_File', 'Test_Case.xlsx')
 config_path = os.path.join(prj_path, "Test_Config", "config.ini")
 # 存放用例文件名称的文件路径
 caseListFile = os.path.join(prj_path, 'Test_Config', 'caseListFile.txt')
-# 读取和写入excel的sheet页名称
-sheet_basic = "Sheet1"
+
 # 要执行的测试用例目录
 test_dir = os.path.join(prj_path, 'Test_Case')
 # 存放用例文件名称的文件路径

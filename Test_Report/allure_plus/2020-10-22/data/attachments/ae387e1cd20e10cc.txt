@@ -1,0 +1,4 @@
+2020-10-22 21:02:07,332 - root - INFO - 请求方式：POST
+2020-10-22 21:02:07,333 - root - INFO - 请求url: http://106.52.206.103:30020/api/user/Login/login_admin
+2020-10-22 21:02:15,882 - root - ERROR - 用例执行错误！错误信息：HTTPConnectionPool(host='106.52.206.103', port=30020): Max retries exceeded with url: /api/user/Login/login_admin (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7ff6688d4050>: Failed to establish a new connection: [Errno 60] Operation timed out'))
+2020-10-22 21:02:15,882 - root - INFO - *******执行用例完成：-----  1  ----**********

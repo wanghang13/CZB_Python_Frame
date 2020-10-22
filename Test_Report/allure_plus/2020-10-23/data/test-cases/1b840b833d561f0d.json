@@ -1,0 +1,124 @@
+{
+  "uid" : "1b840b833d561f0d",
+  "name" : "test_member_4",
+  "fullName" : "Test_Case.其他.test_作业.TestApi#test_member_4",
+  "historyId" : "7d273e19acfff75f6a77de05b0a43133",
+  "time" : {
+    "start" : 1603382929445,
+    "stop" : 1603382929481,
+    "duration" : 36
+  },
+  "description" : "\n        执行测试\n        :param data:excel数据\n        :return:\n        ",
+  "descriptionHtml" : "<pre><code>    执行测试\n    :param data:excel数据\n    :return:\n</code></pre>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1603382926836,
+      "stop" : 1603382926905,
+      "duration" : 69
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "_UnitTestCase__pytest_class_setup",
+    "time" : {
+      "start" : 1603382926905,
+      "stop" : 1603382926905,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "\n        执行测试\n        :param data:excel数据\n        :return:\n        ",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "3870d952d9d86cf8",
+      "name" : "log",
+      "source" : "3870d952d9d86cf8.txt",
+      "type" : "text/plain",
+      "size" : 113
+    }, {
+      "uid" : "ba804f21dad625e2",
+      "name" : "stderr",
+      "source" : "ba804f21dad625e2.txt",
+      "type" : "text/plain",
+      "size" : 1122
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "_UnitTestCase__pytest_class_setup::0",
+    "time" : {
+      "start" : 1603382929522,
+      "stop" : 1603382929522,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "Test_Case.其他"
+  }, {
+    "name" : "suite",
+    "value" : "test_作业"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestApi"
+  }, {
+    "name" : "host",
+    "value" : "Hang-2.local"
+  }, {
+    "name" : "thread",
+    "value" : "1458-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "Test_Case.其他.test_作业"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "1b840b833d561f0d.json",
+  "parameterValues" : [ ]
+}

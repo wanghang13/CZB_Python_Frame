@@ -1,0 +1,26 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "KeyError: 'json'",
+      "children" : [ {
+        "name" : "test_member_1",
+        "uid" : "3956479247d63a0a",
+        "parentUid" : "9c3a08a1be5abb4203f4d4943ab63725",
+        "status" : "broken",
+        "time" : {
+          "start" : 1603371908849,
+          "stop" : 1603371917319,
+          "duration" : 8470
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "9c3a08a1be5abb4203f4d4943ab63725"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ],
+  "name" : "categories"
+}

@@ -1,0 +1,126 @@
+{
+  "uid" : "4064bfb7bc2d7baf",
+  "name" : "test_member_5",
+  "fullName" : "Test_Case.test_activity.test_价立减时间校验.TestApi#test_member_5",
+  "historyId" : "34c343af94dab6a8ba4c006ce7e04df3",
+  "time" : {
+    "start" : 1603371747075,
+    "stop" : 1603371747105,
+    "duration" : 30
+  },
+  "description" : "\n        执行测试\n        :param data:excel数据\n        :return:\n        ",
+  "descriptionHtml" : "<pre><code>    执行测试\n    :param data:excel数据\n    :return:\n</code></pre>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1603371744957,
+      "stop" : 1603371745010,
+      "duration" : 53
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "_UnitTestCase__pytest_class_setup",
+    "time" : {
+      "start" : 1603371745010,
+      "stop" : 1603371745010,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "\n        执行测试\n        :param data:excel数据\n        :return:\n        ",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "bea0f6cf0662fde7",
+      "name" : "log",
+      "source" : "bea0f6cf0662fde7.txt",
+      "type" : "text/plain",
+      "size" : 113
+    }, {
+      "uid" : "d88c598277093cb5",
+      "name" : "stderr",
+      "source" : "d88c598277093cb5.txt",
+      "type" : "text/plain",
+      "size" : 1122
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "_UnitTestCase__pytest_class_setup::0",
+    "time" : {
+      "start" : 1603371747106,
+      "stop" : 1603371747106,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "Test_Case.test_activity"
+  }, {
+    "name" : "suite",
+    "value" : "test_价立减时间校验"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestApi"
+  }, {
+    "name" : "host",
+    "value" : "Hang-2.local"
+  }, {
+    "name" : "thread",
+    "value" : "4421-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "Test_Case.test_activity.test_价立减时间校验"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "4064bfb7bc2d7baf.json",
+  "parameterValues" : [ ]
+}

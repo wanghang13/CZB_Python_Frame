@@ -1,0 +1,147 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "children" : [ {
+    "name" : "Test_Case",
+    "children" : [ {
+      "name" : "test_activity.test_价立减时间校验",
+      "children" : [ {
+        "name" : "test_member_1",
+        "uid" : "2f5b31ca76edad06",
+        "parentUid" : "f5c3521b801be0be1e9a06f237bdce0c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1603384012037,
+          "stop" : 1603384012805,
+          "duration" : 768
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_member_2",
+        "uid" : "9a3c8ca1c03a7cc6",
+        "parentUid" : "f5c3521b801be0be1e9a06f237bdce0c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1603384012809,
+          "stop" : 1603384013599,
+          "duration" : 790
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_member_3",
+        "uid" : "7809cb04fc88f661",
+        "parentUid" : "f5c3521b801be0be1e9a06f237bdce0c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1603384013602,
+          "stop" : 1603384014475,
+          "duration" : 873
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_member_4",
+        "uid" : "beefbce9d9e692ca",
+        "parentUid" : "f5c3521b801be0be1e9a06f237bdce0c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1603384014480,
+          "stop" : 1603384014513,
+          "duration" : 33
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_member_5",
+        "uid" : "e453321e504dd3a3",
+        "parentUid" : "f5c3521b801be0be1e9a06f237bdce0c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1603384014516,
+          "stop" : 1603384014558,
+          "duration" : 42
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "test_activity.test_价立减时间校验"
+    }, {
+      "name" : "其他.test_作业",
+      "children" : [ {
+        "name" : "test_member_1",
+        "uid" : "fc9be698a6ef810b",
+        "parentUid" : "5018da358914cccea1261b9eca545f6d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1603384014563,
+          "stop" : 1603384015099,
+          "duration" : 536
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_member_2",
+        "uid" : "64a52e9527b108a",
+        "parentUid" : "5018da358914cccea1261b9eca545f6d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1603384015103,
+          "stop" : 1603384016065,
+          "duration" : 962
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_member_3",
+        "uid" : "b88ef2040ff1d2cd",
+        "parentUid" : "5018da358914cccea1261b9eca545f6d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1603384016068,
+          "stop" : 1603384016746,
+          "duration" : 678
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_member_4",
+        "uid" : "464d34a858c4e950",
+        "parentUid" : "5018da358914cccea1261b9eca545f6d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1603384016749,
+          "stop" : 1603384016783,
+          "duration" : 34
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_member_5",
+        "uid" : "b445152a466b7ffc",
+        "parentUid" : "5018da358914cccea1261b9eca545f6d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1603384016786,
+          "stop" : 1603384016816,
+          "duration" : 30
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "其他.test_作业"
+    } ],
+    "uid" : "2dd9b9567e56c3d7c46f76a765f97b9c"
+  } ],
+  "name" : "packages"
+}
