@@ -100,14 +100,25 @@ class SendRequests(object):
     def chenckassociateid(self,test_data,old_test_data=None):
         t_data = eval(test_data['associateid'])
         line = eval(t_data['associateid'])
-        associatefield = t_data['associatefield']
+        oldassociatefield = t_data['associatefield']
         old_test_data1 = old_test_data[line-1]
         session = requests.session()
-        res = self.send_requests2(session,old_test_data1,associatefield)
-        res_data = self.updaterequests2(res,associatefield)
+        res = self.send_requests2(session,old_test_data1)
         data = eval(test_data['data'])
         test_data['data']= data
-        test_data['data'][associatefield] = res_data
+        associatefield_test = oldassociatefield.split(",")
+        for associatefield in associatefield_test:
+            if associatefield in 'token':
+                List = []
+                res_data = self.updaterequests2(res,associatefield)
+                test_data['data']['merchant_type'] = self.updaterequests2(res,'merchant_type')
+                test_data['data']['merchant_id'] = self.updaterequests2(res,'merchant_id')
+                test_data['data']['merchant_name'] = self.updaterequests2(res,'merchant_name')
+                List.append(self.updaterequests2(res,'merchant_id'))
+                test_data['data']['arr_merchant_ids'] = List
+            else:
+                res_data = self.updaterequests2(res,associatefield)
+            test_data['data'][associatefield] = res_data
         return str(test_data['data'])
 
 
@@ -205,7 +216,7 @@ class SendRequests(object):
         return results
 
 
-    def send_requests2(self, session, test_data,associatefield, param=None):
+    def send_requests2(self, session, test_data, param=None):
         """
         请求
         :param session: session消息
