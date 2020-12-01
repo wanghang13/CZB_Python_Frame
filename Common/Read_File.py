@@ -17,7 +17,7 @@ from Common import globalparam
 
 
 class ExcelUtil(object):
-    def __init__(self, path, sheet_name="Sheet2"):
+    def __init__(self, path, sheet_name="Sheet3"):
         """
         :param path: excel地址
         :param sheet_name: sheet名称，默认为Sheet1
@@ -29,7 +29,7 @@ class ExcelUtil(object):
         self.table = self.data.sheet_by_name(sheet_name)
 
         # 获取第一行作为key值
-        self.keys = self.table.row_values(3)
+        self.keys = self.table.row_values(2)
         # 获取总行数
         self.rowNum = self.table.nrows
         # 获取总列数
@@ -54,7 +54,7 @@ class ExcelUtil(object):
             else:
                 # url = self.table.cell_value(2,1)
                 result = []  # 结果
-                for line in list(range(3,self.rowNum - 1)):
+                for line in list(range(2,self.rowNum - 1)):
                     value = {}
                     # 从第二行取对应values值
                     # value['url'] = url
@@ -80,13 +80,13 @@ class ExcelUtil(object):
         return result
 
 if __name__ == "__main__":
-    print(globalparam.data_path)
+    # print(globalparam.data_path)
     path = globalparam.data_path+'/Test_Case.xlsx'
-    # s = ExcelUtil(path).get_xls_to_dict()
+    s = ExcelUtil(path).get_xls_to_dict()
     e = ExcelUtil(path).dict_data()
     print(e)
-    s = requests.session()
-    print(s)
+    # s = requests.session()
+    # print(s)
     # for d in e:
     #     r = s.request(method=d['method'],url = d['url'],headers=eval(d['headers']),data=json.dumps(eval(d['data'])),verify=False)
     #     print(d['url'])

@@ -33,35 +33,36 @@ def copy_excel(excel_path1, excel_path2):
     """
     result = os.path.exists(excel_path1)
     if result is True:
-        # 获取测试用例表格
-        wb1 = openpyxl.load_workbook(excel_path1)
-        sheets1 = wb1.sheetnames
-        # 复制excel
-        wb2 = openpyxl.Workbook()
-        for sheet_name in sheets1:
-            wb2.create_sheet(sheet_name)
-        # 删除初始的Sheet表
-        wb2.remove_sheet(wb2.get_sheet_by_name("Sheet"))
-        # 保存复制的excel
-        wb2.save(excel_path2)
-        # 获取复制的表格
-        wb2 = openpyxl.load_workbook(excel_path2)
-        sheets2 = wb2.sheetnames
-        # 复制测试用例表格数据
-        for j in range(len(sheets1)):
-            sheet1 = wb1[sheets1[j]]
-            sheet2 = wb2[sheets2[j]]
-            max_row = sheet1.max_row  # 最大行数
-            max_column = sheet1.max_column  # 最大列数
-            for m in list(range(1, max_row + 1)):
-                for n in list(range(97, 97 + max_column)):  # chr(97)='a'
-                    n = chr(n)  # ASCII字符(A,B...)
-                    i = '%s%d' % (n, m)  # 单元格编号(A1,A2...)
-                    cell1 = sheet1[i].value  # 获取data单元格数据
-                    sheet2[i].value = cell1  # 赋值到test单元格
-        wb2.save(excel_path2)  # 保存数据
-        wb1.close()  # 关闭excel
-        wb2.close()
+        os.system(f'cp {excel_path1} {excel_path2}')
+        # # 获取测试用例表格
+        # wb1 = openpyxl.load_workbook(excel_path1)
+        # sheets1 = wb1.sheetnames
+        # # 复制excel
+        # wb2 = openpyxl.Workbook()
+        # for sheet_name in sheets1:
+        #     wb2.create_sheet(sheet_name)
+        # # 删除初始的Sheet表
+        # # wb2.remove_sheet(wb2.get_sheet_by_name("Sheet"))
+        # # 保存复制的excel
+        # wb2.save(excel_path2)
+        # # 获取复制的表格
+        # wb2 = openpyxl.load_workbook(excel_path2)
+        # sheets2 = wb2.sheetnames
+        # # 复制测试用例表格数据
+        # for j in range(len(sheets1)):
+        #     sheet1 = wb1[sheets1[j]]
+        #     sheet2 = wb2[sheets2[j]]
+        #     max_row = sheet1.max_row  # 最大行数
+        #     max_column = sheet1.max_column  # 最大列数
+        #     for m in list(range(1, max_row + 1)):
+        #         for n in list(range(97, 97 + max_column)):  # chr(97)='a'
+        #             n = chr(n)  # ASCII字符(A,B...)
+        #             i = '%s%d' % (n, m)  # 单元格编号(A1,A2...)
+        #             cell1 = sheet1[i].value  # 获取data单元格数据
+        #             sheet2[i].value = cell1  # 赋值到test单元格
+        # wb2.save(excel_path2)  # 保存数据
+        # wb1.close()  # 关闭excel
+        # wb2.close()
     else:
         Log.TestLog().error("{}复制文件不存在".format(excel_path1))
 
@@ -69,7 +70,7 @@ def copy_excel(excel_path1, excel_path2):
 class WriteExcel(object):
     """修改excel数据"""
 
-    def __init__(self, filename, sheet_name="Sheet_basic"):
+    def __init__(self, filename, sheet_name="Sheet1"):
         """
         修改excel数据
         :param filename: 文件路径（到文件）
@@ -90,13 +91,16 @@ class WriteExcel(object):
         :return:
         """
         if colour == "red":
-            colour = Font(color=colors.RED)  # color="FFBB00"，颜色编码也可以设定颜色
+            colour = Font(color='FF4588')  # color="FFBB00"，颜色编码也可以设定颜色
             self.sheet.cell(row_n, col_n).font = colour
             self.sheet.cell(row_n, col_n).value = value
         elif colour == "green":
-            colour = Font(color=colors.BLUE)  # color="FFBB00"，颜色编码也可以设定颜色
+            colour = Font(color='2B9E54')  # color="FFBB00"，颜色编码也可以设定颜色
             self.sheet.cell(row_n, col_n).font = colour
             self.sheet.cell(row_n, col_n).value = value
         else:
+            colour = Font(color='000000')  # color="FFBB00"，颜色编码也可以设定颜色
+            self.sheet.cell(row_n, col_n).font = colour
             self.sheet.cell(row_n, col_n).value = value
         self.wb.save(self.filename)
+        self.wb.close()

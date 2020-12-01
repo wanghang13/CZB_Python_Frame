@@ -1,7 +1,0 @@
-2020-10-22 21:09:09,226 - root - INFO - ************   Excel 中的 associateid 字段 为空。不做接口关联处理。  *******************
-2020-10-22 21:09:09,227 - root - INFO - ************   Excel 中的 updatadict 字段 为空。不做data数据更新处理。   *******************
-2020-10-22 21:09:09,227 - root - INFO - ************   Excel 中的 timedata 字段 为空。不做时间字段更新处理。   *******************
-2020-10-22 21:09:09,227 - root - INFO - 请求方式：POST
-2020-10-22 21:09:09,228 - root - INFO - 请求url: http://106.52.206.103:30020/api/user/Login/login_admin
-2020-10-22 21:09:17,696 - root - ERROR - 用例执行错误！错误信息：HTTPConnectionPool(host='106.52.206.103', port=30020): Max retries exceeded with url: /api/user/Login/login_admin (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f8224730ed0>: Failed to establish a new connection: [Errno 60] Operation timed out'))
-2020-10-22 21:09:17,699 - root - INFO - *******执行用例完成：-----  1  ----**********

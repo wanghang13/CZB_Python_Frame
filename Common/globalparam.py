@@ -8,9 +8,15 @@ import os
 # 项目参数设置
 prj_path = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # 日志路径
-log_path = os.path.join(prj_path, 'Test_Report')
+log_path = os.path.join(prj_path, 'Test_Report','log')
 # 测试报告存放路径
 report_dir = os.path.join(prj_path, "Test_Report")
+
+# Unittest主程序文件路径
+unittest_main = os.path.join(prj_path, "Common",'Unittest_Main.py')
+
+# Pytest主程序文件路径
+pytest_main = os.path.join(prj_path, "Common",'Pytest_Main.py')
 
 # Allure测试报告存放路径
 allure_dir = os.path.join(report_dir, "allure")
