@@ -21,8 +21,8 @@ from configobj import ConfigObj
 from urllib.parse import urlencode
 from urllib.parse import parse_qs, urlparse
 import re
-start_time = (datetime.datetime.now()+datetime.timedelta(minutes = 0.1)).strftime("%Y-%m-%d %H:%M:%S")  #获取当前时间为：活动开始时间
-end_time = (datetime.datetime.now()+datetime.timedelta(minutes = 10)).strftime("%Y-%m-%d %H:%M:%S")  #获取当前时间2分钟后为：活动结束时间。minutes = 2 配置（分钟数）
+start_time = (datetime.datetime.now()+datetime.timedelta(minutes = 0.3)).strftime("%Y-%m-%d %H:%M:%S")  #获取当前时间为：活动开始时间
+end_time = (datetime.datetime.now()+datetime.timedelta(minutes = 2)).strftime("%Y-%m-%d %H:%M:%S")  #获取当前时间2分钟后为：活动结束时间。minutes = 2 配置（分钟数）
 
 # 今天日期
 today = datetime.date.today()
@@ -336,6 +336,7 @@ class SendRequests(object):
                 if test_data['url'] != '/api/user/Login/login_admin':
                     body['token'] = self.config['MP_NLSAAS_API_INI']['TOKEN']
                     body['merchant_id'] = self.config['MP_NLSAAS_API_INI']['MERCHANT_ID']
+                    body['merchant_type'] = self.config['MP_NLSAAS_API_INI']['MERCHANT_TYPE']
                     body['arr_merchant_ids'] = [self.config['MP_NLSAAS_API_INI']['MERCHANT_ID']]
                     # body['uid'] = self.config['MP_NLSAAS_API_INI']['USERID']
                 if test_data['url'] == '/api/coupon/coupons/create_coupons':
@@ -351,6 +352,29 @@ class SendRequests(object):
                     body['station_range'] = self.config['MP_NLSAAS_API_INI']['MERCHANT_ID']
                 elif test_data['url'] == '/activities/recharge_send_coupon_activity/create':
                     body['activity_rule'][0]['recharge_award'][0]['id'] = self.config['MP_NLSAAS_API_INI']['COUPON_ID']
+                elif test_data['url'] == '/api/manual/manual/create':
+                    body['send_time'] = start_time
+                    body['user_group_rule'] = [self.config['MP_NLSAAS_API_INI']['USER_GROUP']]
+                    body['coupon_json'][0]['coupon_id'] = self.config['MP_NLSAAS_API_INI']['COUPON_ID']
+                elif test_data['url'] == '/api/customer/customer_group/get_user_group':
+                    body['merchant_data'][0]['merchant_id'] = self.config['MP_NLSAAS_API_INI']['MERCHANT_ID']
+                    body['merchant_data'][0]['key'] = self.config['MP_NLSAAS_API_INI']['MERCHANT_ID']
+                    body['merchant_data'][0]['merchant_name'] = self.config['MP_NLSAAS_API_INI']['MERCHANT_NAME']
+                    body['merchant_data'][0]['title'] = self.config['MP_NLSAAS_API_INI']['MERCHANT_NAME']
+                elif test_data['url'] == '/api/wheel/wheel_game/create':
+                    body['station_range'][0]['merchant_ids'] = [self.config['MP_NLSAAS_API_INI']['MERCHANT_ID']]
+                    body['prize_data'][0]['prize_detail'][0]['coupon_id'] = self.config['MP_NLSAAS_API_INI']['COUPON_ID']
+                    body['prize_data'][0]['prize_detail'][0]['coupon_name'] = self.config['MP_NLSAAS_API_INI']['COUPON_NAME']
+                elif test_data['url'] == '/api/invite/invite-activity/create':
+                    body['activity']['stations'][0]['title'] = [self.config['MP_NLSAAS_API_INI']['MERCHANT_NAME']]
+                    body['activity']['stations'][0]['merchant_name'] = self.config['MP_NLSAAS_API_INI']['MERCHANT_NAME']
+                    body['activity']['stations'][0]['merchant_id'] = self.config['MP_NLSAAS_API_INI']['MERCHANT_ID']
+                    body['activity']['stations'][0]['merchant_type'] = self.config['MP_NLSAAS_API_INI']['MERCHANT_TYPE']
+                    body['activity']['start_time'] = start_time
+                    body['activity']['end_time'] = end_time
+                    body['inviter_setting']['coupon_ids_and_amount'][0]['coupon_id'] = self.config['MP_NLSAAS_API_INI']['COUPON_ID']
+                    body['inviter_setting']['coupon_ids_and_amount'][0]['coupon_name'] = self.config['MP_NLSAAS_API_INI']['COUPON_NAME']
+
                 r = session.request(method=method,
                                     url=url,
                                     params=params,
@@ -360,11 +384,14 @@ class SendRequests(object):
                                     )
                 if test_data['url'] == '/api/user/Login/login_admin':
                     self.config['MP_NLSAAS_API_INI']['TOKEN'] = r.json()['data']['token']
-                    self.config['MP_NLSAAS_API_INI']['MERCHANT_ID'] = r.json()['data']['contract']['confirm_merchant_ids'][0]
+                    self.config['MP_NLSAAS_API_INI']['MERCHANT_ID'] = r.json()['data']['merchant_list']['merchant_single']['merchant_id']
+                    self.config['MP_NLSAAS_API_INI']['MERCHANT_NAME'] = r.json()['data']['merchant_list']['merchant_single']['merchant_name']
+                    self.config['MP_NLSAAS_API_INI']['MERCHANT_TYPE'] = r.json()['data']['merchant_list']['merchant_single']['merchant_type']
                     # self.config['MP_NLSAAS_API_INI']['MERCHANT_ID'] = r.json['data']['contract']['confirm_merchant_ids'][0]
                     # self.config['MP_NLSAAS_API_INI']['USERID'] = r.json['data']['id']
                 elif test_data['url'] == '/api/coupon/coupons/create_coupons':
                     self.config['MP_NLSAAS_API_INI']['COUPON_ID'] = r.json()['data']['coupon_id']
+                    self.config['MP_NLSAAS_API_INI']['COUPON_NAME'] = r.json()['data']['coupon_name']
                 elif test_data['url'] == '/api/energy/energy/get_energy_price_list':
                     energy_id_list = []
                     for List in r.json()['data']:
@@ -391,7 +418,10 @@ class SendRequests(object):
                             self.config['POS_API_INI']['RETAIL_ENERGY_TYPE'] = gun_oil_arr['energy_type']
                             self.config['POS_API_INI']['RETAIL_ENERGY_NUMBER'] = gun_oil_arr['energy_number']
                             break
-                            
+                elif test_data['url'] == '/api/customer/customer_group/get_user_group':
+                    for user_group in r.json()['data']:
+                        if user_group['title'] == '动态等级':
+                            self.config['MP_NLSAAS_API_INI']['USER_GROUP'] = user_group['children'][0]['key']
             # print(r.json())
             # 保存请求结果
             self.config.write()

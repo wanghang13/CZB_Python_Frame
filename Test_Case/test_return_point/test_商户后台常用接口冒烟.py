@@ -23,7 +23,7 @@ reportPath = globalparam.report_path
 
 # 读取和写入的表格名称
 excel_name = 'Test_Case.xlsx'
-sheet_name = "商户后台接口冒烟2" 
+sheet_name = "商户后台接口冒烟" 
 excelPath = os.path.join(globalparam.prj_path, 'Test_File', excel_name)
 report_path = os.path.join(globalparam.prj_path, 'Test_Report','excel_report',excel_name)
  

@@ -30,6 +30,7 @@ if __name__ == "__main__":
     '''
     Write_Config().Switch_Host('2') 
 
+    os.system(f'pytest  -v  -k test_商户后台常用接口冒烟.py --html=Test_Report/report/{report_file}-report.html')
     # os.system(f"pytest -v -k test_双屏机常用接口冒烟.py  --alluredir={allure_path}")
     # os.system(f"pytest -v -k test_POS机常用接口冒烟.py  --alluredir={allure_path}")
 
