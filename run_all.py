@@ -28,7 +28,7 @@ if __name__ == "__main__":
     绿色域名环境传递：3 OR 绿色 OR Green-Release
     正式环境传递： 0 OR 不传递
     '''
-    Write_Config().Switch_Host('1') 
+    Write_Config().Switch_Host('2') 
 
     # os.system(f"pytest -v -k test_双屏机常用接口冒烟.py  --alluredir={allure_path}")
     # os.system(f"pytest -v -k test_POS机常用接口冒烟.py  --alluredir={allure_path}")

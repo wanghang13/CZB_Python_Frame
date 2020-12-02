@@ -300,7 +300,7 @@ class SendRequests(object):
                             body = eval(body)
 
                         r = requests.post(url = url, data = json.dumps(body) ,headers = headers)
-                        
+
                         if test_data['url'] == '/order/quickpass/pay':
                             pass
                         if test_data['url'] == '/recharge/top_up_order':
@@ -336,7 +336,21 @@ class SendRequests(object):
                 if test_data['url'] != '/api/user/Login/login_admin':
                     body['token'] = self.config['MP_NLSAAS_API_INI']['TOKEN']
                     body['merchant_id'] = self.config['MP_NLSAAS_API_INI']['MERCHANT_ID']
+                    body['arr_merchant_ids'] = [self.config['MP_NLSAAS_API_INI']['MERCHANT_ID']]
                     # body['uid'] = self.config['MP_NLSAAS_API_INI']['USERID']
+                if test_data['url'] == '/api/coupon/coupons/create_coupons':
+                    body['coupon_start_time'] = start_time
+                    body['coupon_end_time'] = end_time
+                    body['amount_rule'][0]['product_id'] = self.config['MP_NLSAAS_API_INI']['ENERGY_ID_LIST']
+                elif test_data['url'] == '/api/activities/send-gift-with-purchase-activity/create':
+                    body['activity_rule'][0]['step_award'][0]['arr_coupon_id_amount'][0] = self.config['MP_NLSAAS_API_INI']['COUPON_ID']
+                elif test_data['url'] == '/api/coupon/coupons/activation_coupon':
+                    body['coupon_id'] = self.config['MP_NLSAAS_API_INI']['COUPON_ID']
+                elif test_data['url'] == '/api/activity/red_pack/create':
+                    body['award'][0]['value'][0]['id'] = self.config['MP_NLSAAS_API_INI']['COUPON_ID']
+                    body['station_range'] = self.config['MP_NLSAAS_API_INI']['MERCHANT_ID']
+                elif test_data['url'] == '/activities/recharge_send_coupon_activity/create':
+                    body['activity_rule'][0]['recharge_award'][0]['id'] = self.config['MP_NLSAAS_API_INI']['COUPON_ID']
                 r = session.request(method=method,
                                     url=url,
                                     params=params,
@@ -349,7 +363,14 @@ class SendRequests(object):
                     self.config['MP_NLSAAS_API_INI']['MERCHANT_ID'] = r.json()['data']['contract']['confirm_merchant_ids'][0]
                     # self.config['MP_NLSAAS_API_INI']['MERCHANT_ID'] = r.json['data']['contract']['confirm_merchant_ids'][0]
                     # self.config['MP_NLSAAS_API_INI']['USERID'] = r.json['data']['id']
-                if test_data['url'] == '/api/energy/energy/get_gun_list':
+                elif test_data['url'] == '/api/coupon/coupons/create_coupons':
+                    self.config['MP_NLSAAS_API_INI']['COUPON_ID'] = r.json()['data']['coupon_id']
+                elif test_data['url'] == '/api/energy/energy/get_energy_price_list':
+                    energy_id_list = []
+                    for List in r.json()['data']:
+                        energy_id_list.append(List['energy_id'])
+                        self.config['MP_NLSAAS_API_INI']['ENERGY_ID_LIST'] = energy_id_list
+                elif test_data['url'] == '/api/energy/energy/get_gun_list':
                     for gun_oil_arr in r.json()['data']:
                         if gun_oil_arr['retail_status'] == 2:
                             self.config['POS_API_INI']['STATIC_GUN'] = gun_oil_arr['gun_number']
@@ -394,9 +415,11 @@ class SendRequests(object):
             if test_data["checkstatus"] == str(r.json()['status']):
                 results["result"], results["msg"] = "pass", ""
                 # if test_data['url'] != '/order/gun_list' or test_data['url'] != '/api/user/Login/login_admin':
-                if test_data['url'] in 'list' or test_data['url'] in 'login' or test_data['url'] in 'Login':
-                    self.logger.info("用例执行成功！页面返回信息：%s" % r.json())
+                if test_data['url'].find('list') >=0 or test_data['url'].find('List') >=0 or test_data['url'].find('login') >=0 or test_data['url'].find('Login') >=0 :
                     pass
+                else:
+                    pass
+                    self.logger.info("用例执行成功！页面返回信息：%s" % r.json())
             else:
                 results["result"], results["msg"] = "fail", r.content
                 self.logger.error("用例执行失败！页面返回信息：{}".format(r.json()))
