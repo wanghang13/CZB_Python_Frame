@@ -1,7 +1,5 @@
-str ='123,321'
-s = str.split(",")
-print(s)
+List = [{'a':"1"},{"B":"2"}]
 
-for i in s :
-    print(i)
-    print(type(i))
+print(List[0])
+for x in List[0]:
+    print(x)

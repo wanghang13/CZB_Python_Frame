@@ -21,28 +21,7 @@ from configobj import ConfigObj
 from urllib.parse import urlencode
 from urllib.parse import parse_qs, urlparse
 import re
-start_time = (datetime.datetime.now()+datetime.timedelta(minutes = 0.3)).strftime("%Y-%m-%d %H:%M:%S")  #获取当前时间为：活动开始时间
-end_time = (datetime.datetime.now()+datetime.timedelta(minutes = 2)).strftime("%Y-%m-%d %H:%M:%S")  #获取当前时间2分钟后为：活动结束时间。minutes = 2 配置（分钟数）
 
-# 今天日期
-today = datetime.date.today()
-# 昨天时间
-yesterday = today - datetime.timedelta(days=1)
-# 明天时间
-tomorrow = today + datetime.timedelta(days=1)
-acquire = today + datetime.timedelta(days=2)
-# 昨天开始时间戳
-yesterday_start_time = int(time.mktime(time.strptime(str(yesterday), '%Y-%m-%d')))
-# 昨天结束时间戳
-yesterday_end_time = int(time.mktime(time.strptime(str(today), '%Y-%m-%d'))) - 1
-# 今天开始时间戳
-today_start_time = yesterday_end_time + 1
-# 今天结束时间戳
-today_end_time = int(time.mktime(time.strptime(str(tomorrow), '%Y-%m-%d'))) - 1
-# 明天开始时间戳
-tomorrow_start_time = int(time.mktime(time.strptime(str(tomorrow), '%Y-%m-%d')))
-# 明天结束时间戳
-tomorrow_end_time = int(time.mktime(time.strptime(str(acquire), '%Y-%m-%d'))) - 1
 
 
 
@@ -61,6 +40,28 @@ class SendRequests(object):
         self.logger = Log.TestLog()
         self.config = ConfigObj(globalparam.config_path,encoding='UTF8')
         # self.session = requests.session()
+        self.start_time = (datetime.datetime.now()+datetime.timedelta(minutes = 0.3)).strftime("%Y-%m-%d %H:%M:%S")  #获取当前时间为：活动开始时间
+        self.send_time = (datetime.datetime.now()+datetime.timedelta(minutes = 1)).strftime("%Y-%m-%d %H:%M:%S")  #获取当前时间为：活动开始时间
+        self.end_time = (datetime.datetime.now()+datetime.timedelta(minutes = 3)).strftime("%Y-%m-%d %H:%M:%S")  #获取当前时间2分钟后为：活动结束时间。minutes = 2 配置（分钟数）
+        # 今天日期
+        self.today = datetime.date.today()
+        # 昨天时间
+        self.yesterday = self.today - datetime.timedelta(days=1)
+        # 明天时间
+        self.tomorrow = self.today + datetime.timedelta(days=1)
+        self.acquire = self.today + datetime.timedelta(days=2)
+        # 昨天开始时间戳
+        self.yesterday_start_time = int(time.mktime(time.strptime(str(self.yesterday), '%Y-%m-%d')))
+        # 昨天结束时间戳
+        self.yesterday_end_time = int(time.mktime(time.strptime(str(self.today), '%Y-%m-%d'))) - 1
+        # 今天开始时间戳
+        self.today_start_time = self.yesterday_end_time + 1
+        # 今天结束时间戳
+        self.oday_end_time = int(time.mktime(time.strptime(str(self.tomorrow), '%Y-%m-%d'))) - 1
+        # 明天开始时间戳
+        self.tomorrow_start_time = int(time.mktime(time.strptime(str(self.tomorrow), '%Y-%m-%d')))
+        # 明天结束时间戳
+        self.tomorrow_end_time = int(time.mktime(time.strptime(str(self.acquire), '%Y-%m-%d'))) - 1
 
     def send_url(self, test_data):
         """
@@ -139,8 +140,10 @@ class SendRequests(object):
         old_test_data1 = old_test_data[line-1]
         session = requests.session()
         res = self.send_requests(session,old_test_data1)
-        data = eval(test_data['data'])
-        test_data['data']= data
+        if test_data['data']!= '':
+            data = eval(test_data['data'])
+        else: data = ''
+        test_data['data'] = data
         associatefield_test = oldassociatefield.split(",")
         for associatefield in associatefield_test:
             if associatefield in 'token':
@@ -173,18 +176,18 @@ class SendRequests(object):
         if  test_data['timedata']:
             if test_data['timedata'] == '默认':
                 data = eval(test_data['data'])
-                data['start_time'] = start_time
-                data['end_time'] = end_time
+                data['start_time'] = self.start_time
+                data['end_time'] = self.end_time
                 test_data['data'] = str(data)
             elif test_data['timedata'] == 'start>end':
                 data = eval(test_data['data'])
-                data['start_time'] = start_time
+                data['start_time'] = self.start_time
                 data['end_time'] = (datetime.datetime.now()+datetime.timedelta(minutes = -1)).strftime("%Y-%m-%d %H:%M:%S")
                 test_data['data'] = str(data)
             elif test_data['timedata'] == 'start=end':
                 data = eval(test_data['data'])
-                data['start_time'] = start_time
-                data['end_time'] = start_time
+                data['start_time'] = self.start_time
+                data['end_time'] = self.start_time
                 test_data['data'] = str(data)
         else:
             self.logger.info("************   Excel 中的 timedata 字段 为空。不做时间字段更新处理。   *******************") 
@@ -214,12 +217,12 @@ class SendRequests(object):
         # if test_data['params'] != '' and test_data['params'] != None:
         params = parse_qs(urlparse('?' + test_data['params']).query)
         # print(params)
-        headers = test_data['headers']
+        headers = eval(test_data['headers'])
         # 发送请求
         try:
             if test_data['项目名称'] == 'POS机':
                 if test_data['url'] == '/login/userLogin':
-                    r = requests.post(url = url, data = params,headers=eval(headers))
+                    r = requests.post(url = url, data = params,headers=headers)
                     self.config['POS_API_INI']['TOKEN'] = r.json()['data']['token']
                     self.config['POS_API_INI']['MERCHANT_TYPE'] = r.json()['data']['merchant_type']
                     self.config['POS_API_INI']['MERCHANT_ID'] = r.json()['data']['st_id']
@@ -230,9 +233,16 @@ class SendRequests(object):
                         
                         params['token'] = self.config['POS_API_INI']['TOKEN']
                         params['user_id'] = self.config['POS_API_INI']['U_ID']
-                        test_params = eval(params['data'][0])
-                        test_params['st_id'] = self.config['POS_API_INI']['MERCHANT_ID']
-                        test_params['st_type'] = self.config['POS_API_INI']['MERCHANT_TYPE']
+                        params['merchant_id'] = self.config['POS_API_INI']['MERCHANT_ID']
+                        params['merchant_type'] = self.config['POS_API_INI']['MERCHANT_TYPE']
+                        if test_data['url'] == '/staff_performance/getAdmin':
+                            params['merchant_id'] = self.config['POS_API_INI']['MERCHANT_ID']
+                            params['merchant_type'] = self.config['POS_API_INI']['MERCHANT_TYPE']
+                            test_params = None
+                        else:
+                            test_params = eval(params['data'][0])
+                            test_params['st_id'] = self.config['POS_API_INI']['MERCHANT_ID']
+                            test_params['st_type'] = self.config['POS_API_INI']['MERCHANT_TYPE']
                         # test_params['gun_id'] = self.config['POS_API_INI']['GUN_ID']
                         if test_data['标题'] == '零管-输入金额-现金支付':
                             test_params['gun_id'] = self.config['POS_API_INI']['RETAIL_GUN_ID']
@@ -242,6 +252,7 @@ class SendRequests(object):
                             test_params['energy_type'] = self.config['POS_API_INI']['RETAIL_ENERGY_TYPE']
                             test_params['id'] = self.config['POS_API_INI']['RETAIL_GUN_ID']
                             test_params['oil_id'] = self.config['POS_API_INI']['RETAIL_OIL_ID']
+                            test_params['admin_id'] = self.config['POS_API_INI']['GROUP_ID']
                         elif test_data['标题'] == '非零管-输入金额-现金支付':
                             test_params['gun_id'] = self.config['POS_API_INI']['STATIC_GUN_ID']
                             test_params['oil_name'] = self.config['POS_API_INI']['STATIC_ENERGY_NAME']
@@ -250,9 +261,15 @@ class SendRequests(object):
                             test_params['energy_type'] = self.config['POS_API_INI']['STATIC_ENERGY_TYPE']
                             test_params['id'] = self.config['POS_API_INI']['STATIC_GUN_ID']
                             test_params['oil_id'] = self.config['POS_API_INI']['STATIC_OIL_ID']
-                        params['data'] =json.dumps(test_params)
-                        r = requests.post(url = url, data = params,headers=eval(headers))
-
+                            test_params['admin_id'] = self.config['POS_API_INI']['GROUP_ID']
+                        if test_params != None:
+                            params['data'] =json.dumps(test_params)
+                        r = requests.post(url = url, data = params,headers=headers)
+                        if test_data['url'] == '/staff_performance/getAdmin':
+                            if r.json()['data']['list'] == type([]):
+                                self.config['POS_API_INI']['GROUP_ID'] = r.json()['data']['list'][0]['admin_id']
+                            elif r.json()['data']['list'] == type({}):
+                                self.config['POS_API_INI']['GROUP_ID'] = r.json()['data']['list']['admin_id']
                     elif method.upper() == 'GET':
                         pass
 
@@ -276,10 +293,16 @@ class SendRequests(object):
                         if test_data['url'] == '/order/abandon':
                             body['order_id'] = self.config['POS_OS_API_INI']['ORDER_BOX_ID']
                             headers['password'] = self.config['POS_OS_API_INI']['PASSWORD']
+                        # elif test_data['url'] =='/order/pay':
+                        #     body['order_id'] = self.config['POS_OS_API_INI']['ORDER_BOX_ID']
                         else :
                             body['order_id'] = [self.config['POS_OS_API_INI']['ORDER_BOX_ID']]
-
-                        # if test_data['url'] == '/order/refund' or test_data['url'] == '/order/quickpass/pay':
+                        if test_data['url'] == '/order/pay':
+                            body['order_id'] = [self.config['POS_OS_API_INI']['ORDER_BOX_ID']]
+                            if body['pay_type'] =='8':
+                                body['user_card_code'] = self.config['POS_OS_API_INI']['CARD_CODE']
+                                body['card_password'] = self.config['POS_OS_API_INI']['PASSWORD']
+                                body['user_id'] = self.config['POS_OS_API_INI']['USER_ID']
                         if test_data['url'] == '/order/refund':
                             body['order_code'] = self.config['POS_OS_API_INI']['REFUND_ORDER_CODE']
                         elif test_data['url'] == '/order/abandon' :
@@ -311,15 +334,24 @@ class SendRequests(object):
                         params['merchant_type'] = self.config['POS_OS_API_INI']['MERCHANT_TYPE']
                         params['merchant_id'] = self.config['POS_OS_API_INI']['MERCHANT_ID']
                         if test_data['url'] == '/orders':
-                            params['begin_time'] = [str(today_start_time)]
-                            params['end_time'] = [str(today_end_time)]
+                            params['begin_time'] = [str(self.today_start_time)]
+                            params['end_time'] = [str(self.oday_end_time)]
                         headers = self.config['POS_OS_API_INI']['HEADERS']
                         if test_data['url'] == '/recharge/user_card_list':
                             params['user_id'] = self.config['POS_OS_API_INI']['USER_ID']
                             params['phone'] = self.config['POS_OS_API_INI']['MOBILE']
+                        if test_data['url'] == '/os/order/check_lock':
+                            params['order_id'] = self.config['POS_OS_API_INI']['ORDER_BOX_ID']
                         r = requests.get(url = url , params = params,headers = eval(headers))
-                        if test_data['url'] == '/order/gun_list':
-                            self.config['POS_OS_API_INI']['ORDER_BOX_ID'] = str(r.json()['data'][0]['list'][0]['id'])
+                        if test_data['url'] == '/order/list':
+                            # print(r.json()['data']['list'])
+                            for list in r.json()['data']['list']:
+                                # print(list)
+                                if len(list) > 12:
+                                    self.config['POS_OS_API_INI']['ORDER_BOX_ID'] = list['id']
+                                    self.config.write()
+                                    break
+                                
                         elif test_data['url'] == '/orders':
                             self.config['POS_OS_API_INI']['REFUND_ORDER_CODE'] = str(r.json()['data'][0]['order_code'])
                         elif test_data['url'] == '/client/detail':
@@ -328,6 +360,8 @@ class SendRequests(object):
                         elif test_data['url'] == '/recharge/user_card_list':
                             self.config['POS_OS_API_INI']['CARD_CODE'] = str(r.json()['data'][0]['user_card']['code'])
                             self.config['POS_OS_API_INI']['CARD_ID'] = str(r.json()['data'][0]['user_card']['card_id'])
+                        elif test_data['url'] == '/os/order/check_lock':
+                            time.sleep(0.5)
             elif test_data['项目名称'] == '自助机':
                 pass
 
@@ -340,8 +374,8 @@ class SendRequests(object):
                     body['arr_merchant_ids'] = [self.config['MP_NLSAAS_API_INI']['MERCHANT_ID']]
                     # body['uid'] = self.config['MP_NLSAAS_API_INI']['USERID']
                 if test_data['url'] == '/api/coupon/coupons/create_coupons':
-                    body['coupon_start_time'] = start_time
-                    body['coupon_end_time'] = end_time
+                    body['coupon_start_time'] = self.start_time
+                    body['coupon_end_time'] = self.end_time
                     body['amount_rule'][0]['product_id'] = self.config['MP_NLSAAS_API_INI']['ENERGY_ID_LIST']
                 elif test_data['url'] == '/api/activities/send-gift-with-purchase-activity/create':
                     body['activity_rule'][0]['step_award'][0]['arr_coupon_id_amount'][0] = self.config['MP_NLSAAS_API_INI']['COUPON_ID']
@@ -353,7 +387,7 @@ class SendRequests(object):
                 elif test_data['url'] == '/activities/recharge_send_coupon_activity/create':
                     body['activity_rule'][0]['recharge_award'][0]['id'] = self.config['MP_NLSAAS_API_INI']['COUPON_ID']
                 elif test_data['url'] == '/api/manual/manual/create':
-                    body['send_time'] = start_time
+                    body['send_time'] = self.send_time
                     body['user_group_rule'] = [self.config['MP_NLSAAS_API_INI']['USER_GROUP']]
                     body['coupon_json'][0]['coupon_id'] = self.config['MP_NLSAAS_API_INI']['COUPON_ID']
                 elif test_data['url'] == '/api/customer/customer_group/get_user_group':
@@ -370,15 +404,15 @@ class SendRequests(object):
                     body['activity']['stations'][0]['merchant_name'] = self.config['MP_NLSAAS_API_INI']['MERCHANT_NAME']
                     body['activity']['stations'][0]['merchant_id'] = self.config['MP_NLSAAS_API_INI']['MERCHANT_ID']
                     body['activity']['stations'][0]['merchant_type'] = self.config['MP_NLSAAS_API_INI']['MERCHANT_TYPE']
-                    body['activity']['start_time'] = start_time
-                    body['activity']['end_time'] = end_time
+                    body['activity']['start_time'] = self.start_time
+                    body['activity']['end_time'] = self.end_time
                     body['inviter_setting']['coupon_ids_and_amount'][0]['coupon_id'] = self.config['MP_NLSAAS_API_INI']['COUPON_ID']
                     body['inviter_setting']['coupon_ids_and_amount'][0]['coupon_name'] = self.config['MP_NLSAAS_API_INI']['COUPON_NAME']
 
                 r = session.request(method=method,
                                     url=url,
                                     params=params,
-                                    headers=eval(headers),
+                                    headers=headers,
                                     data=json.dumps(body),
                                     verify=True
                                     )

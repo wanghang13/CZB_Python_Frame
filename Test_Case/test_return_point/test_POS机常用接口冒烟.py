@@ -22,7 +22,7 @@ from Common import Log
 reportPath = globalparam.report_path 
 
 # 读取和写入的表格名称
-excel_name = 'Test_Case.xlsx'
+excel_name = '日常冒烟测试点.xlsx'
 sheet_name = "POS机接口冒烟" 
 excelPath = os.path.join(globalparam.prj_path, 'Test_File', excel_name)
 report_path = os.path.join(globalparam.prj_path, 'Test_Report','excel_report',excel_name)
@@ -41,8 +41,7 @@ class TestApi(unittest.TestCase):
         self.logger = Log.TestLog()
         self.session = requests.session()
         warnings.simplefilter('ignore',ResourceWarning)
-        self.config = ConfigObj(globalparam.config_path,encoding='UTF8')
-
+        
 
     @ddt_new.data(*test_data)
     def test_member(self, data):
@@ -72,6 +71,7 @@ class TestApi(unittest.TestCase):
     @classmethod
     def tearDownClass(self):
         pass
+        self.config = ConfigObj(globalparam.config_path,encoding='UTF8')
         if self.config['EXCEL_INFO']['Excel_Save'] == '1':
             # 先复制excel数据到report
             Write_Excel.copy_excel(excelPath,report_path)  # 复制xlsx

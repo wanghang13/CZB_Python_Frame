@@ -1,4 +1,4 @@
-import pytest
+# import pytest
 import os
 import time
 from Common.globalparam import allure_dir,allure_plus_dir
@@ -26,11 +26,16 @@ if __name__ == "__main__":
     测试环境传递： 1 OR 测试 OR test 
     预发布环境传递： 2 OR 预发布 OR Pre-release 
     绿色域名环境传递：3 OR 绿色 OR Green-Release
+    绿色域名环境传递：4 OR 蓝色 OR Blue-Release
     正式环境传递： 0 OR 不传递
     '''
-    Write_Config().Switch_Host('2') 
-
-    os.system(f'pytest  -v  -k test_商户后台常用接口冒烟.py --html=Test_Report/report/{report_file}-report.html')
+    
+    Write_Config().Switch_Host('1')
+# 
+    # os.system(f'pytest  -v Test_Case/test_return_point --html=Test_Report/report/{report_file}-report.html')
+    os.system(f'pytest  -v  -k test_双屏机常用接口冒烟.py --html=Test_Report/report/{report_file}-report.html')
+    # os.system(f'pytest  -v  -k test_商户后台常用接口冒烟.py --html=Test_Report/report/{report_file}-report.html')
+    # os.system(f'pytest  -v  -k test_POS机常用接口冒烟.py --html=Test_Report/report/{report_file}-report.html')
     # os.system(f"pytest -v -k test_双屏机常用接口冒烟.py  --alluredir={allure_path}")
     # os.system(f"pytest -v -k test_POS机常用接口冒烟.py  --alluredir={allure_path}")
 
