@@ -26,6 +26,7 @@ excel_name = '日常冒烟测试点.xlsx'
 sheet_name = "双屏机接口冒烟" 
 excelPath = os.path.join(globalparam.prj_path, 'Test_File', excel_name)
 report_path = os.path.join(globalparam.prj_path, 'Test_Report','excel_report',excel_name)
+init_report_path = os.path.join(globalparam.prj_path, 'Test_Report','excel_report',"init_" + excel_name)
 
 # 读取测试用例
 test_data = ExcelUtil(excelPath, sheet_name=sheet_name).dict_data()
@@ -41,7 +42,7 @@ class TestApi(unittest.TestCase):
         self.logger = Log.TestLog()
         self.session = requests.session()
         warnings.simplefilter('ignore',ResourceWarning)
-        Write_Excel.copy_excel(excelPath,report_path)
+        Write_Excel.copy_excel(excelPath,init_report_path)
         
 
     @ddt_new.data(*test_data)
