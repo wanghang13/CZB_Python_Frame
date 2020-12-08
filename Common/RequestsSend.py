@@ -31,9 +31,6 @@ report_path = globalparam.report_path
 # 忽略警告
 warnings.filterwarnings("ignore") 
 
-# sheet_name1 = globalparam.sheet_basic
-username = globalparam.username
-password = globalparam.password
 
 class SendRequests(object):
     def __init__(self):

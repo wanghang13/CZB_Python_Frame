@@ -81,7 +81,7 @@ class ExcelUtil(object):
 
 if __name__ == "__main__":
     # print(globalparam.data_path)
-    path = globalparam.data_path+'/Test_Case.xlsx'
+    path = globalparam.data_path+'/日常冒烟测试点.xlsx'
     s = ExcelUtil(path).get_xls_to_dict()
     e = ExcelUtil(path).dict_data()
     print(e)

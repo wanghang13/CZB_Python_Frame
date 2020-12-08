@@ -7,8 +7,10 @@ import os
 
 # 项目参数设置
 prj_path = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
 # 日志路径
 log_path = os.path.join(prj_path, 'Test_Report','log')
+
 # 测试报告存放路径
 report_dir = os.path.join(prj_path, "Test_Report")
 

@@ -2,6 +2,6 @@
 Test_Report/allure
 Test_Report/allure_plus
 Test_Report/assets
-Test_Report/log
+# Test_Report/log/.
 Test_Report/report
 # .vscode/
