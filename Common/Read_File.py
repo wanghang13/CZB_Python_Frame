@@ -70,19 +70,22 @@ class ExcelUtil(object):
             self.logger.error("错误信息:{}".format(e))
 
     def get_xls_to_dict(self):
+
         """
         读取excel表结果为dict
         第一行为字典的key，下面的为值
         return [{'title':'1','user':'root'},{'title':'2','user':'xiaoshitou'}]
         """
+
         dataresult = [self.table.row_values(j) for j in range(2, self.table.nrows)]
         result = [dict(zip(dataresult[0], dataresult[f])) for f in range(1, len(dataresult))]
         return result
 
+
 if __name__ == "__main__":
     # print(globalparam.data_path)
     path = globalparam.data_path+'/日常冒烟测试点.xlsx'
-    s = ExcelUtil(path).get_xls_to_dict()
+    # s = ExcelUtil(path).get_xls_to_dict()
     e = ExcelUtil(path).dict_data()
     print(e)
     # s = requests.session()

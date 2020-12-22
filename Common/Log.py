@@ -2,6 +2,7 @@
 # 作者：杭仔
 # *****************************************
 # -*- coding:UTF-8 -*-
+
 import sys,os
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from Common import globalparam
@@ -13,13 +14,14 @@ log_path = globalparam.log_path
 # ch = logging.StreamHandler()
 
 
+
 class TestLog(object):
     def __init__(self):
         # 日志文件的存放路径，根据自己的需要去修改
         self.test_report = globalparam.log_path
         self.now = time.strftime("%Y-%m-%d-")
         self.log_file_path = self.test_report + "/" + self.now + '-log_result.log'
-
+        
     def __printconsole(self, level, message):
         # 创建一个logger
         logger = logging.getLogger()

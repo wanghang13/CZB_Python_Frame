@@ -9,5 +9,11 @@
 
 
 from Common import globalparam
+from Common import Log
 
-print(globalparam.prj_path)
+logger = Log.TestLog()
+
+logger.info('测试log 方法写入。')
+
+
+# print(globalparam.prj_path)

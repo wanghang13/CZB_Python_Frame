@@ -1,0 +1,619 @@
+2020-12-17 10:09:53,873 - root - INFO - ************   Excel 中的 associateid 字段 为空。不做接口关联处理。  *******************
+2020-12-17 10:09:53,874 - root - INFO - ************   Excel 中的 updatadict 字段 为空。不做data数据更新处理。   *******************
+2020-12-17 10:09:53,874 - root - INFO - ************   Excel 中的 timedata 字段 为空。不做时间字段更新处理。   *******************
+2020-12-17 10:09:53,875 - root - INFO - 请求方式：POST
+2020-12-17 10:09:53,875 - root - INFO - 请求url: https://uat-os.nlsaas.com/user/login
+2020-12-17 10:09:54,689 - root - INFO - 请求参数：{"username":"TestAuto","password":"testauto6","device":[{"regid":"1507bfd3f74e1e1c2bf","type":"1"},{"regid":"0690147908a7cae175df42c40a855cae0d1e","type":"5"}]}
+2020-12-17 10:09:54,690 - root - INFO - 请求params：{}
+2020-12-17 10:09:54,690 - root - INFO - 请求headers：{'Content-Type': 'application/json;charset=utf-8', 'token': 'E25D863200021A7BFB047481FDC29AF4', 'aid': '5365'}
+2020-12-17 10:09:54,691 - root - INFO - 检查点->：200
+2020-12-17 10:09:54,691 - root - INFO - 用例测试结果:   1---->   pass
+2020-12-17 10:09:54,692 - root - INFO - *******执行用例完成：-----  1  ----**********
+
+2020-12-17 10:09:56,416 - root - INFO - ********************************************************************************
+2020-12-17 10:09:56,432 - root - INFO - ************   Excel 中的 associateid 字段 为空。不做接口关联处理。  *******************
+2020-12-17 10:09:56,433 - root - INFO - ************   Excel 中的 updatadict 字段 为空。不做data数据更新处理。   *******************
+2020-12-17 10:09:56,434 - root - INFO - ************   Excel 中的 timedata 字段 为空。不做时间字段更新处理。   *******************
+2020-12-17 10:09:56,434 - root - INFO - 请求方式：POST
+2020-12-17 10:09:56,435 - root - INFO - 请求url: https://uat-os.nlsaas.com/order/quickpass/pay
+2020-12-17 10:09:57,213 - root - INFO - 请求参数：{'pay_type': 2, 'pay_price': 100, 'merchant_id': '10002', 'merchant_type': '1001', 'order_id': ['4320'], 'order_code': ['50202012161499641386']}
+2020-12-17 10:09:57,213 - root - INFO - 请求params：{}
+2020-12-17 10:09:57,214 - root - INFO - 请求headers：{'Content-Type': 'application/json;charset=utf-8', 'token': 'E25D863200021A7BFB047481FDC29AF4', 'aid': '5365'}
+2020-12-17 10:09:57,214 - root - INFO - 检查点->：200
+2020-12-17 10:09:57,215 - root - INFO - 用例执行成功！页面返回信息：{'status': 200, 'info': 'Success', 'data': [{'order_id': '5959993', 'order_type': '16', 'order_code': '16202012179968712116', 'is_split': 0, 'is_master': 1, 'is_suborder': 1, 'suborder_num': '0', 'related_order': '', 'payment_id': '0', 'channel_id': '0', 'user_id': '0', 'mobile': '', 'company_id': '0', 'merchant_type': '1001', 'merchant_id': '10002', 'user_level_id': '0', 'user_level_type': '0', 'user_level_name': '', 'user_identity_type': '0', 'user_identity_id': '0', 'invoice_title': '', 'order_status': '1160', 'cancel_status': '0', 'revoke_status': '0', 'pay_status': '4', 'shipping_status': 0, 'goods_amount': '100', 'order_amount': '100', 'pay_money': '100', 'surplus': '0', 'balance': '0', 'credit': '0', 'credit_fee': '0', 'coupon_fee': '0', 'bonus_fee': '0', 'discount': '0', 'remark': '', 'has_refund': '0', 'refund_fee': '0', 'platform': '4100', 'admin_id': '0', 'pay_time': '1608170996', 'cancel_time': '0', 'refund_time': '0', 'update_time': '1608170997', 'create_time': '1608170996', 'recommand_id': 0, 'items': [{'item_id': '5980186', 'order_id': '5959993', 'goods_type': '40', 'category_id': '0', 'goods_id': '0', 'goods_name': '', 'goods_sn': '', 'goods_number': '0.000000', 'market_price': '0', 'goods_price': '0', 'actual_price': '0', 'contract_price': '0', 'subtotal': '100', 'credit': '0', 'credit_fee': '0', 'coupon_fee': '0', 'bonus_fee': '0', 'discount': '0', 'is_gift': '0', 'goods_attr': '', 'ndrc_sale_price': '0', 'ndrc_wholesale_price': '0', 'energy_type': '0', 'energy_number': '', 'gun_type': '0', 'gun_id': '0', 'gun_number': '0', 'gun_name': '', 'has_retail': '0', 'car_no': '', 'fleet_id': '0', 'item_inspay_id': '5803041'}], 'payment_info': [{'id': '5700770', 'order_id': '5700770', 'order_code': '16202012179968712116', 'payment_id': '10', 'channel_id': '10', 'card_type': '0', 'card_number': '', 'trade_no': '16202012179968712116', 'out_trade_no': '', 'total_fee': '100', 'pay_fee': '100', 'fee_rate': '0.00', 'payment_type': '0', 'mch_id': '', 'public_type': '0', 'discount': '0', 'refund_fee': '0', 'pay_time': '1608170996', 'notify_time': '1608170996', 'platform': '4100', 'other': ''}]}], 'request_id': 'e12efd1ec974888e731f34f13fc61d93'}
+2020-12-17 10:09:57,216 - root - INFO - 用例测试结果:   2---->   pass
+2020-12-17 10:09:57,216 - root - INFO - *******执行用例完成：-----  2  ----**********
+
+2020-12-17 10:09:57,792 - root - INFO - ********************************************************************************
+2020-12-17 10:09:57,798 - root - INFO - ************   Excel 中的 associateid 字段 为空。不做接口关联处理。  *******************
+2020-12-17 10:09:57,799 - root - INFO - ************   Excel 中的 updatadict 字段 为空。不做data数据更新处理。   *******************
+2020-12-17 10:09:57,800 - root - INFO - ************   Excel 中的 timedata 字段 为空。不做时间字段更新处理。   *******************
+2020-12-17 10:09:57,801 - root - INFO - 请求方式：GET
+2020-12-17 10:09:57,801 - root - INFO - 请求url: https://uat-os.nlsaas.com/order/list
+2020-12-17 10:09:58,090 - root - INFO - 请求参数：
+2020-12-17 10:09:58,091 - root - INFO - 请求params：{'merchant_type': '1001', 'merchant_id': '10002', 'status[0]': ['1'], 'status[2]': ['5'], 'page_size': ['1'], 'time_sort': ['desc'], 'status[1]': ['2'], 'status[3]': ['7']}
+2020-12-17 10:09:58,091 - root - INFO - 请求headers：{'Content-Type': 'application/json;charset=utf-8', 'token': 'E25D863200021A7BFB047481FDC29AF4', 'aid': '5365'}
+2020-12-17 10:09:58,092 - root - INFO - 检查点->：200
+2020-12-17 10:09:58,092 - root - INFO - 用例测试结果:   3---->   pass
+2020-12-17 10:09:58,093 - root - INFO - *******执行用例完成：-----  3  ----**********
+
+2020-12-17 10:09:58,598 - root - INFO - ********************************************************************************
+2020-12-17 10:09:58,603 - root - INFO - ************   Excel 中的 associateid 字段 为空。不做接口关联处理。  *******************
+2020-12-17 10:09:58,604 - root - INFO - ************   Excel 中的 updatadict 字段 为空。不做data数据更新处理。   *******************
+2020-12-17 10:09:58,604 - root - INFO - ************   Excel 中的 timedata 字段 为空。不做时间字段更新处理。   *******************
+2020-12-17 10:09:58,604 - root - INFO - 请求方式：GET
+2020-12-17 10:09:58,605 - root - INFO - 请求url: https://uat-os.nlsaas.com/order/list
+2020-12-17 10:09:58,925 - root - INFO - 请求参数：
+2020-12-17 10:09:58,925 - root - INFO - 请求params：{'merchant_type': '1001', 'merchant_id': '10002', 'status[0]': ['1'], 'status[2]': ['5'], 'page_size': ['1'], 'time_sort': ['desc'], 'status[1]': ['2'], 'status[3]': ['7']}
+2020-12-17 10:09:58,925 - root - INFO - 请求headers：{'Content-Type': 'application/json;charset=utf-8', 'token': 'E25D863200021A7BFB047481FDC29AF4', 'aid': '5365'}
+2020-12-17 10:09:58,926 - root - INFO - 检查点->：200
+2020-12-17 10:09:58,926 - root - INFO - 用例测试结果:   3---->   pass
+2020-12-17 10:09:58,926 - root - INFO - *******执行用例完成：-----  3  ----**********
+
+2020-12-17 10:09:58,927 - root - INFO - ************   Excel 中的 updatadict 字段 为空。不做data数据更新处理。   *******************
+2020-12-17 10:09:58,927 - root - INFO - ************   Excel 中的 timedata 字段 为空。不做时间字段更新处理。   *******************
+2020-12-17 10:09:58,928 - root - INFO - 请求方式：POST
+2020-12-17 10:09:58,928 - root - INFO - 请求url: https://uat-os.nlsaas.com/order/pay
+2020-12-17 10:10:00,654 - root - INFO - 请求参数：{'order_id': [12727], 'is_mix_pay': 0, 'pay_type': 2, 'merchant_id': '10002', 'merchant_type': '1001', 'order_code': ['50202012161499641386']}
+2020-12-17 10:10:00,654 - root - INFO - 请求params：{}
+2020-12-17 10:10:00,655 - root - INFO - 请求headers：{'Content-Type': 'application/json;charset=utf-8', 'token': 'E25D863200021A7BFB047481FDC29AF4', 'aid': '5365'}
+2020-12-17 10:10:00,656 - root - INFO - 检查点->：200
+2020-12-17 10:10:00,657 - root - INFO - 用例执行成功！页面返回信息：{'status': 200, 'info': 'Success', 'data': [{'order_id': '5959994', 'order_type': '16', 'order_code': '16202012179994812269', 'is_split': 0, 'is_master': 1, 'is_suborder': 1, 'suborder_num': '0', 'related_order': '', 'payment_id': '0', 'channel_id': '0', 'user_id': '0', 'mobile': '', 'company_id': '0', 'merchant_type': '1001', 'merchant_id': '10002', 'user_level_id': '0', 'user_level_type': '0', 'user_level_name': '', 'user_identity_type': '0', 'user_identity_id': '0', 'invoice_title': '', 'order_status': '1160', 'cancel_status': '0', 'revoke_status': '0', 'pay_status': '4', 'shipping_status': 0, 'goods_amount': '100', 'order_amount': '100', 'pay_money': '100', 'surplus': '0', 'balance': '0', 'credit': '0', 'credit_fee': '0', 'coupon_fee': '0', 'bonus_fee': '0', 'discount': '0', 'remark': '', 'has_refund': '0', 'refund_fee': '0', 'platform': '4100', 'admin_id': '0', 'pay_time': '1608170999', 'cancel_time': '0', 'refund_time': '0', 'update_time': '1608170999', 'create_time': '1608170999', 'recommand_id': 0, 'items': [{'item_id': '5980187', 'order_id': '5959994', 'goods_type': '10', 'category_id': '1', 'goods_id': '1', 'goods_name': '92#车用汽油', 'goods_sn': '', 'goods_number': '0.190000', 'market_price': '56700', 'goods_price': '56700', 'actual_price': '56700', 'contract_price': '56700', 'subtotal': '100', 'credit': '0', 'credit_fee': '0', 'coupon_fee': '0', 'bonus_fee': '0', 'discount': '0', 'is_gift': '0', 'goods_attr': '', 'ndrc_sale_price': '0', 'ndrc_wholesale_price': '0', 'energy_type': '1', 'energy_number': '92', 'gun_type': '0', 'gun_id': '10363', 'gun_number': '1', 'gun_name': '', 'has_retail': '0', 'car_no': '', 'fleet_id': '0', 'item_inspay_id': '5803042'}], 'payment_info': [{'id': '5700771', 'order_id': '5700771', 'order_code': '16202012179994812269', 'payment_id': '10', 'channel_id': '10', 'card_type': '0', 'card_number': '', 'trade_no': '16202012179994812269', 'out_trade_no': '', 'total_fee': '100', 'pay_fee': '100', 'fee_rate': '0.00', 'payment_type': '0', 'mch_id': '', 'public_type': '0', 'discount': '0', 'refund_fee': '0', 'pay_time': '1608170999', 'notify_time': '1608170999', 'platform': '4100', 'other': ''}]}], 'request_id': '8f0cb8b562ea3fa7424819e7def0cc3e'}
+2020-12-17 10:10:00,657 - root - INFO - 用例测试结果:   4---->   pass
+2020-12-17 10:10:00,657 - root - INFO - *******执行用例完成：-----  4  ----**********
+
+2020-12-17 10:10:01,122 - root - INFO - ********************************************************************************
+2020-12-17 10:10:01,126 - root - INFO - ************   Excel 中的 associateid 字段 为空。不做接口关联处理。  *******************
+2020-12-17 10:10:01,127 - root - INFO - ************   Excel 中的 updatadict 字段 为空。不做data数据更新处理。   *******************
+2020-12-17 10:10:01,127 - root - INFO - ************   Excel 中的 timedata 字段 为空。不做时间字段更新处理。   *******************
+2020-12-17 10:10:01,128 - root - INFO - 请求方式：GET
+2020-12-17 10:10:01,128 - root - INFO - 请求url: https://uat-os.nlsaas.com/order/list
+2020-12-17 10:10:01,437 - root - INFO - 请求参数：
+2020-12-17 10:10:01,437 - root - INFO - 请求params：{'merchant_type': '1001', 'merchant_id': '10002', 'status[0]': ['1'], 'status[2]': ['5'], 'page_size': ['1'], 'time_sort': ['desc'], 'status[1]': ['2'], 'status[3]': ['7']}
+2020-12-17 10:10:01,437 - root - INFO - 请求headers：{'Content-Type': 'application/json;charset=utf-8', 'token': 'E25D863200021A7BFB047481FDC29AF4', 'aid': '5365'}
+2020-12-17 10:10:01,438 - root - INFO - 检查点->：200
+2020-12-17 10:10:01,438 - root - INFO - 用例测试结果:   3---->   pass
+2020-12-17 10:10:01,438 - root - INFO - *******执行用例完成：-----  3  ----**********
+
+2020-12-17 10:10:01,439 - root - INFO - ************   Excel 中的 updatadict 字段 为空。不做data数据更新处理。   *******************
+2020-12-17 10:10:01,439 - root - INFO - ************   Excel 中的 timedata 字段 为空。不做时间字段更新处理。   *******************
+2020-12-17 10:10:01,439 - root - INFO - 请求方式：POST
+2020-12-17 10:10:01,440 - root - INFO - 请求url: https://uat-os.nlsaas.com/order/pay
+2020-12-17 10:10:03,219 - root - INFO - 请求参数：{'order_id': [12698], 'is_mix_pay': 0, 'pay_type': 7, 'merchant_id': '10002', 'merchant_type': '1001', 'order_code': ['50202012161499641386']}
+2020-12-17 10:10:03,220 - root - INFO - 请求params：{}
+2020-12-17 10:10:03,221 - root - INFO - 请求headers：{'Content-Type': 'application/json;charset=utf-8', 'token': 'E25D863200021A7BFB047481FDC29AF4', 'aid': '5365'}
+2020-12-17 10:10:03,221 - root - INFO - 检查点->：200
+2020-12-17 10:10:03,222 - root - INFO - 用例执行成功！页面返回信息：{'status': 200, 'info': 'Success', 'data': [{'order_id': '5959995', 'order_type': '16', 'order_code': '16202012170019619828', 'is_split': 0, 'is_master': 1, 'is_suborder': 1, 'suborder_num': '0', 'related_order': '', 'payment_id': '0', 'channel_id': '0', 'user_id': '0', 'mobile': '', 'company_id': '0', 'merchant_type': '1001', 'merchant_id': '10002', 'user_level_id': '0', 'user_level_type': '0', 'user_level_name': '', 'user_identity_type': '0', 'user_identity_id': '0', 'invoice_title': '', 'order_status': '1160', 'cancel_status': '0', 'revoke_status': '0', 'pay_status': '4', 'shipping_status': 0, 'goods_amount': '100', 'order_amount': '100', 'pay_money': '100', 'surplus': '0', 'balance': '0', 'credit': '0', 'credit_fee': '0', 'coupon_fee': '0', 'bonus_fee': '0', 'discount': '0', 'remark': '', 'has_refund': '0', 'refund_fee': '0', 'platform': '4100', 'admin_id': '0', 'pay_time': '1608171001', 'cancel_time': '0', 'refund_time': '0', 'update_time': '1608171002', 'create_time': '1608171001', 'recommand_id': 0, 'items': [{'item_id': '5980188', 'order_id': '5959995', 'goods_type': '10', 'category_id': '1', 'goods_id': '1', 'goods_name': '92#车用汽油', 'goods_sn': '', 'goods_number': '0.190000', 'market_price': '56700', 'goods_price': '56700', 'actual_price': '56700', 'contract_price': '56700', 'subtotal': '100', 'credit': '0', 'credit_fee': '0', 'coupon_fee': '0', 'bonus_fee': '0', 'discount': '0', 'is_gift': '0', 'goods_attr': '', 'ndrc_sale_price': '0', 'ndrc_wholesale_price': '0', 'energy_type': '1', 'energy_number': '92', 'gun_type': '0', 'gun_id': '10363', 'gun_number': '1', 'gun_name': '', 'has_retail': '0', 'car_no': '', 'fleet_id': '0', 'item_inspay_id': '5803043'}], 'payment_info': [{'id': '5700772', 'order_id': '5700772', 'order_code': '16202012170019619828', 'payment_id': '45', 'channel_id': '45', 'card_type': '0', 'card_number': '', 'trade_no': '16202012170019619828', 'out_trade_no': '', 'total_fee': '100', 'pay_fee': '100', 'fee_rate': '0.00', 'payment_type': '0', 'mch_id': '', 'public_type': '0', 'discount': '0', 'refund_fee': '0', 'pay_time': '1608171001', 'notify_time': '1608171001', 'platform': '4100', 'other': ''}]}], 'request_id': 'c87ea3e77f20a6ba705c9f1638b61951'}
+2020-12-17 10:10:03,222 - root - INFO - 用例测试结果:   5---->   pass
+2020-12-17 10:10:03,222 - root - INFO - *******执行用例完成：-----  5  ----**********
+
+2020-12-17 10:10:03,687 - root - INFO - ********************************************************************************
+2020-12-17 10:10:03,691 - root - INFO - ************   Excel 中的 associateid 字段 为空。不做接口关联处理。  *******************
+2020-12-17 10:10:03,691 - root - INFO - ************   Excel 中的 updatadict 字段 为空。不做data数据更新处理。   *******************
+2020-12-17 10:10:03,691 - root - INFO - ************   Excel 中的 timedata 字段 为空。不做时间字段更新处理。   *******************
+2020-12-17 10:10:03,692 - root - INFO - 请求方式：GET
+2020-12-17 10:10:03,692 - root - INFO - 请求url: https://uat-os.nlsaas.com/order/list
+2020-12-17 10:10:04,024 - root - INFO - 请求参数：
+2020-12-17 10:10:04,024 - root - INFO - 请求params：{'merchant_type': '1001', 'merchant_id': '10002', 'status[0]': ['1'], 'status[2]': ['5'], 'page_size': ['1'], 'time_sort': ['desc'], 'status[1]': ['2'], 'status[3]': ['7']}
+2020-12-17 10:10:04,024 - root - INFO - 请求headers：{'Content-Type': 'application/json;charset=utf-8', 'token': 'E25D863200021A7BFB047481FDC29AF4', 'aid': '5365'}
+2020-12-17 10:10:04,025 - root - INFO - 检查点->：200
+2020-12-17 10:10:04,025 - root - INFO - 用例测试结果:   3---->   pass
+2020-12-17 10:10:04,025 - root - INFO - *******执行用例完成：-----  3  ----**********
+
+2020-12-17 10:10:04,026 - root - INFO - ************   Excel 中的 updatadict 字段 为空。不做data数据更新处理。   *******************
+2020-12-17 10:10:04,026 - root - INFO - ************   Excel 中的 timedata 字段 为空。不做时间字段更新处理。   *******************
+2020-12-17 10:10:04,026 - root - INFO - 请求方式：POST
+2020-12-17 10:10:04,027 - root - INFO - 请求url: https://uat-os.nlsaas.com/order/pay
+2020-12-17 10:10:05,778 - root - INFO - 请求参数：{'order_id': [12695], 'is_mix_pay': 0, 'pay_type': 8, 'merchant_id': '10002', 'merchant_type': '1001', 'order_code': ['50202012161499641386']}
+2020-12-17 10:10:05,779 - root - INFO - 请求params：{}
+2020-12-17 10:10:05,780 - root - INFO - 请求headers：{'Content-Type': 'application/json;charset=utf-8', 'token': 'E25D863200021A7BFB047481FDC29AF4', 'aid': '5365'}
+2020-12-17 10:10:05,780 - root - INFO - 检查点->：200
+2020-12-17 10:10:05,782 - root - INFO - 用例执行成功！页面返回信息：{'status': 200, 'info': 'Success', 'data': [{'order_id': '5959996', 'order_type': '16', 'order_code': '16202012170045482886', 'is_split': 0, 'is_master': 1, 'is_suborder': 1, 'suborder_num': '0', 'related_order': '', 'payment_id': '0', 'channel_id': '0', 'user_id': '0', 'mobile': '', 'company_id': '0', 'merchant_type': '1001', 'merchant_id': '10002', 'user_level_id': '0', 'user_level_type': '0', 'user_level_name': '', 'user_identity_type': '0', 'user_identity_id': '0', 'invoice_title': '', 'order_status': '1160', 'cancel_status': '0', 'revoke_status': '0', 'pay_status': '4', 'shipping_status': 0, 'goods_amount': '100', 'order_amount': '100', 'pay_money': '100', 'surplus': '0', 'balance': '0', 'credit': '0', 'credit_fee': '0', 'coupon_fee': '0', 'bonus_fee': '0', 'discount': '0', 'remark': '', 'has_refund': '0', 'refund_fee': '0', 'platform': '4100', 'admin_id': '0', 'pay_time': '1608171004', 'cancel_time': '0', 'refund_time': '0', 'update_time': '1608171004', 'create_time': '1608171004', 'recommand_id': 0, 'items': [{'item_id': '5980189', 'order_id': '5959996', 'goods_type': '10', 'category_id': '1', 'goods_id': '1', 'goods_name': '92#车用汽油', 'goods_sn': '', 'goods_number': '0.190000', 'market_price': '56700', 'goods_price': '56700', 'actual_price': '56700', 'contract_price': '56700', 'subtotal': '100', 'credit': '0', 'credit_fee': '0', 'coupon_fee': '0', 'bonus_fee': '0', 'discount': '0', 'is_gift': '0', 'goods_attr': '', 'ndrc_sale_price': '0', 'ndrc_wholesale_price': '0', 'energy_type': '1', 'energy_number': '92', 'gun_type': '0', 'gun_id': '10363', 'gun_number': '1', 'gun_name': '', 'has_retail': '0', 'car_no': '', 'fleet_id': '0', 'item_inspay_id': '5803044'}], 'payment_info': [{'id': '5700773', 'order_id': '5700773', 'order_code': '16202012170045482886', 'payment_id': '41', 'channel_id': '41', 'card_type': '0', 'card_number': '', 'trade_no': '16202012170045482886', 'out_trade_no': '', 'total_fee': '100', 'pay_fee': '100', 'fee_rate': '0.00', 'payment_type': '0', 'mch_id': '', 'public_type': '0', 'discount': '0', 'refund_fee': '0', 'pay_time': '1608171004', 'notify_time': '1608171004', 'platform': '4100', 'other': ''}]}], 'request_id': '474b52d19454d6cf432e01dec80f23d8'}
+2020-12-17 10:10:05,783 - root - INFO - 用例测试结果:   6---->   pass
+2020-12-17 10:10:05,784 - root - INFO - *******执行用例完成：-----  6  ----**********
+
+2020-12-17 10:10:06,245 - root - INFO - ********************************************************************************
+2020-12-17 10:10:06,252 - root - INFO - ************   Excel 中的 associateid 字段 为空。不做接口关联处理。  *******************
+2020-12-17 10:10:06,253 - root - INFO - ************   Excel 中的 updatadict 字段 为空。不做data数据更新处理。   *******************
+2020-12-17 10:10:06,253 - root - INFO - ************   Excel 中的 timedata 字段 为空。不做时间字段更新处理。   *******************
+2020-12-17 10:10:06,253 - root - INFO - 请求方式：GET
+2020-12-17 10:10:06,254 - root - INFO - 请求url: https://uat-os.nlsaas.com/order/list
+2020-12-17 10:10:06,554 - root - INFO - 请求参数：
+2020-12-17 10:10:06,555 - root - INFO - 请求params：{'merchant_type': '1001', 'merchant_id': '10002', 'status[0]': ['1'], 'status[2]': ['5'], 'page_size': ['1'], 'time_sort': ['desc'], 'status[1]': ['2'], 'status[3]': ['7']}
+2020-12-17 10:10:06,555 - root - INFO - 请求headers：{'Content-Type': 'application/json;charset=utf-8', 'token': 'E25D863200021A7BFB047481FDC29AF4', 'aid': '5365'}
+2020-12-17 10:10:06,555 - root - INFO - 检查点->：200
+2020-12-17 10:10:06,556 - root - INFO - 用例测试结果:   3---->   pass
+2020-12-17 10:10:06,556 - root - INFO - *******执行用例完成：-----  3  ----**********
+
+2020-12-17 10:10:06,556 - root - INFO - ************   Excel 中的 updatadict 字段 为空。不做data数据更新处理。   *******************
+2020-12-17 10:10:06,557 - root - INFO - ************   Excel 中的 timedata 字段 为空。不做时间字段更新处理。   *******************
+2020-12-17 10:10:06,557 - root - INFO - 请求方式：POST
+2020-12-17 10:10:06,557 - root - INFO - 请求url: https://uat-os.nlsaas.com/order/pay
+2020-12-17 10:10:08,337 - root - INFO - 请求参数：{'order_id': [4320], 'is_mix_pay': 0, 'pay_type': 9, 'merchant_id': '10002', 'merchant_type': '1001', 'order_code': ['50202012161499641386']}
+2020-12-17 10:10:08,337 - root - INFO - 请求params：{}
+2020-12-17 10:10:08,339 - root - INFO - 请求headers：{'Content-Type': 'application/json;charset=utf-8', 'token': 'E25D863200021A7BFB047481FDC29AF4', 'aid': '5365'}
+2020-12-17 10:10:08,339 - root - INFO - 检查点->：200
+2020-12-17 10:10:08,340 - root - INFO - 用例执行成功！页面返回信息：{'status': 200, 'info': 'Success', 'data': [{'order_id': '5959997', 'order_type': '16', 'order_code': '16202012170070514416', 'is_split': 0, 'is_master': 1, 'is_suborder': 1, 'suborder_num': '0', 'related_order': '', 'payment_id': '0', 'channel_id': '0', 'user_id': '0', 'mobile': '', 'company_id': '0', 'merchant_type': '1001', 'merchant_id': '10002', 'user_level_id': '0', 'user_level_type': '0', 'user_level_name': '', 'user_identity_type': '0', 'user_identity_id': '0', 'invoice_title': '', 'order_status': '1160', 'cancel_status': '0', 'revoke_status': '0', 'pay_status': '4', 'shipping_status': 0, 'goods_amount': '25708', 'order_amount': '25708', 'pay_money': '25708', 'surplus': '0', 'balance': '0', 'credit': '0', 'credit_fee': '0', 'coupon_fee': '0', 'bonus_fee': '0', 'discount': '0', 'remark': '', 'has_refund': '0', 'refund_fee': '0', 'platform': '4100', 'admin_id': '0', 'pay_time': '1608171007', 'cancel_time': '0', 'refund_time': '0', 'update_time': '1608171007', 'create_time': '1608171007', 'recommand_id': 0, 'items': [{'item_id': '5980190', 'order_id': '5959997', 'goods_type': '10', 'category_id': '1', 'goods_id': '3', 'goods_name': '98#车用汽油', 'goods_sn': '', 'goods_number': '49.430000', 'market_price': '80000', 'goods_price': '80000', 'actual_price': '80000', 'contract_price': '80000', 'subtotal': '25708', 'credit': '0', 'credit_fee': '0', 'coupon_fee': '0', 'bonus_fee': '0', 'discount': '0', 'is_gift': '0', 'goods_attr': '', 'ndrc_sale_price': '0', 'ndrc_wholesale_price': '0', 'energy_type': '1', 'energy_number': '98', 'gun_type': '0', 'gun_id': '10364', 'gun_number': '2', 'gun_name': '', 'has_retail': '0', 'car_no': '', 'fleet_id': '0', 'item_inspay_id': '5803045'}], 'payment_info': [{'id': '5700774', 'order_id': '5700774', 'order_code': '16202012170070514416', 'payment_id': '42', 'channel_id': '42', 'card_type': '0', 'card_number': '', 'trade_no': '16202012170070514416', 'out_trade_no': '', 'total_fee': '25708', 'pay_fee': '25708', 'fee_rate': '0.00', 'payment_type': '0', 'mch_id': '', 'public_type': '0', 'discount': '0', 'refund_fee': '0', 'pay_time': '1608171007', 'notify_time': '1608171007', 'platform': '4100', 'other': ''}]}], 'request_id': 'e8bd8077dfd871d8711673d4cab93223'}
+2020-12-17 10:10:08,341 - root - INFO - 用例测试结果:   7---->   pass
+2020-12-17 10:10:08,341 - root - INFO - *******执行用例完成：-----  7  ----**********
+
+2020-12-17 10:10:08,826 - root - INFO - ********************************************************************************
+2020-12-17 10:10:08,832 - root - INFO - ************   Excel 中的 associateid 字段 为空。不做接口关联处理。  *******************
+2020-12-17 10:10:08,832 - root - INFO - ************   Excel 中的 updatadict 字段 为空。不做data数据更新处理。   *******************
+2020-12-17 10:10:08,833 - root - INFO - ************   Excel 中的 timedata 字段 为空。不做时间字段更新处理。   *******************
+2020-12-17 10:10:08,833 - root - INFO - 请求方式：GET
+2020-12-17 10:10:08,834 - root - INFO - 请求url: https://uat-os.nlsaas.com/order/list
+2020-12-17 10:10:09,225 - root - INFO - 请求参数：
+2020-12-17 10:10:09,226 - root - INFO - 请求params：{'merchant_type': '1001', 'merchant_id': '10002', 'status[0]': ['1'], 'status[2]': ['5'], 'page_size': ['1'], 'time_sort': ['desc'], 'status[1]': ['2'], 'status[3]': ['7']}
+2020-12-17 10:10:09,227 - root - INFO - 请求headers：{'Content-Type': 'application/json;charset=utf-8', 'token': 'E25D863200021A7BFB047481FDC29AF4', 'aid': '5365'}
+2020-12-17 10:10:09,227 - root - INFO - 检查点->：200
+2020-12-17 10:10:09,228 - root - INFO - 用例测试结果:   3---->   pass
+2020-12-17 10:10:09,228 - root - INFO - *******执行用例完成：-----  3  ----**********
+
+2020-12-17 10:10:09,229 - root - INFO - ************   Excel 中的 updatadict 字段 为空。不做data数据更新处理。   *******************
+2020-12-17 10:10:09,230 - root - INFO - ************   Excel 中的 timedata 字段 为空。不做时间字段更新处理。   *******************
+2020-12-17 10:10:09,230 - root - INFO - 请求方式：POST
+2020-12-17 10:10:09,230 - root - INFO - 请求url: https://uat-os.nlsaas.com/order/pay
+2020-12-17 10:10:11,003 - root - INFO - 请求参数：{'order_id': [4319], 'is_mix_pay': 0, 'pay_type': 10, 'merchant_id': '10002', 'merchant_type': '1001', 'order_code': ['50202012161499641386']}
+2020-12-17 10:10:11,003 - root - INFO - 请求params：{}
+2020-12-17 10:10:11,004 - root - INFO - 请求headers：{'Content-Type': 'application/json;charset=utf-8', 'token': 'E25D863200021A7BFB047481FDC29AF4', 'aid': '5365'}
+2020-12-17 10:10:11,005 - root - INFO - 检查点->：200
+2020-12-17 10:10:11,005 - root - INFO - 用例执行成功！页面返回信息：{'status': 200, 'info': 'Success', 'data': [{'order_id': '5959998', 'order_type': '16', 'order_code': '16202012170097576627', 'is_split': 0, 'is_master': 1, 'is_suborder': 1, 'suborder_num': '0', 'related_order': '', 'payment_id': '0', 'channel_id': '0', 'user_id': '0', 'mobile': '', 'company_id': '0', 'merchant_type': '1001', 'merchant_id': '10002', 'user_level_id': '0', 'user_level_type': '0', 'user_level_name': '', 'user_identity_type': '0', 'user_identity_id': '0', 'invoice_title': '', 'order_status': '1160', 'cancel_status': '0', 'revoke_status': '0', 'pay_status': '4', 'shipping_status': 0, 'goods_amount': '19172', 'order_amount': '19172', 'pay_money': '19172', 'surplus': '0', 'balance': '0', 'credit': '0', 'credit_fee': '0', 'coupon_fee': '0', 'bonus_fee': '0', 'discount': '0', 'remark': '', 'has_refund': '0', 'refund_fee': '0', 'platform': '4100', 'admin_id': '0', 'pay_time': '1608171009', 'cancel_time': '0', 'refund_time': '0', 'update_time': '1608171009', 'create_time': '1608171009', 'recommand_id': 0, 'items': [{'item_id': '5980191', 'order_id': '5959998', 'goods_type': '10', 'category_id': '2', 'goods_id': '5', 'goods_name': '-10#车用柴油', 'goods_sn': '', 'goods_number': '36.860000', 'market_price': '9500', 'goods_price': '9500', 'actual_price': '9500', 'contract_price': '9500', 'subtotal': '19172', 'credit': '0', 'credit_fee': '0', 'coupon_fee': '0', 'bonus_fee': '0', 'discount': '0', 'is_gift': '0', 'goods_attr': '', 'ndrc_sale_price': '0', 'ndrc_wholesale_price': '0', 'energy_type': '2', 'energy_number': '-10', 'gun_type': '0', 'gun_id': '10368', 'gun_number': '6', 'gun_name': '', 'has_retail': '0', 'car_no': '', 'fleet_id': '0', 'item_inspay_id': '5803046'}], 'payment_info': [{'id': '5700775', 'order_id': '5700775', 'order_code': '16202012170097576627', 'payment_id': '43', 'channel_id': '43', 'card_type': '0', 'card_number': '', 'trade_no': '16202012170097576627', 'out_trade_no': '', 'total_fee': '19172', 'pay_fee': '19172', 'fee_rate': '0.00', 'payment_type': '0', 'mch_id': '', 'public_type': '0', 'discount': '0', 'refund_fee': '0', 'pay_time': '1608171009', 'notify_time': '1608171009', 'platform': '4100', 'other': ''}]}], 'request_id': 'f04d271aa23f0ab11ad5664833109a3d'}
+2020-12-17 10:10:11,006 - root - INFO - 用例测试结果:   8---->   pass
+2020-12-17 10:10:11,006 - root - INFO - *******执行用例完成：-----  8  ----**********
+
+2020-12-17 10:10:11,465 - root - INFO - ********************************************************************************
+2020-12-17 10:10:11,470 - root - INFO - ************   Excel 中的 associateid 字段 为空。不做接口关联处理。  *******************
+2020-12-17 10:10:11,471 - root - INFO - ************   Excel 中的 updatadict 字段 为空。不做data数据更新处理。   *******************
+2020-12-17 10:10:11,471 - root - INFO - ************   Excel 中的 timedata 字段 为空。不做时间字段更新处理。   *******************
+2020-12-17 10:10:11,471 - root - INFO - 请求方式：GET
+2020-12-17 10:10:11,472 - root - INFO - 请求url: https://uat-os.nlsaas.com/order/list
+2020-12-17 10:10:11,749 - root - INFO - 请求参数：
+2020-12-17 10:10:11,750 - root - INFO - 请求params：{'merchant_type': '1001', 'merchant_id': '10002', 'status[0]': ['1'], 'status[2]': ['5'], 'page_size': ['1'], 'time_sort': ['desc'], 'status[1]': ['2'], 'status[3]': ['7']}
+2020-12-17 10:10:11,750 - root - INFO - 请求headers：{'Content-Type': 'application/json;charset=utf-8', 'token': 'E25D863200021A7BFB047481FDC29AF4', 'aid': '5365'}
+2020-12-17 10:10:11,751 - root - INFO - 检查点->：200
+2020-12-17 10:10:11,751 - root - INFO - 用例测试结果:   3---->   pass
+2020-12-17 10:10:11,751 - root - INFO - *******执行用例完成：-----  3  ----**********
+
+2020-12-17 10:10:11,752 - root - INFO - ************   Excel 中的 updatadict 字段 为空。不做data数据更新处理。   *******************
+2020-12-17 10:10:11,752 - root - INFO - ************   Excel 中的 timedata 字段 为空。不做时间字段更新处理。   *******************
+2020-12-17 10:10:11,752 - root - INFO - 请求方式：POST
+2020-12-17 10:10:11,753 - root - INFO - 请求url: https://uat-os.nlsaas.com/order/pay
+2020-12-17 10:10:13,459 - root - INFO - 请求参数：{'order_id': [4318], 'is_mix_pay': 0, 'pay_type': 11, 'merchant_id': '10002', 'merchant_type': '1001', 'order_code': ['50202012161499641386']}
+2020-12-17 10:10:13,460 - root - INFO - 请求params：{}
+2020-12-17 10:10:13,461 - root - INFO - 请求headers：{'Content-Type': 'application/json;charset=utf-8', 'token': 'E25D863200021A7BFB047481FDC29AF4', 'aid': '5365'}
+2020-12-17 10:10:13,461 - root - INFO - 检查点->：200
+2020-12-17 10:10:13,462 - root - INFO - 用例执行成功！页面返回信息：{'status': 200, 'info': 'Success', 'data': [{'order_id': '5960000', 'order_type': '16', 'order_code': '16202012170122616083', 'is_split': 0, 'is_master': 1, 'is_suborder': 1, 'suborder_num': '0', 'related_order': '', 'payment_id': '0', 'channel_id': '0', 'user_id': '0', 'mobile': '', 'company_id': '0', 'merchant_type': '1001', 'merchant_id': '10002', 'user_level_id': '0', 'user_level_type': '0', 'user_level_name': '', 'user_identity_type': '0', 'user_identity_id': '0', 'invoice_title': '', 'order_status': '1160', 'cancel_status': '0', 'revoke_status': '0', 'pay_status': '4', 'shipping_status': 0, 'goods_amount': '2459', 'order_amount': '2459', 'pay_money': '2459', 'surplus': '0', 'balance': '0', 'credit': '0', 'credit_fee': '0', 'coupon_fee': '0', 'bonus_fee': '0', 'discount': '0', 'remark': '', 'has_refund': '0', 'refund_fee': '0', 'platform': '4100', 'admin_id': '0', 'pay_time': '1608171012', 'cancel_time': '0', 'refund_time': '0', 'update_time': '1608171012', 'create_time': '1608171012', 'recommand_id': 0, 'items': [{'item_id': '5980193', 'order_id': '5960000', 'goods_type': '10', 'category_id': '1', 'goods_id': '6', 'goods_name': '89#车用汽油', 'goods_sn': '', 'goods_number': '4.720000', 'market_price': '10000', 'goods_price': '10000', 'actual_price': '10000', 'contract_price': '10000', 'subtotal': '2459', 'credit': '0', 'credit_fee': '0', 'coupon_fee': '0', 'bonus_fee': '0', 'discount': '0', 'is_gift': '0', 'goods_attr': '', 'ndrc_sale_price': '0', 'ndrc_wholesale_price': '0', 'energy_type': '1', 'energy_number': '89', 'gun_type': '0', 'gun_id': '10371', 'gun_number': '9', 'gun_name': '', 'has_retail': '0', 'car_no': '', 'fleet_id': '0', 'item_inspay_id': '5803048'}], 'payment_info': [{'id': '5700777', 'order_id': '5700777', 'order_code': '16202012170122616083', 'payment_id': '44', 'channel_id': '44', 'card_type': '0', 'card_number': '', 'trade_no': '16202012170122616083', 'out_trade_no': '', 'total_fee': '2459', 'pay_fee': '2459', 'fee_rate': '0.00', 'payment_type': '0', 'mch_id': '', 'public_type': '0', 'discount': '0', 'refund_fee': '0', 'pay_time': '1608171012', 'notify_time': '1608171012', 'platform': '4100', 'other': ''}]}], 'request_id': 'dc5ff5c5a2ce7d114bec0bebbed8e5cc'}
+2020-12-17 10:10:13,463 - root - INFO - 用例测试结果:   9---->   pass
+2020-12-17 10:10:13,464 - root - INFO - *******执行用例完成：-----  9  ----**********
+
+2020-12-17 10:10:13,922 - root - INFO - ********************************************************************************
+2020-12-17 10:10:13,927 - root - INFO - ************   Excel 中的 associateid 字段 为空。不做接口关联处理。  *******************
+2020-12-17 10:10:13,927 - root - INFO - ************   Excel 中的 updatadict 字段 为空。不做data数据更新处理。   *******************
+2020-12-17 10:10:13,928 - root - INFO - ************   Excel 中的 timedata 字段 为空。不做时间字段更新处理。   *******************
+2020-12-17 10:10:13,928 - root - INFO - 请求方式：POST
+2020-12-17 10:10:13,929 - root - INFO - 请求url: https://uat-os.nlsaas.com/order/quickpass/pay
+2020-12-17 10:10:14,653 - root - INFO - 请求参数：{'pay_type': 2, 'pay_price': 10, 'merchant_id': '10002', 'merchant_type': '1001', 'order_id': ['4318'], 'order_code': ['50202012161499641386']}
+2020-12-17 10:10:14,654 - root - INFO - 请求params：{}
+2020-12-17 10:10:14,655 - root - INFO - 请求headers：{'Content-Type': 'application/json;charset=utf-8', 'token': 'E25D863200021A7BFB047481FDC29AF4', 'aid': '5365'}
+2020-12-17 10:10:14,655 - root - INFO - 检查点->：200
+2020-12-17 10:10:14,656 - root - INFO - 用例执行成功！页面返回信息：{'status': 200, 'info': 'Success', 'data': [{'order_id': '5960001', 'order_type': '16', 'order_code': '16202012170143324071', 'is_split': 0, 'is_master': 1, 'is_suborder': 1, 'suborder_num': '0', 'related_order': '', 'payment_id': '0', 'channel_id': '0', 'user_id': '0', 'mobile': '', 'company_id': '0', 'merchant_type': '1001', 'merchant_id': '10002', 'user_level_id': '0', 'user_level_type': '0', 'user_level_name': '', 'user_identity_type': '0', 'user_identity_id': '0', 'invoice_title': '', 'order_status': '1160', 'cancel_status': '0', 'revoke_status': '0', 'pay_status': '4', 'shipping_status': 0, 'goods_amount': '10', 'order_amount': '10', 'pay_money': '10', 'surplus': '0', 'balance': '0', 'credit': '0', 'credit_fee': '0', 'coupon_fee': '0', 'bonus_fee': '0', 'discount': '0', 'remark': '', 'has_refund': '0', 'refund_fee': '0', 'platform': '4100', 'admin_id': '0', 'pay_time': '1608171014', 'cancel_time': '0', 'refund_time': '0', 'update_time': '1608171014', 'create_time': '1608171014', 'recommand_id': 0, 'items': [{'item_id': '5980194', 'order_id': '5960001', 'goods_type': '40', 'category_id': '0', 'goods_id': '0', 'goods_name': '', 'goods_sn': '', 'goods_number': '0.000000', 'market_price': '0', 'goods_price': '0', 'actual_price': '0', 'contract_price': '0', 'subtotal': '10', 'credit': '0', 'credit_fee': '0', 'coupon_fee': '0', 'bonus_fee': '0', 'discount': '0', 'is_gift': '0', 'goods_attr': '', 'ndrc_sale_price': '0', 'ndrc_wholesale_price': '0', 'energy_type': '0', 'energy_number': '', 'gun_type': '0', 'gun_id': '0', 'gun_number': '0', 'gun_name': '', 'has_retail': '0', 'car_no': '', 'fleet_id': '0', 'item_inspay_id': '5803049'}], 'payment_info': [{'id': '5700778', 'order_id': '5700778', 'order_code': '16202012170143324071', 'payment_id': '10', 'channel_id': '10', 'card_type': '0', 'card_number': '', 'trade_no': '16202012170143324071', 'out_trade_no': '', 'total_fee': '10', 'pay_fee': '10', 'fee_rate': '0.00', 'payment_type': '0', 'mch_id': '', 'public_type': '0', 'discount': '0', 'refund_fee': '0', 'pay_time': '1608171014', 'notify_time': '1608171014', 'platform': '4100', 'other': ''}]}], 'request_id': '1f6cd9a918b4c8975a630c4c5c23f2ee'}
+2020-12-17 10:10:14,656 - root - INFO - 用例测试结果:   10---->   pass
+2020-12-17 10:10:14,656 - root - INFO - *******执行用例完成：-----  10  ----**********
+
+2020-12-17 10:10:15,113 - root - INFO - ********************************************************************************
+2020-12-17 10:10:15,119 - root - INFO - ************   Excel 中的 associateid 字段 为空。不做接口关联处理。  *******************
+2020-12-17 10:10:15,120 - root - INFO - ************   Excel 中的 updatadict 字段 为空。不做data数据更新处理。   *******************
+2020-12-17 10:10:15,120 - root - INFO - ************   Excel 中的 timedata 字段 为空。不做时间字段更新处理。   *******************
+2020-12-17 10:10:15,120 - root - INFO - 请求方式：GET
+2020-12-17 10:10:15,121 - root - INFO - 请求url: https://uat-os.nlsaas.com/order/list
+2020-12-17 10:10:15,395 - root - INFO - 请求参数：
+2020-12-17 10:10:15,395 - root - INFO - 请求params：{'merchant_type': '1001', 'merchant_id': '10002', 'status[0]': ['1'], 'status[2]': ['5'], 'page_size': ['1'], 'time_sort': ['desc'], 'status[1]': ['2'], 'status[3]': ['7']}
+2020-12-17 10:10:15,397 - root - INFO - 请求headers：{'Content-Type': 'application/json;charset=utf-8', 'token': 'E25D863200021A7BFB047481FDC29AF4', 'aid': '5365'}
+2020-12-17 10:10:15,397 - root - INFO - 检查点->：200
+2020-12-17 10:10:15,398 - root - INFO - 用例测试结果:   3---->   pass
+2020-12-17 10:10:15,399 - root - INFO - *******执行用例完成：-----  3  ----**********
+
+2020-12-17 10:10:15,399 - root - INFO - ************   Excel 中的 updatadict 字段 为空。不做data数据更新处理。   *******************
+2020-12-17 10:10:15,399 - root - INFO - ************   Excel 中的 timedata 字段 为空。不做时间字段更新处理。   *******************
+2020-12-17 10:10:15,400 - root - INFO - 请求方式：POST
+2020-12-17 10:10:15,400 - root - INFO - 请求url: https://uat-os.nlsaas.com/order/batch/pay
+2020-12-17 10:10:15,685 - root - INFO - 请求参数：{'order_id': [4317], 'pay_type': 2, 'merchant_id': '10002', 'merchant_type': '1001', 'order_code': ['50202012161499641386']}
+2020-12-17 10:10:15,685 - root - INFO - 请求params：{}
+2020-12-17 10:10:15,685 - root - INFO - 请求headers：{'Content-Type': 'application/json;charset=utf-8', 'token': 'E25D863200021A7BFB047481FDC29AF4', 'aid': '5365'}
+2020-12-17 10:10:15,686 - root - INFO - 检查点->：200
+2020-12-17 10:10:15,686 - root - INFO - 用例执行成功！页面返回信息：{'status': 200, 'info': '批量结算提交成功', 'data': None, 'request_id': '4ed397b8fc5cdd4863e64710e813cbfe'}
+2020-12-17 10:10:15,686 - root - INFO - 用例测试结果:   11---->   pass
+2020-12-17 10:10:15,686 - root - INFO - *******执行用例完成：-----  11  ----**********
+
+2020-12-17 10:10:16,193 - root - INFO - ********************************************************************************
+2020-12-17 10:10:16,200 - root - INFO - ************   Excel 中的 associateid 字段 为空。不做接口关联处理。  *******************
+2020-12-17 10:10:16,200 - root - INFO - ************   Excel 中的 updatadict 字段 为空。不做data数据更新处理。   *******************
+2020-12-17 10:10:16,201 - root - INFO - ************   Excel 中的 timedata 字段 为空。不做时间字段更新处理。   *******************
+2020-12-17 10:10:16,201 - root - INFO - 请求方式：GET
+2020-12-17 10:10:16,202 - root - INFO - 请求url: https://uat-os.nlsaas.com/order/list
+2020-12-17 10:10:16,551 - root - INFO - 请求参数：
+2020-12-17 10:10:16,552 - root - INFO - 请求params：{'merchant_type': '1001', 'merchant_id': '10002', 'status[0]': ['1'], 'status[2]': ['5'], 'page_size': ['1'], 'time_sort': ['desc'], 'status[1]': ['2'], 'status[3]': ['7']}
+2020-12-17 10:10:16,552 - root - INFO - 请求headers：{'Content-Type': 'application/json;charset=utf-8', 'token': 'E25D863200021A7BFB047481FDC29AF4', 'aid': '5365'}
+2020-12-17 10:10:16,552 - root - INFO - 检查点->：200
+2020-12-17 10:10:16,553 - root - INFO - 用例测试结果:   3---->   pass
+2020-12-17 10:10:16,553 - root - INFO - *******执行用例完成：-----  3  ----**********
+
+2020-12-17 10:10:16,553 - root - INFO - ************   Excel 中的 updatadict 字段 为空。不做data数据更新处理。   *******************
+2020-12-17 10:10:16,553 - root - INFO - ************   Excel 中的 timedata 字段 为空。不做时间字段更新处理。   *******************
+2020-12-17 10:10:16,554 - root - INFO - 请求方式：POST
+2020-12-17 10:10:16,554 - root - INFO - 请求url: https://uat-os.nlsaas.com/order/batch/pay
+2020-12-17 10:10:17,006 - root - INFO - 请求参数：{'order_id': [4317], 'pay_type': 7, 'merchant_id': '10002', 'merchant_type': '1001', 'order_code': ['50202012161499641386']}
+2020-12-17 10:10:17,007 - root - INFO - 请求params：{}
+2020-12-17 10:10:17,007 - root - INFO - 请求headers：{'Content-Type': 'application/json;charset=utf-8', 'token': 'E25D863200021A7BFB047481FDC29AF4', 'aid': '5365'}
+2020-12-17 10:10:17,007 - root - INFO - 检查点->：200
+2020-12-17 10:10:17,008 - root - INFO - 用例执行成功！页面返回信息：{'status': 200, 'info': '批量结算提交成功', 'data': None, 'request_id': 'c58b0b5764f8cd8c8ab27566bc1e43cc'}
+2020-12-17 10:10:17,008 - root - INFO - 用例测试结果:   12---->   pass
+2020-12-17 10:10:17,008 - root - INFO - *******执行用例完成：-----  12  ----**********
+
+2020-12-17 10:10:17,473 - root - INFO - ********************************************************************************
+2020-12-17 10:10:17,478 - root - INFO - ************   Excel 中的 associateid 字段 为空。不做接口关联处理。  *******************
+2020-12-17 10:10:17,478 - root - INFO - ************   Excel 中的 updatadict 字段 为空。不做data数据更新处理。   *******************
+2020-12-17 10:10:17,478 - root - INFO - ************   Excel 中的 timedata 字段 为空。不做时间字段更新处理。   *******************
+2020-12-17 10:10:17,479 - root - INFO - 请求方式：GET
+2020-12-17 10:10:17,479 - root - INFO - 请求url: https://uat-os.nlsaas.com/order/list
+2020-12-17 10:10:17,771 - root - INFO - 请求参数：
+2020-12-17 10:10:17,771 - root - INFO - 请求params：{'merchant_type': '1001', 'merchant_id': '10002', 'status[0]': ['1'], 'status[2]': ['5'], 'page_size': ['1'], 'time_sort': ['desc'], 'status[1]': ['2'], 'status[3]': ['7']}
+2020-12-17 10:10:17,772 - root - INFO - 请求headers：{'Content-Type': 'application/json;charset=utf-8', 'token': 'E25D863200021A7BFB047481FDC29AF4', 'aid': '5365'}
+2020-12-17 10:10:17,772 - root - INFO - 检查点->：200
+2020-12-17 10:10:17,772 - root - INFO - 用例测试结果:   3---->   pass
+2020-12-17 10:10:17,773 - root - INFO - *******执行用例完成：-----  3  ----**********
+
+2020-12-17 10:10:17,773 - root - INFO - ************   Excel 中的 updatadict 字段 为空。不做data数据更新处理。   *******************
+2020-12-17 10:10:17,773 - root - INFO - ************   Excel 中的 timedata 字段 为空。不做时间字段更新处理。   *******************
+2020-12-17 10:10:17,773 - root - INFO - 请求方式：POST
+2020-12-17 10:10:17,774 - root - INFO - 请求url: https://uat-os.nlsaas.com/order/batch/pay
+2020-12-17 10:10:18,134 - root - INFO - 请求参数：{'order_id': [4317], 'pay_type': 8, 'merchant_id': '10002', 'merchant_type': '1001', 'order_code': ['50202012161499641386']}
+2020-12-17 10:10:18,134 - root - INFO - 请求params：{}
+2020-12-17 10:10:18,136 - root - INFO - 请求headers：{'Content-Type': 'application/json;charset=utf-8', 'token': 'E25D863200021A7BFB047481FDC29AF4', 'aid': '5365'}
+2020-12-17 10:10:18,136 - root - INFO - 检查点->：200
+2020-12-17 10:10:18,136 - root - INFO - 用例执行成功！页面返回信息：{'status': 200, 'info': '批量结算提交成功', 'data': None, 'request_id': '63412d203a2ca1ebb5944e1b3faf822b'}
+2020-12-17 10:10:18,137 - root - INFO - 用例测试结果:   13---->   pass
+2020-12-17 10:10:18,137 - root - INFO - *******执行用例完成：-----  13  ----**********
+
+2020-12-17 10:10:18,588 - root - INFO - ********************************************************************************
+2020-12-17 10:10:18,592 - root - INFO - ************   Excel 中的 associateid 字段 为空。不做接口关联处理。  *******************
+2020-12-17 10:10:18,592 - root - INFO - ************   Excel 中的 updatadict 字段 为空。不做data数据更新处理。   *******************
+2020-12-17 10:10:18,592 - root - INFO - ************   Excel 中的 timedata 字段 为空。不做时间字段更新处理。   *******************
+2020-12-17 10:10:18,593 - root - INFO - 请求方式：GET
+2020-12-17 10:10:18,593 - root - INFO - 请求url: https://uat-os.nlsaas.com/order/list
+2020-12-17 10:10:18,906 - root - INFO - 请求参数：
+2020-12-17 10:10:18,906 - root - INFO - 请求params：{'merchant_type': '1001', 'merchant_id': '10002', 'status[0]': ['1'], 'status[2]': ['5'], 'page_size': ['1'], 'time_sort': ['desc'], 'status[1]': ['2'], 'status[3]': ['7']}
+2020-12-17 10:10:18,907 - root - INFO - 请求headers：{'Content-Type': 'application/json;charset=utf-8', 'token': 'E25D863200021A7BFB047481FDC29AF4', 'aid': '5365'}
+2020-12-17 10:10:18,907 - root - INFO - 检查点->：200
+2020-12-17 10:10:18,908 - root - INFO - 用例测试结果:   3---->   pass
+2020-12-17 10:10:18,911 - root - INFO - *******执行用例完成：-----  3  ----**********
+
+2020-12-17 10:10:18,912 - root - INFO - ************   Excel 中的 updatadict 字段 为空。不做data数据更新处理。   *******************
+2020-12-17 10:10:18,915 - root - INFO - ************   Excel 中的 timedata 字段 为空。不做时间字段更新处理。   *******************
+2020-12-17 10:10:18,915 - root - INFO - 请求方式：POST
+2020-12-17 10:10:18,916 - root - INFO - 请求url: https://uat-os.nlsaas.com/order/batch/pay
+2020-12-17 10:10:19,214 - root - INFO - 请求参数：{'order_id': [4316], 'pay_type': 9, 'merchant_id': '10002', 'merchant_type': '1001', 'order_code': ['50202012161499641386']}
+2020-12-17 10:10:19,214 - root - INFO - 请求params：{}
+2020-12-17 10:10:19,216 - root - INFO - 请求headers：{'Content-Type': 'application/json;charset=utf-8', 'token': 'E25D863200021A7BFB047481FDC29AF4', 'aid': '5365'}
+2020-12-17 10:10:19,216 - root - INFO - 检查点->：200
+2020-12-17 10:10:19,217 - root - INFO - 用例执行成功！页面返回信息：{'status': 200, 'info': '批量结算提交成功', 'data': None, 'request_id': '25c3ef54bb991930b5a4c7236c189bff'}
+2020-12-17 10:10:19,217 - root - INFO - 用例测试结果:   14---->   pass
+2020-12-17 10:10:19,217 - root - INFO - *******执行用例完成：-----  14  ----**********
+
+2020-12-17 10:10:19,670 - root - INFO - ********************************************************************************
+2020-12-17 10:10:19,674 - root - INFO - ************   Excel 中的 associateid 字段 为空。不做接口关联处理。  *******************
+2020-12-17 10:10:19,674 - root - INFO - ************   Excel 中的 updatadict 字段 为空。不做data数据更新处理。   *******************
+2020-12-17 10:10:19,674 - root - INFO - ************   Excel 中的 timedata 字段 为空。不做时间字段更新处理。   *******************
+2020-12-17 10:10:19,675 - root - INFO - 请求方式：GET
+2020-12-17 10:10:19,675 - root - INFO - 请求url: https://uat-os.nlsaas.com/order/list
+2020-12-17 10:10:20,024 - root - INFO - 请求参数：
+2020-12-17 10:10:20,025 - root - INFO - 请求params：{'merchant_type': '1001', 'merchant_id': '10002', 'status[0]': ['1'], 'status[2]': ['5'], 'page_size': ['1'], 'time_sort': ['desc'], 'status[1]': ['2'], 'status[3]': ['7']}
+2020-12-17 10:10:20,025 - root - INFO - 请求headers：{'Content-Type': 'application/json;charset=utf-8', 'token': 'E25D863200021A7BFB047481FDC29AF4', 'aid': '5365'}
+2020-12-17 10:10:20,026 - root - INFO - 检查点->：200
+2020-12-17 10:10:20,026 - root - INFO - 用例测试结果:   3---->   pass
+2020-12-17 10:10:20,027 - root - INFO - *******执行用例完成：-----  3  ----**********
+
+2020-12-17 10:10:20,027 - root - INFO - ************   Excel 中的 updatadict 字段 为空。不做data数据更新处理。   *******************
+2020-12-17 10:10:20,028 - root - INFO - ************   Excel 中的 timedata 字段 为空。不做时间字段更新处理。   *******************
+2020-12-17 10:10:20,029 - root - INFO - 请求方式：POST
+2020-12-17 10:10:20,029 - root - INFO - 请求url: https://uat-os.nlsaas.com/order/batch/pay
+2020-12-17 10:10:20,311 - root - INFO - 请求参数：{'order_id': [4316], 'pay_type': 10, 'merchant_id': '10002', 'merchant_type': '1001', 'order_code': ['50202012161499641386']}
+2020-12-17 10:10:20,311 - root - INFO - 请求params：{}
+2020-12-17 10:10:20,312 - root - INFO - 请求headers：{'Content-Type': 'application/json;charset=utf-8', 'token': 'E25D863200021A7BFB047481FDC29AF4', 'aid': '5365'}
+2020-12-17 10:10:20,313 - root - INFO - 检查点->：200
+2020-12-17 10:10:20,313 - root - INFO - 用例执行成功！页面返回信息：{'status': 200, 'info': '批量结算提交成功', 'data': None, 'request_id': 'd8657dbe4efac7f87f637380580e047b'}
+2020-12-17 10:10:20,314 - root - INFO - 用例测试结果:   15---->   pass
+2020-12-17 10:10:20,314 - root - INFO - *******执行用例完成：-----  15  ----**********
+
+2020-12-17 10:10:20,772 - root - INFO - ********************************************************************************
+2020-12-17 10:10:20,777 - root - INFO - ************   Excel 中的 associateid 字段 为空。不做接口关联处理。  *******************
+2020-12-17 10:10:20,777 - root - INFO - ************   Excel 中的 updatadict 字段 为空。不做data数据更新处理。   *******************
+2020-12-17 10:10:20,778 - root - INFO - ************   Excel 中的 timedata 字段 为空。不做时间字段更新处理。   *******************
+2020-12-17 10:10:20,779 - root - INFO - 请求方式：GET
+2020-12-17 10:10:20,779 - root - INFO - 请求url: https://uat-os.nlsaas.com/order/list
+2020-12-17 10:10:21,133 - root - INFO - 请求参数：
+2020-12-17 10:10:21,134 - root - INFO - 请求params：{'merchant_type': '1001', 'merchant_id': '10002', 'status[0]': ['1'], 'status[2]': ['5'], 'page_size': ['1'], 'time_sort': ['desc'], 'status[1]': ['2'], 'status[3]': ['7']}
+2020-12-17 10:10:21,134 - root - INFO - 请求headers：{'Content-Type': 'application/json;charset=utf-8', 'token': 'E25D863200021A7BFB047481FDC29AF4', 'aid': '5365'}
+2020-12-17 10:10:21,134 - root - INFO - 检查点->：200
+2020-12-17 10:10:21,135 - root - INFO - 用例测试结果:   3---->   pass
+2020-12-17 10:10:21,135 - root - INFO - *******执行用例完成：-----  3  ----**********
+
+2020-12-17 10:10:21,136 - root - INFO - ************   Excel 中的 updatadict 字段 为空。不做data数据更新处理。   *******************
+2020-12-17 10:10:21,136 - root - INFO - ************   Excel 中的 timedata 字段 为空。不做时间字段更新处理。   *******************
+2020-12-17 10:10:21,136 - root - INFO - 请求方式：POST
+2020-12-17 10:10:21,137 - root - INFO - 请求url: https://uat-os.nlsaas.com/order/batch/pay
+2020-12-17 10:10:21,417 - root - INFO - 请求参数：{'order_id': [4316], 'pay_type': 11, 'merchant_id': '10002', 'merchant_type': '1001', 'order_code': ['50202012161499641386']}
+2020-12-17 10:10:21,417 - root - INFO - 请求params：{}
+2020-12-17 10:10:21,418 - root - INFO - 请求headers：{'Content-Type': 'application/json;charset=utf-8', 'token': 'E25D863200021A7BFB047481FDC29AF4', 'aid': '5365'}
+2020-12-17 10:10:21,418 - root - INFO - 检查点->：200
+2020-12-17 10:10:21,419 - root - INFO - 用例执行成功！页面返回信息：{'status': 200, 'info': '批量结算提交成功', 'data': None, 'request_id': '8c2db16b8ff54de7dd6a9c5035f22094'}
+2020-12-17 10:10:21,419 - root - INFO - 用例测试结果:   16---->   pass
+2020-12-17 10:10:21,420 - root - INFO - *******执行用例完成：-----  16  ----**********
+
+2020-12-17 10:10:21,899 - root - INFO - ********************************************************************************
+2020-12-17 10:10:21,904 - root - INFO - ************   Excel 中的 associateid 字段 为空。不做接口关联处理。  *******************
+2020-12-17 10:10:21,904 - root - INFO - ************   Excel 中的 updatadict 字段 为空。不做data数据更新处理。   *******************
+2020-12-17 10:10:21,905 - root - INFO - ************   Excel 中的 timedata 字段 为空。不做时间字段更新处理。   *******************
+2020-12-17 10:10:21,905 - root - INFO - 请求方式：GET
+2020-12-17 10:10:21,905 - root - INFO - 请求url: https://uat-os.nlsaas.com/orders
+2020-12-17 10:10:22,867 - root - INFO - 请求参数：
+2020-12-17 10:10:22,867 - root - INFO - 请求params：{'merchant_type': '1001', 'end_time': ['1608220799'], 'merchant_id': '10002', 'page_size': ['10'], 'pay_status[0]': ['4'], 'begin_time': ['1608134400'], 'has_user_info': ['1'], 'order_status[0]': ['2010'], 'order_status[1]': ['1160'], 'page': ['1'], 'order_type': ['1']}
+2020-12-17 10:10:22,868 - root - INFO - 请求headers：{'Content-Type': 'application/json;charset=utf-8', 'token': 'E25D863200021A7BFB047481FDC29AF4', 'aid': '5365'}
+2020-12-17 10:10:22,868 - root - INFO - 检查点->：200
+2020-12-17 10:10:22,869 - root - INFO - 用例执行成功！页面返回信息：{'status': 200, 'info': 'Success', 'data': [{'merchant_id': '10002', 'merchant_type': '1001', 'admin_id': '0', 'create_time': '1608171021', 'pay_time': '1608171021', 'order_time': '1608171021', 'pay_status': '4', 'pay_status_name': '已支付', 'mobile': '--', 'pay_type': ['滴滴加油'], 'user_id': '0', 'user_level_id': '0', 'user_level_type': '0', 'user_level_name': '--', 'user_info': None, 'goods_amount': '3520', 'order_amount': '3520', 'pay_money': '3520', 'discount': 0, 'coupon_fee': '0', 'surplus': '0', 'order_status': '1160', 'order_status_name': '已支付', 'order_code': '16202012170214643575', 'master_order_code': '16202012170214643575', 'order_id': '5960003', 'order_type': '16', 'order_type_name': '双屏机支付', 'is_vip_pay': 0, 'is_refunded': 0, 'note': '', 'remark': '', 'retail_info': None, 'is_master': '1', 'is_split': '0', 'is_suborder': '1', 'recharge': [], 'invoice': 'https://api.shylwlkj.com/q/?r=1&a=invoice&order_code=16202012170214643575&merchant_id=10002', 'is_print_invoice': 1, 'os_order_match': True, 'gun_number': '12', 'goods_number': '6.76', 'market_price': '9800', 'energy_number': '0', 'goods_name': '0#车用柴油', 'goods_id': '4', 'goods_type': '10', 'category_id': '2', 'car_no': '', 'items': [{'item_id': '5980196', 'order_id': '5960003', 'goods_type': '10', 'category_id': '2', 'product_id': '0', 'goods_id': '4', 'goods_name': '0#车用柴油', 'goods_sn': '', 'goods_number': '6.76', 'market_price': '9800', 'goods_price': '9800', 'actual_price': '9800', 'contract_price': '9800', 'credit': '0', 'credit_fee': '0', 'coupon_fee': '0', 'discount': '0', 'subtotal': '3520', 'is_gift': '0', 'energy_number': '0', 'energy_type': '2', 'gun_id': '10374', 'gun_name': '', 'gun_number': '12', 'car_no': ''}]}, {'merchant_id': '10002', 'merchant_type': '1001', 'admin_id': '0', 'create_time': '1608171017', 'pay_time': '1608171017', 'order_time': '1608171017', 'pay_status': '4', 'pay_status_name': '已支付', 'mobile': '--', 'pay_type': ['现金支付'], 'user_id': '0', 'user_level_id': '0', 'user_level_type': '0', 'user_level_name': '--', 'user_info': None, 'goods_amount': '8658', 'order_amount': '8658', 'pay_money': '8658', 'discount': 0, 'coupon_fee': '0', 'surplus': '0', 'order_status': '1160', 'order_status_name': '已支付', 'order_code': '16202012170178588617', 'master_order_code': '16202012170178588617', 'order_id': '5960002', 'order_type': '16', 'order_type_name': '双屏机支付', 'is_vip_pay': 0, 'is_refunded': 0, 'note': '', 'remark': '', 'retail_info': None, 'is_master': '1', 'is_split': '0', 'is_suborder': '1', 'recharge': [], 'invoice': 'https://api.shylwlkj.com/q/?r=1&a=invoice&order_code=16202012170178588617&merchant_id=10002', 'is_print_invoice': 1, 'os_order_match': True, 'gun_number': '13', 'goods_number': '16.65', 'market_price': '9500', 'energy_number': '-10', 'goods_name': '-10#车用柴油', 'goods_id': '5', 'goods_type': '10', 'category_id': '2', 'car_no': '', 'items': [{'item_id': '5980195', 'order_id': '5960002', 'goods_type': '10', 'category_id': '2', 'product_id': '0', 'goods_id': '5', 'goods_name': '-10#车用柴油', 'goods_sn': '', 'goods_number': '16.65', 'market_price': '9500', 'goods_price': '9500', 'actual_price': '9500', 'contract_price': '9500', 'credit': '0', 'credit_fee': '0', 'coupon_fee': '0', 'discount': '0', 'subtotal': '8658', 'is_gift': '0', 'energy_number': '-10', 'energy_type': '2', 'gun_id': '10375', 'gun_name': '', 'gun_number': '13', 'car_no': ''}]}, {'merchant_id': '10002', 'merchant_type': '1001', 'admin_id': '0', 'create_time': '1608171012', 'pay_time': '1608171012', 'order_time': '1608171012', 'pay_status': '4', 'pay_status_name': '已支付', 'mobile': '--', 'pay_type': ['客户IC卡'], 'user_id': '0', 'user_level_id': '0', 'user_level_type': '0', 'user_level_name': '--', 'user_info': None, 'goods_amount': '2459', 'order_amount': '2459', 'pay_money': '2459', 'discount': 0, 'coupon_fee': '0', 'surplus': '0', 'order_status': '1160', 'order_status_name': '已支付', 'order_code': '16202012170122616083', 'master_order_code': '16202012170122616083', 'order_id': '5960000', 'order_type': '16', 'order_type_name': '双屏机支付', 'is_vip_pay': 0, 'is_refunded': 0, 'note': '', 'remark': '', 'retail_info': None, 'is_master': '1', 'is_split': '0', 'is_suborder': '1', 'recharge': [], 'invoice': 'https://api.shylwlkj.com/q/?r=1&a=invoice&order_code=16202012170122616083&merchant_id=10002', 'is_print_invoice': 1, 'os_order_match': True, 'gun_number': '9', 'goods_number': '4.72', 'market_price': '10000', 'energy_number': '89', 'goods_name': '89#车用汽油', 'goods_id': '6', 'goods_type': '10', 'category_id': '1', 'car_no': '', 'items': [{'item_id': '5980193', 'order_id': '5960000', 'goods_type': '10', 'category_id': '1', 'product_id': '0', 'goods_id': '6', 'goods_name': '89#车用汽油', 'goods_sn': '', 'goods_number': '4.72', 'market_price': '10000', 'goods_price': '10000', 'actual_price': '10000', 'contract_price': '10000', 'credit': '0', 'credit_fee': '0', 'coupon_fee': '0', 'discount': '0', 'subtotal': '2459', 'is_gift': '0', 'energy_number': '89', 'energy_type': '1', 'gun_id': '10371', 'gun_name': '', 'gun_number': '9', 'car_no': ''}]}, {'merchant_id': '10002', 'merchant_type': '1001', 'admin_id': '0', 'create_time': '1608171009', 'pay_time': '1608171009', 'order_time': '1608171009', 'pay_status': '4', 'pay_status_name': '已支付', 'mobile': '--', 'pay_type': ['挂账'], 'user_id': '0', 'user_level_id': '0', 'user_level_type': '0', 'user_level_name': '--', 'user_info': None, 'goods_amount': '19172', 'order_amount': '19172', 'pay_money': '19172', 'discount': 0, 'coupon_fee': '0', 'surplus': '0', 'order_status': '1160', 'order_status_name': '已支付', 'order_code': '16202012170097576627', 'master_order_code': '16202012170097576627', 'order_id': '5959998', 'order_type': '16', 'order_type_name': '双屏机支付', 'is_vip_pay': 0, 'is_refunded': 0, 'note': '', 'remark': '', 'retail_info': None, 'is_master': '1', 'is_split': '0', 'is_suborder': '1', 'recharge': [], 'invoice': 'https://api.shylwlkj.com/q/?r=1&a=invoice&order_code=16202012170097576627&merchant_id=10002', 'is_print_invoice': 1, 'os_order_match': True, 'gun_number': '6', 'goods_number': '36.86', 'market_price': '9500', 'energy_number': '-10', 'goods_name': '-10#车用柴油', 'goods_id': '5', 'goods_type': '10', 'category_id': '2', 'car_no': '', 'items': [{'item_id': '5980191', 'order_id': '5959998', 'goods_type': '10', 'category_id': '2', 'product_id': '0', 'goods_id': '5', 'goods_name': '-10#车用柴油', 'goods_sn': '', 'goods_number': '36.86', 'market_price': '9500', 'goods_price': '9500', 'actual_price': '9500', 'contract_price': '9500', 'credit': '0', 'credit_fee': '0', 'coupon_fee': '0', 'discount': '0', 'subtotal': '19172', 'is_gift': '0', 'energy_number': '-10', 'energy_type': '2', 'gun_id': '10368', 'gun_name': '', 'gun_number': '6', 'car_no': ''}]}, {'merchant_id': '10002', 'merchant_type': '1001', 'admin_id': '0', 'create_time': '1608171007', 'pay_time': '1608171007', 'order_time': '1608171007', 'pay_status': '4', 'pay_status_name': '已支付', 'mobile': '--', 'pay_type': ['滴滴加油'], 'user_id': '0', 'user_level_id': '0', 'user_level_type': '0', 'user_level_name': '--', 'user_info': None, 'goods_amount': '25708', 'order_amount': '25708', 'pay_money': '25708', 'discount': 0, 'coupon_fee': '0', 'surplus': '0', 'order_status': '1160', 'order_status_name': '已支付', 'order_code': '16202012170070514416', 'master_order_code': '16202012170070514416', 'order_id': '5959997', 'order_type': '16', 'order_type_name': '双屏机支付', 'is_vip_pay': 0, 'is_refunded': 0, 'note': '', 'remark': '', 'retail_info': None, 'is_master': '1', 'is_split': '0', 'is_suborder': '1', 'recharge': [], 'invoice': 'https://api.shylwlkj.com/q/?r=1&a=invoice&order_code=16202012170070514416&merchant_id=10002', 'is_print_invoice': 1, 'os_order_match': True, 'gun_number': '2', 'goods_number': '49.43', 'market_price': '80000', 'energy_number': '98', 'goods_name': '98#车用汽油', 'goods_id': '3', 'goods_type': '10', 'category_id': '1', 'car_no': '', 'items': [{'item_id': '5980190', 'order_id': '5959997', 'goods_type': '10', 'category_id': '1', 'product_id': '0', 'goods_id': '3', 'goods_name': '98#车用汽油', 'goods_sn': '', 'goods_number': '49.43', 'market_price': '80000', 'goods_price': '80000', 'actual_price': '80000', 'contract_price': '80000', 'credit': '0', 'credit_fee': '0', 'coupon_fee': '0', 'discount': '0', 'subtotal': '25708', 'is_gift': '0', 'energy_number': '98', 'energy_type': '1', 'gun_id': '10364', 'gun_name': '', 'gun_number': '2', 'car_no': ''}]}, {'merchant_id': '10002', 'merchant_type': '1001', 'admin_id': '0', 'create_time': '1608171004', 'pay_time': '1608171004', 'order_time': '1608171004', 'pay_status': '4', 'pay_status_name': '已支付', 'mobile': '--', 'pay_type': ['货车帮'], 'user_id': '0', 'user_level_id': '0', 'user_level_type': '0', 'user_level_name': '--', 'user_info': None, 'goods_amount': '100', 'order_amount': '100', 'pay_money': '100', 'discount': 0, 'coupon_fee': '0', 'surplus': '0', 'order_status': '1160', 'order_status_name': '已支付', 'order_code': '16202012170045482886', 'master_order_code': '16202012170045482886', 'order_id': '5959996', 'order_type': '16', 'order_type_name': '双屏机支付', 'is_vip_pay': 0, 'is_refunded': 0, 'note': '', 'remark': '', 'retail_info': None, 'is_master': '1', 'is_split': '0', 'is_suborder': '1', 'recharge': [], 'invoice': 'https://api.shylwlkj.com/q/?r=1&a=invoice&order_code=16202012170045482886&merchant_id=10002', 'is_print_invoice': 1, 'os_order_match': True, 'gun_number': '1', 'goods_number': '0.19', 'market_price': '56700', 'energy_number': '92', 'goods_name': '92#车用汽油', 'goods_id': '1', 'goods_type': '10', 'category_id': '1', 'car_no': '', 'items': [{'item_id': '5980189', 'order_id': '5959996', 'goods_type': '10', 'category_id': '1', 'product_id': '0', 'goods_id': '1', 'goods_name': '92#车用汽油', 'goods_sn': '', 'goods_number': '0.19', 'market_price': '56700', 'goods_price': '56700', 'actual_price': '56700', 'contract_price': '56700', 'credit': '0', 'credit_fee': '0', 'coupon_fee': '0', 'discount': '0', 'subtotal': '100', 'is_gift': '0', 'energy_number': '92', 'energy_type': '1', 'gun_id': '10363', 'gun_name': '', 'gun_number': '1', 'car_no': ''}]}, {'merchant_id': '10002', 'merchant_type': '1001', 'admin_id': '0', 'create_time': '1608171001', 'pay_time': '1608171001', 'order_time': '1608171001', 'pay_status': '4', 'pay_status_name': '已支付', 'mobile': '--', 'pay_type': ['第三方银联'], 'user_id': '0', 'user_level_id': '0', 'user_level_type': '0', 'user_level_name': '--', 'user_info': None, 'goods_amount': '100', 'order_amount': '100', 'pay_money': '100', 'discount': 0, 'coupon_fee': '0', 'surplus': '0', 'order_status': '1160', 'order_status_name': '已支付', 'order_code': '16202012170019619828', 'master_order_code': '16202012170019619828', 'order_id': '5959995', 'order_type': '16', 'order_type_name': '双屏机支付', 'is_vip_pay': 0, 'is_refunded': 0, 'note': '', 'remark': '', 'retail_info': None, 'is_master': '1', 'is_split': '0', 'is_suborder': '1', 'recharge': [], 'invoice': 'https://api.shylwlkj.com/q/?r=1&a=invoice&order_code=16202012170019619828&merchant_id=10002', 'is_print_invoice': 1, 'os_order_match': True, 'gun_number': '1', 'goods_number': '0.19', 'market_price': '56700', 'energy_number': '92', 'goods_name': '92#车用汽油', 'goods_id': '1', 'goods_type': '10', 'category_id': '1', 'car_no': '', 'items': [{'item_id': '5980188', 'order_id': '5959995', 'goods_type': '10', 'category_id': '1', 'product_id': '0', 'goods_id': '1', 'goods_name': '92#车用汽油', 'goods_sn': '', 'goods_number': '0.19', 'market_price': '56700', 'goods_price': '56700', 'actual_price': '56700', 'contract_price': '56700', 'credit': '0', 'credit_fee': '0', 'coupon_fee': '0', 'discount': '0', 'subtotal': '100', 'is_gift': '0', 'energy_number': '92', 'energy_type': '1', 'gun_id': '10363', 'gun_name': '', 'gun_number': '1', 'car_no': ''}]}, {'merchant_id': '10002', 'merchant_type': '1001', 'admin_id': '0', 'create_time': '1608170999', 'pay_time': '1608170999', 'order_time': '1608170999', 'pay_status': '4', 'pay_status_name': '已支付', 'mobile': '--', 'pay_type': ['现金支付'], 'user_id': '0', 'user_level_id': '0', 'user_level_type': '0', 'user_level_name': '--', 'user_info': None, 'goods_amount': '100', 'order_amount': '100', 'pay_money': '100', 'discount': 0, 'coupon_fee': '0', 'surplus': '0', 'order_status': '1160', 'order_status_name': '已支付', 'order_code': '16202012179994812269', 'master_order_code': '16202012179994812269', 'order_id': '5959994', 'order_type': '16', 'order_type_name': '双屏机支付', 'is_vip_pay': 0, 'is_refunded': 0, 'note': '', 'remark': '', 'retail_info': None, 'is_master': '1', 'is_split': '0', 'is_suborder': '1', 'recharge': [], 'invoice': 'https://api.shylwlkj.com/q/?r=1&a=invoice&order_code=16202012179994812269&merchant_id=10002', 'is_print_invoice': 1, 'os_order_match': True, 'gun_number': '1', 'goods_number': '0.19', 'market_price': '56700', 'energy_number': '92', 'goods_name': '92#车用汽油', 'goods_id': '1', 'goods_type': '10', 'category_id': '1', 'car_no': '', 'items': [{'item_id': '5980187', 'order_id': '5959994', 'goods_type': '10', 'category_id': '1', 'product_id': '0', 'goods_id': '1', 'goods_name': '92#车用汽油', 'goods_sn': '', 'goods_number': '0.19', 'market_price': '56700', 'goods_price': '56700', 'actual_price': '56700', 'contract_price': '56700', 'credit': '0', 'credit_fee': '0', 'coupon_fee': '0', 'discount': '0', 'subtotal': '100', 'is_gift': '0', 'energy_number': '92', 'energy_type': '1', 'gun_id': '10363', 'gun_name': '', 'gun_number': '1', 'car_no': ''}]}], 'request_id': 'fbec438690e1f2fc2aff2cfeca61642a'}
+2020-12-17 10:10:22,870 - root - INFO - 用例测试结果:   17---->   pass
+2020-12-17 10:10:22,870 - root - INFO - *******执行用例完成：-----  17  ----**********
+
+2020-12-17 10:10:23,339 - root - INFO - ********************************************************************************
+2020-12-17 10:10:23,344 - root - INFO - ************   Excel 中的 associateid 字段 为空。不做接口关联处理。  *******************
+2020-12-17 10:10:23,344 - root - INFO - ************   Excel 中的 updatadict 字段 为空。不做data数据更新处理。   *******************
+2020-12-17 10:10:23,345 - root - INFO - ************   Excel 中的 timedata 字段 为空。不做时间字段更新处理。   *******************
+2020-12-17 10:10:23,345 - root - INFO - 请求方式：GET
+2020-12-17 10:10:23,345 - root - INFO - 请求url: https://uat-os.nlsaas.com/orders
+2020-12-17 10:10:24,324 - root - INFO - 请求参数：
+2020-12-17 10:10:24,324 - root - INFO - 请求params：{'merchant_type': '1001', 'end_time': ['1608220799'], 'merchant_id': '10002', 'page_size': ['10'], 'pay_status[0]': ['4'], 'begin_time': ['1608134400'], 'has_user_info': ['1'], 'order_status[0]': ['2010'], 'order_status[1]': ['1160'], 'page': ['1'], 'order_type': ['1']}
+2020-12-17 10:10:24,324 - root - INFO - 请求headers：{'Content-Type': 'application/json;charset=utf-8', 'token': 'E25D863200021A7BFB047481FDC29AF4', 'aid': '5365'}
+2020-12-17 10:10:24,325 - root - INFO - 检查点->：200
+2020-12-17 10:10:24,326 - root - INFO - 用例执行成功！页面返回信息：{'status': 200, 'info': 'Success', 'data': [{'merchant_id': '10002', 'merchant_type': '1001', 'admin_id': '0', 'create_time': '1608171021', 'pay_time': '1608171021', 'order_time': '1608171021', 'pay_status': '4', 'pay_status_name': '已支付', 'mobile': '--', 'pay_type': ['滴滴加油'], 'user_id': '0', 'user_level_id': '0', 'user_level_type': '0', 'user_level_name': '--', 'user_info': None, 'goods_amount': '3520', 'order_amount': '3520', 'pay_money': '3520', 'discount': 0, 'coupon_fee': '0', 'surplus': '0', 'order_status': '1160', 'order_status_name': '已支付', 'order_code': '16202012170214643575', 'master_order_code': '16202012170214643575', 'order_id': '5960003', 'order_type': '16', 'order_type_name': '双屏机支付', 'is_vip_pay': 0, 'is_refunded': 0, 'note': '', 'remark': '', 'retail_info': None, 'is_master': '1', 'is_split': '0', 'is_suborder': '1', 'recharge': [], 'invoice': 'https://api.shylwlkj.com/q/?r=1&a=invoice&order_code=16202012170214643575&merchant_id=10002', 'is_print_invoice': 1, 'os_order_match': True, 'gun_number': '12', 'goods_number': '6.76', 'market_price': '9800', 'energy_number': '0', 'goods_name': '0#车用柴油', 'goods_id': '4', 'goods_type': '10', 'category_id': '2', 'car_no': '', 'items': [{'item_id': '5980196', 'order_id': '5960003', 'goods_type': '10', 'category_id': '2', 'product_id': '0', 'goods_id': '4', 'goods_name': '0#车用柴油', 'goods_sn': '', 'goods_number': '6.76', 'market_price': '9800', 'goods_price': '9800', 'actual_price': '9800', 'contract_price': '9800', 'credit': '0', 'credit_fee': '0', 'coupon_fee': '0', 'discount': '0', 'subtotal': '3520', 'is_gift': '0', 'energy_number': '0', 'energy_type': '2', 'gun_id': '10374', 'gun_name': '', 'gun_number': '12', 'car_no': ''}]}, {'merchant_id': '10002', 'merchant_type': '1001', 'admin_id': '0', 'create_time': '1608171017', 'pay_time': '1608171017', 'order_time': '1608171017', 'pay_status': '4', 'pay_status_name': '已支付', 'mobile': '--', 'pay_type': ['现金支付'], 'user_id': '0', 'user_level_id': '0', 'user_level_type': '0', 'user_level_name': '--', 'user_info': None, 'goods_amount': '8658', 'order_amount': '8658', 'pay_money': '8658', 'discount': 0, 'coupon_fee': '0', 'surplus': '0', 'order_status': '1160', 'order_status_name': '已支付', 'order_code': '16202012170178588617', 'master_order_code': '16202012170178588617', 'order_id': '5960002', 'order_type': '16', 'order_type_name': '双屏机支付', 'is_vip_pay': 0, 'is_refunded': 0, 'note': '', 'remark': '', 'retail_info': None, 'is_master': '1', 'is_split': '0', 'is_suborder': '1', 'recharge': [], 'invoice': 'https://api.shylwlkj.com/q/?r=1&a=invoice&order_code=16202012170178588617&merchant_id=10002', 'is_print_invoice': 1, 'os_order_match': True, 'gun_number': '13', 'goods_number': '16.65', 'market_price': '9500', 'energy_number': '-10', 'goods_name': '-10#车用柴油', 'goods_id': '5', 'goods_type': '10', 'category_id': '2', 'car_no': '', 'items': [{'item_id': '5980195', 'order_id': '5960002', 'goods_type': '10', 'category_id': '2', 'product_id': '0', 'goods_id': '5', 'goods_name': '-10#车用柴油', 'goods_sn': '', 'goods_number': '16.65', 'market_price': '9500', 'goods_price': '9500', 'actual_price': '9500', 'contract_price': '9500', 'credit': '0', 'credit_fee': '0', 'coupon_fee': '0', 'discount': '0', 'subtotal': '8658', 'is_gift': '0', 'energy_number': '-10', 'energy_type': '2', 'gun_id': '10375', 'gun_name': '', 'gun_number': '13', 'car_no': ''}]}, {'merchant_id': '10002', 'merchant_type': '1001', 'admin_id': '0', 'create_time': '1608171012', 'pay_time': '1608171012', 'order_time': '1608171012', 'pay_status': '4', 'pay_status_name': '已支付', 'mobile': '--', 'pay_type': ['客户IC卡'], 'user_id': '0', 'user_level_id': '0', 'user_level_type': '0', 'user_level_name': '--', 'user_info': None, 'goods_amount': '2459', 'order_amount': '2459', 'pay_money': '2459', 'discount': 0, 'coupon_fee': '0', 'surplus': '0', 'order_status': '1160', 'order_status_name': '已支付', 'order_code': '16202012170122616083', 'master_order_code': '16202012170122616083', 'order_id': '5960000', 'order_type': '16', 'order_type_name': '双屏机支付', 'is_vip_pay': 0, 'is_refunded': 0, 'note': '', 'remark': '', 'retail_info': None, 'is_master': '1', 'is_split': '0', 'is_suborder': '1', 'recharge': [], 'invoice': 'https://api.shylwlkj.com/q/?r=1&a=invoice&order_code=16202012170122616083&merchant_id=10002', 'is_print_invoice': 1, 'os_order_match': True, 'gun_number': '9', 'goods_number': '4.72', 'market_price': '10000', 'energy_number': '89', 'goods_name': '89#车用汽油', 'goods_id': '6', 'goods_type': '10', 'category_id': '1', 'car_no': '', 'items': [{'item_id': '5980193', 'order_id': '5960000', 'goods_type': '10', 'category_id': '1', 'product_id': '0', 'goods_id': '6', 'goods_name': '89#车用汽油', 'goods_sn': '', 'goods_number': '4.72', 'market_price': '10000', 'goods_price': '10000', 'actual_price': '10000', 'contract_price': '10000', 'credit': '0', 'credit_fee': '0', 'coupon_fee': '0', 'discount': '0', 'subtotal': '2459', 'is_gift': '0', 'energy_number': '89', 'energy_type': '1', 'gun_id': '10371', 'gun_name': '', 'gun_number': '9', 'car_no': ''}]}, {'merchant_id': '10002', 'merchant_type': '1001', 'admin_id': '0', 'create_time': '1608171009', 'pay_time': '1608171009', 'order_time': '1608171009', 'pay_status': '4', 'pay_status_name': '已支付', 'mobile': '--', 'pay_type': ['挂账'], 'user_id': '0', 'user_level_id': '0', 'user_level_type': '0', 'user_level_name': '--', 'user_info': None, 'goods_amount': '19172', 'order_amount': '19172', 'pay_money': '19172', 'discount': 0, 'coupon_fee': '0', 'surplus': '0', 'order_status': '1160', 'order_status_name': '已支付', 'order_code': '16202012170097576627', 'master_order_code': '16202012170097576627', 'order_id': '5959998', 'order_type': '16', 'order_type_name': '双屏机支付', 'is_vip_pay': 0, 'is_refunded': 0, 'note': '', 'remark': '', 'retail_info': None, 'is_master': '1', 'is_split': '0', 'is_suborder': '1', 'recharge': [], 'invoice': 'https://api.shylwlkj.com/q/?r=1&a=invoice&order_code=16202012170097576627&merchant_id=10002', 'is_print_invoice': 1, 'os_order_match': True, 'gun_number': '6', 'goods_number': '36.86', 'market_price': '9500', 'energy_number': '-10', 'goods_name': '-10#车用柴油', 'goods_id': '5', 'goods_type': '10', 'category_id': '2', 'car_no': '', 'items': [{'item_id': '5980191', 'order_id': '5959998', 'goods_type': '10', 'category_id': '2', 'product_id': '0', 'goods_id': '5', 'goods_name': '-10#车用柴油', 'goods_sn': '', 'goods_number': '36.86', 'market_price': '9500', 'goods_price': '9500', 'actual_price': '9500', 'contract_price': '9500', 'credit': '0', 'credit_fee': '0', 'coupon_fee': '0', 'discount': '0', 'subtotal': '19172', 'is_gift': '0', 'energy_number': '-10', 'energy_type': '2', 'gun_id': '10368', 'gun_name': '', 'gun_number': '6', 'car_no': ''}]}, {'merchant_id': '10002', 'merchant_type': '1001', 'admin_id': '0', 'create_time': '1608171007', 'pay_time': '1608171007', 'order_time': '1608171007', 'pay_status': '4', 'pay_status_name': '已支付', 'mobile': '--', 'pay_type': ['滴滴加油'], 'user_id': '0', 'user_level_id': '0', 'user_level_type': '0', 'user_level_name': '--', 'user_info': None, 'goods_amount': '25708', 'order_amount': '25708', 'pay_money': '25708', 'discount': 0, 'coupon_fee': '0', 'surplus': '0', 'order_status': '1160', 'order_status_name': '已支付', 'order_code': '16202012170070514416', 'master_order_code': '16202012170070514416', 'order_id': '5959997', 'order_type': '16', 'order_type_name': '双屏机支付', 'is_vip_pay': 0, 'is_refunded': 0, 'note': '', 'remark': '', 'retail_info': None, 'is_master': '1', 'is_split': '0', 'is_suborder': '1', 'recharge': [], 'invoice': 'https://api.shylwlkj.com/q/?r=1&a=invoice&order_code=16202012170070514416&merchant_id=10002', 'is_print_invoice': 1, 'os_order_match': True, 'gun_number': '2', 'goods_number': '49.43', 'market_price': '80000', 'energy_number': '98', 'goods_name': '98#车用汽油', 'goods_id': '3', 'goods_type': '10', 'category_id': '1', 'car_no': '', 'items': [{'item_id': '5980190', 'order_id': '5959997', 'goods_type': '10', 'category_id': '1', 'product_id': '0', 'goods_id': '3', 'goods_name': '98#车用汽油', 'goods_sn': '', 'goods_number': '49.43', 'market_price': '80000', 'goods_price': '80000', 'actual_price': '80000', 'contract_price': '80000', 'credit': '0', 'credit_fee': '0', 'coupon_fee': '0', 'discount': '0', 'subtotal': '25708', 'is_gift': '0', 'energy_number': '98', 'energy_type': '1', 'gun_id': '10364', 'gun_name': '', 'gun_number': '2', 'car_no': ''}]}, {'merchant_id': '10002', 'merchant_type': '1001', 'admin_id': '0', 'create_time': '1608171004', 'pay_time': '1608171004', 'order_time': '1608171004', 'pay_status': '4', 'pay_status_name': '已支付', 'mobile': '--', 'pay_type': ['货车帮'], 'user_id': '0', 'user_level_id': '0', 'user_level_type': '0', 'user_level_name': '--', 'user_info': None, 'goods_amount': '100', 'order_amount': '100', 'pay_money': '100', 'discount': 0, 'coupon_fee': '0', 'surplus': '0', 'order_status': '1160', 'order_status_name': '已支付', 'order_code': '16202012170045482886', 'master_order_code': '16202012170045482886', 'order_id': '5959996', 'order_type': '16', 'order_type_name': '双屏机支付', 'is_vip_pay': 0, 'is_refunded': 0, 'note': '', 'remark': '', 'retail_info': None, 'is_master': '1', 'is_split': '0', 'is_suborder': '1', 'recharge': [], 'invoice': 'https://api.shylwlkj.com/q/?r=1&a=invoice&order_code=16202012170045482886&merchant_id=10002', 'is_print_invoice': 1, 'os_order_match': True, 'gun_number': '1', 'goods_number': '0.19', 'market_price': '56700', 'energy_number': '92', 'goods_name': '92#车用汽油', 'goods_id': '1', 'goods_type': '10', 'category_id': '1', 'car_no': '', 'items': [{'item_id': '5980189', 'order_id': '5959996', 'goods_type': '10', 'category_id': '1', 'product_id': '0', 'goods_id': '1', 'goods_name': '92#车用汽油', 'goods_sn': '', 'goods_number': '0.19', 'market_price': '56700', 'goods_price': '56700', 'actual_price': '56700', 'contract_price': '56700', 'credit': '0', 'credit_fee': '0', 'coupon_fee': '0', 'discount': '0', 'subtotal': '100', 'is_gift': '0', 'energy_number': '92', 'energy_type': '1', 'gun_id': '10363', 'gun_name': '', 'gun_number': '1', 'car_no': ''}]}, {'merchant_id': '10002', 'merchant_type': '1001', 'admin_id': '0', 'create_time': '1608171001', 'pay_time': '1608171001', 'order_time': '1608171001', 'pay_status': '4', 'pay_status_name': '已支付', 'mobile': '--', 'pay_type': ['第三方银联'], 'user_id': '0', 'user_level_id': '0', 'user_level_type': '0', 'user_level_name': '--', 'user_info': None, 'goods_amount': '100', 'order_amount': '100', 'pay_money': '100', 'discount': 0, 'coupon_fee': '0', 'surplus': '0', 'order_status': '1160', 'order_status_name': '已支付', 'order_code': '16202012170019619828', 'master_order_code': '16202012170019619828', 'order_id': '5959995', 'order_type': '16', 'order_type_name': '双屏机支付', 'is_vip_pay': 0, 'is_refunded': 0, 'note': '', 'remark': '', 'retail_info': None, 'is_master': '1', 'is_split': '0', 'is_suborder': '1', 'recharge': [], 'invoice': 'https://api.shylwlkj.com/q/?r=1&a=invoice&order_code=16202012170019619828&merchant_id=10002', 'is_print_invoice': 1, 'os_order_match': True, 'gun_number': '1', 'goods_number': '0.19', 'market_price': '56700', 'energy_number': '92', 'goods_name': '92#车用汽油', 'goods_id': '1', 'goods_type': '10', 'category_id': '1', 'car_no': '', 'items': [{'item_id': '5980188', 'order_id': '5959995', 'goods_type': '10', 'category_id': '1', 'product_id': '0', 'goods_id': '1', 'goods_name': '92#车用汽油', 'goods_sn': '', 'goods_number': '0.19', 'market_price': '56700', 'goods_price': '56700', 'actual_price': '56700', 'contract_price': '56700', 'credit': '0', 'credit_fee': '0', 'coupon_fee': '0', 'discount': '0', 'subtotal': '100', 'is_gift': '0', 'energy_number': '92', 'energy_type': '1', 'gun_id': '10363', 'gun_name': '', 'gun_number': '1', 'car_no': ''}]}, {'merchant_id': '10002', 'merchant_type': '1001', 'admin_id': '0', 'create_time': '1608170999', 'pay_time': '1608170999', 'order_time': '1608170999', 'pay_status': '4', 'pay_status_name': '已支付', 'mobile': '--', 'pay_type': ['现金支付'], 'user_id': '0', 'user_level_id': '0', 'user_level_type': '0', 'user_level_name': '--', 'user_info': None, 'goods_amount': '100', 'order_amount': '100', 'pay_money': '100', 'discount': 0, 'coupon_fee': '0', 'surplus': '0', 'order_status': '1160', 'order_status_name': '已支付', 'order_code': '16202012179994812269', 'master_order_code': '16202012179994812269', 'order_id': '5959994', 'order_type': '16', 'order_type_name': '双屏机支付', 'is_vip_pay': 0, 'is_refunded': 0, 'note': '', 'remark': '', 'retail_info': None, 'is_master': '1', 'is_split': '0', 'is_suborder': '1', 'recharge': [], 'invoice': 'https://api.shylwlkj.com/q/?r=1&a=invoice&order_code=16202012179994812269&merchant_id=10002', 'is_print_invoice': 1, 'os_order_match': True, 'gun_number': '1', 'goods_number': '0.19', 'market_price': '56700', 'energy_number': '92', 'goods_name': '92#车用汽油', 'goods_id': '1', 'goods_type': '10', 'category_id': '1', 'car_no': '', 'items': [{'item_id': '5980187', 'order_id': '5959994', 'goods_type': '10', 'category_id': '1', 'product_id': '0', 'goods_id': '1', 'goods_name': '92#车用汽油', 'goods_sn': '', 'goods_number': '0.19', 'market_price': '56700', 'goods_price': '56700', 'actual_price': '56700', 'contract_price': '56700', 'credit': '0', 'credit_fee': '0', 'coupon_fee': '0', 'discount': '0', 'subtotal': '100', 'is_gift': '0', 'energy_number': '92', 'energy_type': '1', 'gun_id': '10363', 'gun_name': '', 'gun_number': '1', 'car_no': ''}]}], 'request_id': 'b0150362a8f19fe9bd9419fcb40185d2'}
+2020-12-17 10:10:24,327 - root - INFO - 用例测试结果:   17---->   pass
+2020-12-17 10:10:24,328 - root - INFO - *******执行用例完成：-----  17  ----**********
+
+2020-12-17 10:10:24,329 - root - INFO - ************   Excel 中的 updatadict 字段 为空。不做data数据更新处理。   *******************
+2020-12-17 10:10:24,330 - root - INFO - ************   Excel 中的 timedata 字段 为空。不做时间字段更新处理。   *******************
+2020-12-17 10:10:24,330 - root - INFO - 请求方式：POST
+2020-12-17 10:10:24,330 - root - INFO - 请求url: https://uat-os.nlsaas.com/order/refund
+2020-12-17 10:10:25,323 - root - INFO - 请求参数：{'merchant_type': '1001', 'merchant_id': '10002', 'order_code': '16202012170214643575', 'reason': '双屏机接口冒烟测试-退款', 'password': '123123', 'order_id': ['4316']}
+2020-12-17 10:10:25,324 - root - INFO - 请求params：{}
+2020-12-17 10:10:25,325 - root - INFO - 请求headers：{'Content-Type': 'application/json;charset=utf-8', 'token': 'E25D863200021A7BFB047481FDC29AF4', 'aid': '5365'}
+2020-12-17 10:10:25,325 - root - INFO - 检查点->：200
+2020-12-17 10:10:25,325 - root - INFO - 用例执行成功！页面返回信息：{'status': 200, 'info': 'Success', 'data': {'order_id': '5960003', 'order_type': '16', 'order_code': '16202012170214643575', 'is_split': 0, 'is_master': 1, 'is_suborder': 1, 'suborder_num': '0', 'related_order': '', 'payment_id': '0', 'channel_id': '0', 'user_id': '0', 'mobile': '', 'company_id': '0', 'merchant_type': '1001', 'merchant_id': '10002', 'user_level_id': '0', 'user_level_type': '0', 'user_level_name': '', 'user_identity_type': '0', 'user_identity_id': '0', 'invoice_title': '', 'order_status': '3020', 'cancel_status': '0', 'revoke_status': '0', 'pay_status': '4', 'shipping_status': 0, 'goods_amount': '3520', 'order_amount': '3520', 'pay_money': '3520', 'surplus': '0', 'balance': '0', 'credit': '0', 'credit_fee': '0', 'coupon_fee': '0', 'bonus_fee': '0', 'discount': '0', 'remark': '', 'has_refund': '1', 'refund_fee': '3520', 'platform': '4100', 'admin_id': '0', 'pay_time': '1608171021', 'cancel_time': '0', 'refund_time': '1608171025', 'update_time': '1608171025', 'create_time': '1608171021', 'recommand_id': 0, 'items': [{'item_id': '5980196', 'order_id': '5960003', 'goods_type': '10', 'category_id': '2', 'goods_id': '4', 'goods_name': '0#车用柴油', 'goods_sn': '', 'goods_number': '6.760000', 'market_price': '9800', 'goods_price': '9800', 'actual_price': '9800', 'contract_price': '9800', 'subtotal': '3520', 'credit': '0', 'credit_fee': '0', 'coupon_fee': '0', 'bonus_fee': '0', 'discount': '0', 'is_gift': '0', 'goods_attr': '', 'ndrc_sale_price': '0', 'ndrc_wholesale_price': '0', 'energy_type': '2', 'energy_number': '0', 'gun_type': '0', 'gun_id': '10374', 'gun_number': '12', 'gun_name': '', 'has_retail': '0', 'car_no': '', 'fleet_id': '0', 'item_inspay_id': '5803051'}], 'payment_info': [{'id': '5700780', 'order_id': '5700780', 'order_code': '16202012170214643575', 'payment_id': '42', 'channel_id': '42', 'card_type': '0', 'card_number': '', 'trade_no': '16202012170214643575', 'out_trade_no': '', 'total_fee': '3520', 'pay_fee': '3520', 'fee_rate': '0.00', 'payment_type': '0', 'mch_id': '', 'public_type': '0', 'discount': '0', 'refund_fee': '0', 'pay_time': '1608171021', 'notify_time': '1608171021', 'platform': '4100', 'other': ''}], 'refund_info': [{'refund_id': '9500', 'refund_type': '11', 'refund_no': '11202012170251929256', 'out_refund_no': '', 'refund_fee': '3520', 'reason': '双屏机接口冒烟测试-退款', 'remark': 'TestAuto双屏机申请退款', 'refund_status': '16', 'platform': '0', 'operator_name': 'TestAuto', 'update_time': '1608171025', 'create_time': '1608171025'}]}, 'request_id': 'eb37ad3cef43e587913f0bf093676193'}
+2020-12-17 10:10:25,326 - root - INFO - 用例测试结果:   18---->   pass
+2020-12-17 10:10:25,326 - root - INFO - *******执行用例完成：-----  18  ----**********
+
+2020-12-17 10:10:25,799 - root - INFO - ********************************************************************************
+2020-12-17 10:10:25,804 - root - INFO - ************   Excel 中的 associateid 字段 为空。不做接口关联处理。  *******************
+2020-12-17 10:10:25,804 - root - INFO - ************   Excel 中的 updatadict 字段 为空。不做data数据更新处理。   *******************
+2020-12-17 10:10:25,804 - root - INFO - ************   Excel 中的 timedata 字段 为空。不做时间字段更新处理。   *******************
+2020-12-17 10:10:25,805 - root - INFO - 请求方式：GET
+2020-12-17 10:10:25,805 - root - INFO - 请求url: https://uat-os.nlsaas.com/client/detail
+2020-12-17 10:10:26,387 - root - INFO - 请求参数：
+2020-12-17 10:10:26,387 - root - INFO - 请求params：{'mobile': ['15672655599'], 'merchant_id': '10002', 'merchant_type': '1001'}
+2020-12-17 10:10:26,388 - root - INFO - 请求headers：{'Content-Type': 'application/json;charset=utf-8', 'token': 'E25D863200021A7BFB047481FDC29AF4', 'aid': '5365'}
+2020-12-17 10:10:26,389 - root - INFO - 检查点->：200
+2020-12-17 10:10:26,390 - root - INFO - 用例执行成功！页面返回信息：{'status': 200, 'info': 'ok', 'reason': '', 'data': {'user_id': '1691198', 'user_name': '', 'full_name': '', 'nickname': '、杭', 'img_url': 'https://wx.qlogo.cn/mmopen/vi_32/77xQM5WFqKjXaNsCUk3hnWyZsRTRwTE5CLYrxsNz4k0snWILEn8WfjW0lWCpVqMhrt0ib6rzliaibiaCF2hTpLG3uw/132', 'password': '', 'gender': '1', 'mobile': '15672655599', 'status': '1', 'bind_uid': '366128', 'email': '', 'card_id': '0', 'user_auth_id': '1690861', 'auth_type_id': '2', 'app_id': 'wx73a8de5287159207', 'open_id': 'oW7by5LziMh21Uh0cDkM2HmTB8qI', 'master_id': 'ooSm91UB61zF7aMrm5Y-5L26EwVA', 'vip_info': {'id': '183140', 'uid': '1691198', 'growth_value': '5513', 'level_id': '5', 'type': '1', 'expire_time': '1610035200', 'wx_card_id': '0', 'wx_card_code': '0', 'is_active': '1', 'is_delete': '0', 'create_time': '2020-06-30 20:21:05', 'station_id': '0', 'appid': 'wx73a8de5287159207', 'merchant_id': '1', 'merchant_type': '1003', 'is_first': '0', 'source': '1', 'update_date': '2020-12-15 18:22:20', 'is_bind': '0', 'min_growth_value': '2000', 'max_growth_value': '2999', 'level_name': '钻石会员', 'discount': {'1': 0.8, '2': 0.8, '3': 0.8, '4': 0.8, '5': 0.8, '6': 0.8, '100': 0.8, '101': 0.8, '102': 0.8, '103': 0.8, '104': 0.8, '105': 0.8, '106': 0.8, '107': 0.8, '108': 0.8, '109': 0.8, '110': 0.8, '111': 0.8, '118': 0.8, '130': 0.8, '131': 0.8, '132': 0.8, '134': 0.8, '150': 0.8, '151': 0.8, '162': 0.8, '400': 0.8, '401': 0.8, '402': 0.8, '403': 0.8, '404': 0.8, '405': 0.8, '600': 0.8, '601': 0.8, '602': 0.8, '603': 0.8, '604': 0.8, '605': 0.8, '610': 0.8}, 'real_level_id': '2628', 'discount_type': 1}, 'point_info': {'id': '571866', 'user_id': '1691198', 'merchant_id': '10002', 'remain_points': '25197', 'issue_points': '29761', 'consume_points': '4564', 'create_time': '1593708940', 'update_time': '1608085814', 'merchant_type': '1001', 'update_date': '2020-12-16 10:30:14'}, 'car': None, 'card_password': True, 'bind_nl_user': None, 'bind_ali_user': {'user_id': '366128', 'user_name': '', 'full_name': '', 'nickname': '杭', 'img_url': 'https://tfs.alipayobjects.com/images/partner/T1v_hmXkVgXXXXXXXX', 'password': '', 'gender': '1', 'mobile': '15672655599', 'status': '1', 'bind_uid': '366128', 'email': '', 'card_id': '0', 'user_auth_id': '365883', 'auth_type_id': '3', 'app_id': '2019112069300474', 'open_id': '2088902558355112', 'master_id': '2088902558355112'}}, 'request_id': '3fbb444dfc2e0bfedf7ba31bba51ac31'}
+2020-12-17 10:10:26,390 - root - INFO - 用例测试结果:   19---->   pass
+2020-12-17 10:10:26,390 - root - INFO - *******执行用例完成：-----  19  ----**********
+
+2020-12-17 10:10:26,860 - root - INFO - ********************************************************************************
+2020-12-17 10:10:26,868 - root - INFO - ************   Excel 中的 associateid 字段 为空。不做接口关联处理。  *******************
+2020-12-17 10:10:26,868 - root - INFO - ************   Excel 中的 updatadict 字段 为空。不做data数据更新处理。   *******************
+2020-12-17 10:10:26,868 - root - INFO - ************   Excel 中的 timedata 字段 为空。不做时间字段更新处理。   *******************
+2020-12-17 10:10:26,868 - root - INFO - 请求方式：GET
+2020-12-17 10:10:26,869 - root - INFO - 请求url: https://uat-os.nlsaas.com/recharge/user_card_list
+2020-12-17 10:10:27,421 - root - INFO - 请求参数：
+2020-12-17 10:10:27,422 - root - INFO - 请求params：{'user_id': '1691198', 'phone': '15672655599', 'scene': ['1'], 'merchant_id': '10002', 'type': ['2'], 'merchant_type': '1001'}
+2020-12-17 10:10:27,423 - root - INFO - 请求headers：{'Content-Type': 'application/json;charset=utf-8', 'token': 'E25D863200021A7BFB047481FDC29AF4', 'aid': '5365'}
+2020-12-17 10:10:27,423 - root - INFO - 检查点->：200
+2020-12-17 10:10:27,424 - root - INFO - 用例测试结果:   20---->   pass
+2020-12-17 10:10:27,424 - root - INFO - *******执行用例完成：-----  20  ----**********
+
+2020-12-17 10:10:27,935 - root - INFO - ********************************************************************************
+2020-12-17 10:10:27,938 - root - INFO - ************   Excel 中的 associateid 字段 为空。不做接口关联处理。  *******************
+2020-12-17 10:10:27,939 - root - INFO - ************   Excel 中的 updatadict 字段 为空。不做data数据更新处理。   *******************
+2020-12-17 10:10:27,939 - root - INFO - ************   Excel 中的 timedata 字段 为空。不做时间字段更新处理。   *******************
+2020-12-17 10:10:27,940 - root - INFO - 请求方式：POST
+2020-12-17 10:10:27,940 - root - INFO - 请求url: https://uat-os.nlsaas.com/recharge/top_up_order
+2020-12-17 10:10:28,684 - root - INFO - 请求参数：{'user_id': '1691198', 'amount': 1000, 'card_code': '2012029444332135', 'card_id': '741', 'pay_type': 2, 'merchant_id': '10002', 'merchant_type': '1001', 'order_id': ['4316'], 'order_code': '50202012161499641386', 'user_card_code': '2012029444332135'}
+2020-12-17 10:10:28,685 - root - INFO - 请求params：{}
+2020-12-17 10:10:28,686 - root - INFO - 请求headers：{'Content-Type': 'application/json;charset=utf-8', 'token': 'E25D863200021A7BFB047481FDC29AF4', 'aid': '5365'}
+2020-12-17 10:10:28,686 - root - INFO - 检查点->：200
+2020-12-17 10:10:28,687 - root - INFO - 用例执行成功！页面返回信息：{'status': 200, 'info': '操作成功', 'reason': '', 'data': {'order_type': 50, 'order_code': '50202012170287048842', 'order_code_reversal': '24884078207121020205', 'is_master': 1, 'suborder_num': 0, 'is_suborder': 1, 'related_order': '', 'user_id': 1691198, 'mobile': '15672655599', 'company_id': 0, 'merchant_type': 1001, 'merchant_id': 10002, 'user_level_id': 0, 'user_level_type': 0, 'user_level_name': '', 'user_identity_type': 0, 'user_identity_id': 0, 'invoice_title': '', 'order_status': 1010, 'cancel_status': 0, 'pay_status': 1, 'shipping_status': 0, 'goods_amount': 1000, 'order_amount': 1000, 'pay_money': 0, 'balance': 0, 'credit': 0, 'credit_fee': 0, 'coupon_fee': 0, 'platform_coupon_fee': 0, 'bonus_fee': 0, 'discount': 0, 'surplus': 1000, 'remark': '加油卡充值', 'has_refund': 0, 'refund_fee': 0, 'pay_time': 1608171028, 'platform': 4100, 'admin_id': 0, 'update_time': 1608171028, 'create_time': 1608171028, 'order_id': '5960004', 'items': [{'goods_type': 50, 'goods_id': 0, 'category_id': 50, 'goods_name': '加油卡充值', 'goods_number': 1, 'market_price': '1000', 'goods_price': '1000'}]}, 'request_id': '2d9c903a31579ec249f94dda052c887a'}
+2020-12-17 10:10:28,687 - root - INFO - 用例测试结果:   21---->   pass
+2020-12-17 10:10:28,687 - root - INFO - *******执行用例完成：-----  21  ----**********
+
+2020-12-17 10:10:29,166 - root - INFO - ********************************************************************************
+2020-12-17 10:10:29,170 - root - INFO - ************   Excel 中的 associateid 字段 为空。不做接口关联处理。  *******************
+2020-12-17 10:10:29,170 - root - INFO - ************   Excel 中的 updatadict 字段 为空。不做data数据更新处理。   *******************
+2020-12-17 10:10:29,170 - root - INFO - ************   Excel 中的 timedata 字段 为空。不做时间字段更新处理。   *******************
+2020-12-17 10:10:29,170 - root - INFO - 请求方式：POST
+2020-12-17 10:10:29,171 - root - INFO - 请求url: https://uat-os.nlsaas.com/recharge/top_up
+2020-12-17 10:10:30,628 - root - INFO - 请求参数：{'pay_type': 2, 'user_id': '1691198', 'order_code': '50202012170287048842', 'user_card_code': '2012029444332135', 'card_id': '741', 'pay_price': 1000, 'input_price': 1000, 'merchant_id': '10002', 'merchant_type': '1001', 'order_id': ['4316'], 'card_code': '2012029444332135'}
+2020-12-17 10:10:30,629 - root - INFO - 请求params：{}
+2020-12-17 10:10:30,630 - root - INFO - 请求headers：{'Content-Type': 'application/json;charset=utf-8', 'token': 'E25D863200021A7BFB047481FDC29AF4', 'aid': '5365'}
+2020-12-17 10:10:30,631 - root - INFO - 检查点->：200
+2020-12-17 10:10:30,632 - root - INFO - 用例执行成功！页面返回信息：{'status': 200, 'info': 'Success', 'data': [{'order_id': '5960004', 'order_type': '50', 'order_code': '50202012170287048842', 'is_split': 0, 'is_master': 1, 'is_suborder': 1, 'suborder_num': '0', 'related_order': '', 'payment_id': '0', 'channel_id': '0', 'user_id': '1691198', 'mobile': '15672655599', 'company_id': '0', 'merchant_type': '1001', 'merchant_id': '10002', 'user_level_id': '5', 'user_level_type': '1', 'user_level_name': '钻石会员', 'user_identity_type': '0', 'user_identity_id': '0', 'invoice_title': '', 'order_status': '1160', 'cancel_status': '0', 'revoke_status': '0', 'pay_status': '4', 'shipping_status': 0, 'goods_amount': '1000', 'order_amount': '1000', 'pay_money': '1000', 'surplus': '0', 'balance': '0', 'credit': '0', 'credit_fee': '0', 'coupon_fee': '0', 'bonus_fee': '0', 'discount': '0', 'remark': '加油卡充值', 'has_refund': '0', 'refund_fee': '0', 'platform': '4100', 'admin_id': '0', 'pay_time': '1608171029', 'cancel_time': '0', 'refund_time': '0', 'update_time': '1608171030', 'create_time': '1608171028', 'recommand_id': 0, 'items': [{'item_id': '5980197', 'order_id': '5960004', 'goods_type': '50', 'category_id': '50', 'goods_id': '0', 'goods_name': '加油卡充值', 'goods_sn': '', 'goods_number': '1.000000', 'market_price': '1000', 'goods_price': '1000', 'actual_price': '0', 'contract_price': '0', 'subtotal': '0', 'credit': '0', 'credit_fee': '0', 'coupon_fee': '0', 'bonus_fee': '0', 'discount': '0', 'is_gift': '0', 'goods_attr': ''}], 'payment_info': [{'id': '5700781', 'order_id': '5700781', 'order_code': '50202012170287048842', 'payment_id': '10', 'channel_id': '10', 'card_type': '0', 'card_number': '', 'trade_no': '50202012170287048842', 'out_trade_no': '', 'total_fee': '1000', 'pay_fee': '1000', 'fee_rate': '0.00', 'payment_type': '0', 'mch_id': '', 'public_type': '0', 'discount': '0', 'refund_fee': '0', 'pay_time': '1608171029', 'notify_time': '1608171029', 'platform': '4100', 'other': ''}]}], 'request_id': 'bd17fd9c7ee137e857b41e96b176316b'}
+2020-12-17 10:10:30,632 - root - INFO - 用例测试结果:   22---->   pass
+2020-12-17 10:10:30,633 - root - INFO - *******执行用例完成：-----  22  ----**********
+
+2020-12-17 10:10:31,121 - root - INFO - ********************************************************************************
+2020-12-17 10:10:31,125 - root - INFO - ************   Excel 中的 associateid 字段 为空。不做接口关联处理。  *******************
+2020-12-17 10:10:31,125 - root - INFO - ************   Excel 中的 updatadict 字段 为空。不做data数据更新处理。   *******************
+2020-12-17 10:10:31,126 - root - INFO - ************   Excel 中的 timedata 字段 为空。不做时间字段更新处理。   *******************
+2020-12-17 10:10:31,126 - root - INFO - 请求方式：GET
+2020-12-17 10:10:31,126 - root - INFO - 请求url: https://uat-os.nlsaas.com/order/list
+2020-12-17 10:10:31,615 - root - INFO - 请求参数：
+2020-12-17 10:10:31,615 - root - INFO - 请求params：{'merchant_type': '1001', 'merchant_id': '10002', 'status[0]': ['1'], 'status[2]': ['5'], 'page_size': ['1'], 'time_sort': ['desc'], 'status[1]': ['2'], 'status[3]': ['7']}
+2020-12-17 10:10:31,615 - root - INFO - 请求headers：{'Content-Type': 'application/json;charset=utf-8', 'token': 'E25D863200021A7BFB047481FDC29AF4', 'aid': '5365'}
+2020-12-17 10:10:31,616 - root - INFO - 检查点->：200
+2020-12-17 10:10:31,616 - root - INFO - 用例测试结果:   3---->   pass
+2020-12-17 10:10:31,616 - root - INFO - *******执行用例完成：-----  3  ----**********
+
+2020-12-17 10:10:31,617 - root - INFO - ************   Excel 中的 updatadict 字段 为空。不做data数据更新处理。   *******************
+2020-12-17 10:10:31,617 - root - INFO - ************   Excel 中的 timedata 字段 为空。不做时间字段更新处理。   *******************
+2020-12-17 10:10:31,618 - root - INFO - 请求方式：POST
+2020-12-17 10:10:31,618 - root - INFO - 请求url: https://uat-os.nlsaas.com/order/pay
+2020-12-17 10:10:33,529 - root - INFO - 请求参数：{'order_id': [4316], 'is_mix_pay': 0, 'pay_type': 8, 'merchant_id': '10002', 'merchant_type': '1001', 'order_code': ['16202012170214643575']}
+2020-12-17 10:10:33,530 - root - INFO - 请求params：{}
+2020-12-17 10:10:33,530 - root - INFO - 请求headers：{'Content-Type': 'application/json;charset=utf-8', 'token': 'E25D863200021A7BFB047481FDC29AF4', 'aid': '5365'}
+2020-12-17 10:10:33,531 - root - INFO - 检查点->：200
+2020-12-17 10:10:33,533 - root - INFO - 用例执行成功！页面返回信息：{'status': 200, 'info': 'Success', 'data': [{'order_id': '5960005', 'order_type': '16', 'order_code': '16202012170321303005', 'is_split': 0, 'is_master': 1, 'is_suborder': 1, 'suborder_num': '0', 'related_order': '', 'payment_id': '0', 'channel_id': '0', 'user_id': '0', 'mobile': '', 'company_id': '0', 'merchant_type': '1001', 'merchant_id': '10002', 'user_level_id': '0', 'user_level_type': '0', 'user_level_name': '', 'user_identity_type': '0', 'user_identity_id': '0', 'invoice_title': '', 'order_status': '1160', 'cancel_status': '0', 'revoke_status': '0', 'pay_status': '4', 'shipping_status': 0, 'goods_amount': '3520', 'order_amount': '3520', 'pay_money': '3520', 'surplus': '0', 'balance': '0', 'credit': '0', 'credit_fee': '0', 'coupon_fee': '0', 'bonus_fee': '0', 'discount': '0', 'remark': '', 'has_refund': '0', 'refund_fee': '0', 'platform': '4100', 'admin_id': '0', 'pay_time': '1608171032', 'cancel_time': '0', 'refund_time': '0', 'update_time': '1608171032', 'create_time': '1608171032', 'recommand_id': 0, 'items': [{'item_id': '5980198', 'order_id': '5960005', 'goods_type': '10', 'category_id': '2', 'goods_id': '4', 'goods_name': '0#车用柴油', 'goods_sn': '', 'goods_number': '6.760000', 'market_price': '9800', 'goods_price': '9800', 'actual_price': '9800', 'contract_price': '9800', 'subtotal': '3520', 'credit': '0', 'credit_fee': '0', 'coupon_fee': '0', 'bonus_fee': '0', 'discount': '0', 'is_gift': '0', 'goods_attr': '', 'ndrc_sale_price': '0', 'ndrc_wholesale_price': '0', 'energy_type': '2', 'energy_number': '0', 'gun_type': '0', 'gun_id': '10374', 'gun_number': '12', 'gun_name': '', 'has_retail': '0', 'car_no': '', 'fleet_id': '0', 'item_inspay_id': '5803052'}], 'payment_info': [{'id': '5700782', 'order_id': '5700782', 'order_code': '16202012170321303005', 'payment_id': '41', 'channel_id': '41', 'card_type': '0', 'card_number': '', 'trade_no': '16202012170321303005', 'out_trade_no': '', 'total_fee': '3520', 'pay_fee': '3520', 'fee_rate': '0.00', 'payment_type': '0', 'mch_id': '', 'public_type': '0', 'discount': '0', 'refund_fee': '0', 'pay_time': '1608171032', 'notify_time': '1608171032', 'platform': '4100', 'other': ''}]}], 'request_id': '676b49d8011dec860b8fd37aa8b50788'}
+2020-12-17 10:10:33,533 - root - INFO - 用例测试结果:   23---->   pass
+2020-12-17 10:10:33,534 - root - INFO - *******执行用例完成：-----  23  ----**********
+
+2020-12-17 10:10:34,005 - root - INFO - ********************************************************************************
+2020-12-17 10:10:34,008 - root - INFO - ************   Excel 中的 associateid 字段 为空。不做接口关联处理。  *******************
+2020-12-17 10:10:34,009 - root - INFO - ************   Excel 中的 updatadict 字段 为空。不做data数据更新处理。   *******************
+2020-12-17 10:10:34,009 - root - INFO - ************   Excel 中的 timedata 字段 为空。不做时间字段更新处理。   *******************
+2020-12-17 10:10:34,009 - root - INFO - 请求方式：GET
+2020-12-17 10:10:34,010 - root - INFO - 请求url: https://uat-os.nlsaas.com/orders
+2020-12-17 10:10:34,502 - root - INFO - 请求参数：
+2020-12-17 10:10:34,502 - root - INFO - 请求params：{'order_status[5]': ['2055'], 'merchant_type': '1001', 'order_status[2]': ['1010'], 'order_status[3]': ['1020'], 'order_status[7]': ['1030'], 'end_time': ['1608220799'], 'pay_status[2]': ['4'], 'merchant_id': '10002', 'pay_status[0]': ['1'], 'has_user_info': ['1'], 'order_status[0]': ['2010'], 'page_size': ['10'], 'pay_status[1]': ['2'], 'order_status[4]': ['3020'], 'begin_time': ['1608134400'], 'order_status[1]': ['1160'], 'page': ['1'], 'order_status[6]': ['2020'], 'order_type': ['4']}
+2020-12-17 10:10:34,503 - root - INFO - 请求headers：{'Content-Type': 'application/json;charset=utf-8', 'token': 'E25D863200021A7BFB047481FDC29AF4', 'aid': '5365'}
+2020-12-17 10:10:34,504 - root - INFO - 检查点->：200
+2020-12-17 10:10:34,504 - root - INFO - 用例执行成功！页面返回信息：{'status': 200, 'info': 'Success', 'data': [{'merchant_id': '10002', 'merchant_type': '1001', 'admin_id': '0', 'create_time': '1608171029', 'pay_time': '1608171029', 'order_time': '1608171028', 'pay_status': '4', 'pay_status_name': '已支付', 'mobile': '15672655599', 'pay_type': ['现金支付'], 'user_id': '1691198', 'user_level_id': '5', 'user_level_type': '1', 'user_level_name': '钻石会员', 'user_info': {'user_id': '1691198', 'user_name': '', 'full_name': '', 'nickname': '、杭', 'img_url': 'https://wx.qlogo.cn/mmopen/vi_32/77xQM5WFqKjXaNsCUk3hnWyZsRTRwTE5CLYrxsNz4k0snWILEn8WfjW0lWCpVqMhrt0ib6rzliaibiaCF2hTpLG3uw/132', 'gender': '1', 'mobile': '15672655599', 'status': '1', 'create_time': '1593340812', 'update_time': '1607052674', 'bind_uid': '366128', 'bind_time': '1607052674'}, 'goods_amount': '1000', 'order_amount': '1000', 'pay_money': '1000', 'discount': 0, 'coupon_fee': '0', 'surplus': '0', 'order_status': '1160', 'order_status_name': '已支付', 'order_code': '50202012170287048842', 'master_order_code': '50202012170287048842', 'order_id': '5960004', 'order_type': '50', 'order_type_name': '加油卡充值', 'is_vip_pay': 0, 'is_refunded': 0, 'note': '', 'remark': '加油卡充值', 'retail_info': None, 'is_master': '1', 'is_split': '0', 'is_suborder': '1', 'recharge': [], 'invoice': 'https://api.shylwlkj.com/q/?r=1&a=invoice&order_code=50202012170287048842&merchant_id=10002', 'is_print_invoice': 1, 'os_order_match': False, 'gun_number': '', 'goods_number': '1.00', 'market_price': '1000', 'energy_number': '', 'goods_name': '加油卡充值', 'goods_id': '0', 'goods_type': '50', 'category_id': '50', 'car_no': '', 'items': [{'item_id': '5980197', 'order_id': '5960004', 'goods_type': '50', 'category_id': '50', 'product_id': '0', 'goods_id': '0', 'goods_name': '加油卡充值', 'goods_sn': '', 'goods_number': '1.000000', 'market_price': '1000', 'goods_price': '1000', 'actual_price': '0', 'contract_price': '0', 'credit': '0', 'credit_fee': '0', 'coupon_fee': '0', 'discount': '0', 'subtotal': '0', 'is_gift': '0', 'energy_number': '', 'energy_type': '', 'gun_id': '', 'gun_name': '', 'gun_number': '', 'car_no': ''}]}], 'request_id': '77773822961a55cc294c42444b8297e9'}
+2020-12-17 10:10:34,505 - root - INFO - 用例测试结果:   24---->   pass
+2020-12-17 10:10:34,505 - root - INFO - *******执行用例完成：-----  24  ----**********
+
+2020-12-17 10:10:34,972 - root - INFO - ********************************************************************************
+2020-12-17 10:10:34,977 - root - INFO - ************   Excel 中的 associateid 字段 为空。不做接口关联处理。  *******************
+2020-12-17 10:10:34,978 - root - INFO - ************   Excel 中的 updatadict 字段 为空。不做data数据更新处理。   *******************
+2020-12-17 10:10:34,978 - root - INFO - ************   Excel 中的 timedata 字段 为空。不做时间字段更新处理。   *******************
+2020-12-17 10:10:34,978 - root - INFO - 请求方式：POST
+2020-12-17 10:10:34,979 - root - INFO - 请求url: https://uat-os.nlsaas.com/order/pay
+2020-12-17 10:10:36,269 - root - ERROR - 请求错误！接口返回状态：500
+2020-12-17 10:10:36,269 - root - INFO - 请求参数：{'order_id': ['4316'], 'is_mix_pay': 0, 'pay_type': 8, 'merchant_id': '10002', 'merchant_type': '1001', 'order_code': ['50202012170287048842']}
+2020-12-17 10:10:36,271 - root - INFO - 请求params：{}
+2020-12-17 10:10:36,271 - root - INFO - 请求headers：{'Content-Type': 'application/json;charset=utf-8', 'token': 'E25D863200021A7BFB047481FDC29AF4', 'aid': '5365'}
+2020-12-17 10:10:36,272 - root - INFO - 检查点->：200
+2020-12-17 10:10:36,272 - root - ERROR - 用例执行失败！页面返回信息：{'status': 500, 'info': '加油单已消单，请勿重复支付', 'reason': 500, 'request_id': 'b0d549cec833d543304c35da49f19e76'}
+2020-12-17 10:10:36,272 - root - INFO - 用例测试结果:   23---->   fail
+2020-12-17 10:10:36,273 - root - INFO - *******执行用例完成：-----  23  ----**********
+
+2020-12-17 10:10:36,273 - root - INFO - ************   Excel 中的 updatadict 字段 为空。不做data数据更新处理。   *******************
+2020-12-17 10:10:36,274 - root - INFO - ************   Excel 中的 timedata 字段 为空。不做时间字段更新处理。   *******************
+2020-12-17 10:10:36,274 - root - INFO - 请求方式：POST
+2020-12-17 10:10:36,274 - root - INFO - 请求url: https://uat-os.nlsaas.com/order/refund
+2020-12-17 10:10:37,290 - root - INFO - 请求参数：{'merchant_type': '1001', 'merchant_id': '10002', 'order_code': '50202012170287048842', 'reason': '双屏机接口冒烟测试-退款', 'password': '123123', 'order_id': ['4316']}
+2020-12-17 10:10:37,291 - root - INFO - 请求params：{}
+2020-12-17 10:10:37,292 - root - INFO - 请求headers：{'Content-Type': 'application/json;charset=utf-8', 'token': 'E25D863200021A7BFB047481FDC29AF4', 'aid': '5365'}
+2020-12-17 10:10:37,293 - root - INFO - 检查点->：200
+2020-12-17 10:10:37,293 - root - INFO - 用例执行成功！页面返回信息：{'status': 200, 'info': 'Success', 'data': {'order_id': '5960004', 'order_type': '50', 'order_code': '50202012170287048842', 'is_split': 0, 'is_master': 1, 'is_suborder': 1, 'suborder_num': '0', 'related_order': '', 'payment_id': '0', 'channel_id': '0', 'user_id': '1691198', 'mobile': '15672655599', 'company_id': '0', 'merchant_type': '1001', 'merchant_id': '10002', 'user_level_id': '5', 'user_level_type': '1', 'user_level_name': '钻石会员', 'user_identity_type': '0', 'user_identity_id': '0', 'invoice_title': '', 'order_status': '3020', 'cancel_status': '0', 'revoke_status': '0', 'pay_status': '4', 'shipping_status': 0, 'goods_amount': '1000', 'order_amount': '1000', 'pay_money': '1000', 'surplus': '0', 'balance': '0', 'credit': '0', 'credit_fee': '0', 'coupon_fee': '0', 'bonus_fee': '0', 'discount': '0', 'remark': '加油卡充值', 'has_refund': '1', 'refund_fee': '1000', 'platform': '4100', 'admin_id': '0', 'pay_time': '1608171029', 'cancel_time': '0', 'refund_time': '1608171037', 'update_time': '1608171037', 'create_time': '1608171028', 'recommand_id': 0, 'items': [{'item_id': '5980197', 'order_id': '5960004', 'goods_type': '50', 'category_id': '50', 'goods_id': '0', 'goods_name': '加油卡充值', 'goods_sn': '', 'goods_number': '1.000000', 'market_price': '1000', 'goods_price': '1000', 'actual_price': '0', 'contract_price': '0', 'subtotal': '0', 'credit': '0', 'credit_fee': '0', 'coupon_fee': '0', 'bonus_fee': '0', 'discount': '0', 'is_gift': '0', 'goods_attr': ''}], 'payment_info': [{'id': '5700781', 'order_id': '5700781', 'order_code': '50202012170287048842', 'payment_id': '10', 'channel_id': '10', 'card_type': '0', 'card_number': '', 'trade_no': '50202012170287048842', 'out_trade_no': '', 'total_fee': '1000', 'pay_fee': '1000', 'fee_rate': '0.00', 'payment_type': '0', 'mch_id': '', 'public_type': '0', 'discount': '0', 'refund_fee': '0', 'pay_time': '1608171029', 'notify_time': '1608171029', 'platform': '4100', 'other': ''}], 'refund_info': [{'refund_id': '9501', 'refund_type': '11', 'refund_no': '11202012170371844486', 'out_refund_no': '', 'refund_fee': '1000', 'reason': '双屏机接口冒烟测试-退款', 'remark': 'TestAuto双屏机申请退款', 'refund_status': '16', 'platform': '0', 'operator_name': 'TestAuto', 'update_time': '1608171037', 'create_time': '1608171037'}]}, 'request_id': 'a3b20deda72f26400455c295e8a83c4f'}
+2020-12-17 10:10:37,294 - root - INFO - 用例测试结果:   25---->   pass
+2020-12-17 10:10:37,294 - root - INFO - *******执行用例完成：-----  25  ----**********
+
+2020-12-17 10:10:37,754 - root - INFO - ********************************************************************************
+2020-12-17 10:10:37,765 - root - INFO - ************   Excel 中的 associateid 字段 为空。不做接口关联处理。  *******************
+2020-12-17 10:10:37,766 - root - INFO - ************   Excel 中的 updatadict 字段 为空。不做data数据更新处理。   *******************
+2020-12-17 10:10:37,766 - root - INFO - ************   Excel 中的 timedata 字段 为空。不做时间字段更新处理。   *******************
+2020-12-17 10:10:37,767 - root - INFO - 请求方式：GET
+2020-12-17 10:10:37,768 - root - INFO - 请求url: https://uat-os.nlsaas.com/order/list
+2020-12-17 10:10:38,220 - root - INFO - 请求参数：
+2020-12-17 10:10:38,221 - root - INFO - 请求params：{'merchant_type': '1001', 'merchant_id': '10002', 'status[0]': ['1'], 'status[2]': ['5'], 'page_size': ['1'], 'time_sort': ['desc'], 'status[1]': ['2'], 'status[3]': ['7']}
+2020-12-17 10:10:38,221 - root - INFO - 请求headers：{'Content-Type': 'application/json;charset=utf-8', 'token': 'E25D863200021A7BFB047481FDC29AF4', 'aid': '5365'}
+2020-12-17 10:10:38,221 - root - INFO - 检查点->：200
+2020-12-17 10:10:38,221 - root - INFO - 用例测试结果:   3---->   pass
+2020-12-17 10:10:38,222 - root - INFO - *******执行用例完成：-----  3  ----**********
+
+2020-12-17 10:10:38,222 - root - INFO - ************   Excel 中的 updatadict 字段 为空。不做data数据更新处理。   *******************
+2020-12-17 10:10:38,222 - root - INFO - ************   Excel 中的 timedata 字段 为空。不做时间字段更新处理。   *******************
+2020-12-17 10:10:38,223 - root - INFO - 请求方式：POST
+2020-12-17 10:10:38,223 - root - INFO - 请求url: https://uat-os.nlsaas.com/order/abandon
+2020-12-17 10:10:38,634 - root - INFO - 请求参数：{'merchant_type': '1001', 'merchant_id': '10002', 'order_id': 4315, 'reason': '双屏机接口冒烟测试-弃单', 'abandon_type': 2}
+2020-12-17 10:10:38,634 - root - INFO - 请求params：{}
+2020-12-17 10:10:38,635 - root - INFO - 请求headers：{'Content-Type': 'application/json;charset=utf-8', 'token': 'E25D863200021A7BFB047481FDC29AF4', 'aid': '5365', 'password': '123123'}
+2020-12-17 10:10:38,636 - root - INFO - 检查点->：200
+2020-12-17 10:10:38,636 - root - INFO - 用例执行成功！页面返回信息：{'status': 200, 'info': 'Success', 'data': {'order_id': 4315, 'only_id': None}, 'request_id': '3a239e41ce81f13e85901e4597eb82ef'}
+2020-12-17 10:10:38,636 - root - INFO - 用例测试结果:   26---->   pass
+2020-12-17 10:10:38,637 - root - INFO - *******执行用例完成：-----  26  ----**********
+
+2020-12-17 10:10:39,118 - root - INFO - ********************************************************************************
+2020-12-17 10:10:39,122 - root - INFO - ************   Excel 中的 associateid 字段 为空。不做接口关联处理。  *******************
+2020-12-17 10:10:39,122 - root - INFO - ************   Excel 中的 updatadict 字段 为空。不做data数据更新处理。   *******************
+2020-12-17 10:10:39,123 - root - INFO - ************   Excel 中的 timedata 字段 为空。不做时间字段更新处理。   *******************
+2020-12-17 10:10:39,123 - root - INFO - 请求方式：GET
+2020-12-17 10:10:39,123 - root - INFO - 请求url: https://uat-os.nlsaas.com/order/list
+2020-12-17 10:10:39,534 - root - INFO - 请求参数：
+2020-12-17 10:10:39,534 - root - INFO - 请求params：{'merchant_type': '1001', 'merchant_id': '10002', 'status[0]': ['1'], 'status[2]': ['5'], 'page_size': ['1'], 'time_sort': ['desc'], 'status[1]': ['2'], 'status[3]': ['7']}
+2020-12-17 10:10:39,535 - root - INFO - 请求headers：{'Content-Type': 'application/json;charset=utf-8', 'token': 'E25D863200021A7BFB047481FDC29AF4', 'aid': '5365'}
+2020-12-17 10:10:39,535 - root - INFO - 检查点->：200
+2020-12-17 10:10:39,536 - root - INFO - 用例测试结果:   3---->   pass
+2020-12-17 10:10:39,536 - root - INFO - *******执行用例完成：-----  3  ----**********
+
+2020-12-17 10:10:39,536 - root - INFO - ************   Excel 中的 updatadict 字段 为空。不做data数据更新处理。   *******************
+2020-12-17 10:10:39,537 - root - INFO - ************   Excel 中的 timedata 字段 为空。不做时间字段更新处理。   *******************
+2020-12-17 10:10:39,537 - root - INFO - 请求方式：POST
+2020-12-17 10:10:39,537 - root - INFO - 请求url: https://uat-os.nlsaas.com/order/abandon
+2020-12-17 10:10:40,004 - root - INFO - 请求参数：{'merchant_type': '1001', 'merchant_id': '10002', 'order_id': 4314, 'reason': '双屏机接口冒烟测试-弃单', 'abandon_type': 1}
+2020-12-17 10:10:40,004 - root - INFO - 请求params：{}
+2020-12-17 10:10:40,006 - root - INFO - 请求headers：{'Content-Type': 'application/json;charset=utf-8', 'token': 'E25D863200021A7BFB047481FDC29AF4', 'aid': '5365', 'password': '123123'}
+2020-12-17 10:10:40,006 - root - INFO - 检查点->：200
+2020-12-17 10:10:40,007 - root - INFO - 用例执行成功！页面返回信息：{'status': 200, 'info': 'Success', 'data': {'order_id': 4314, 'only_id': None}, 'request_id': '1dc5e0995da2a0af8d36b4279cae578e'}
+2020-12-17 10:10:40,007 - root - INFO - 用例测试结果:   27---->   pass
+2020-12-17 10:10:40,007 - root - INFO - *******执行用例完成：-----  27  ----**********
+
+2020-12-17 10:10:40,478 - root - INFO - ********************************************************************************
+2020-12-17 10:10:40,485 - root - INFO - ************   Excel 中的 associateid 字段 为空。不做接口关联处理。  *******************
+2020-12-17 10:10:40,485 - root - INFO - ************   Excel 中的 updatadict 字段 为空。不做data数据更新处理。   *******************
+2020-12-17 10:10:40,485 - root - INFO - ************   Excel 中的 timedata 字段 为空。不做时间字段更新处理。   *******************
+2020-12-17 10:10:40,486 - root - INFO - 请求方式：GET
+2020-12-17 10:10:40,486 - root - INFO - 请求url: https://uat-os.nlsaas.com/order/list
+2020-12-17 10:10:41,054 - root - INFO - 请求参数：
+2020-12-17 10:10:41,055 - root - INFO - 请求params：{'merchant_type': '1001', 'merchant_id': '10002', 'status[0]': ['1'], 'status[2]': ['5'], 'page_size': ['1'], 'time_sort': ['desc'], 'status[1]': ['2'], 'status[3]': ['7']}
+2020-12-17 10:10:41,055 - root - INFO - 请求headers：{'Content-Type': 'application/json;charset=utf-8', 'token': 'E25D863200021A7BFB047481FDC29AF4', 'aid': '5365'}
+2020-12-17 10:10:41,056 - root - INFO - 检查点->：200
+2020-12-17 10:10:41,056 - root - INFO - 用例测试结果:   3---->   pass
+2020-12-17 10:10:41,056 - root - INFO - *******执行用例完成：-----  3  ----**********
+
+2020-12-17 10:10:41,056 - root - INFO - ************   Excel 中的 updatadict 字段 为空。不做data数据更新处理。   *******************
+2020-12-17 10:10:41,057 - root - INFO - ************   Excel 中的 timedata 字段 为空。不做时间字段更新处理。   *******************
+2020-12-17 10:10:41,057 - root - INFO - 请求方式：GET
+2020-12-17 10:10:41,057 - root - INFO - 请求url: https://uat-os.nlsaas.com/os/order/check_lock
+2020-12-17 10:10:41,944 - root - INFO - 请求参数：
+2020-12-17 10:10:41,945 - root - INFO - 请求params：{'merchant_id': '10002', 'merchant_type': '1001', 'order_id': 4313, 'source': ['5']}
+2020-12-17 10:10:41,946 - root - INFO - 请求headers：{'Content-Type': 'application/json;charset=utf-8', 'token': 'E25D863200021A7BFB047481FDC29AF4', 'aid': '5365'}
+2020-12-17 10:10:41,947 - root - INFO - 检查点->：200
+2020-12-17 10:10:41,948 - root - INFO - 用例执行成功！页面返回信息：{'status': 200, 'info': 'Success', 'data': {'lock_status': False}, 'request_id': '9528ce4337c2e72fe8e1f0d1b54fe78c'}
+2020-12-17 10:10:41,949 - root - INFO - 用例测试结果:   28---->   pass
+2020-12-17 10:10:41,949 - root - INFO - *******执行用例完成：-----  28  ----**********
+
+2020-12-17 10:10:42,454 - root - INFO - ********************************************************************************
+2020-12-17 10:10:42,458 - root - INFO - ************   Excel 中的 associateid 字段 为空。不做接口关联处理。  *******************
+2020-12-17 10:10:42,458 - root - INFO - ************   Excel 中的 updatadict 字段 为空。不做data数据更新处理。   *******************
+2020-12-17 10:10:42,459 - root - INFO - ************   Excel 中的 timedata 字段 为空。不做时间字段更新处理。   *******************
+2020-12-17 10:10:42,460 - root - INFO - 请求方式：GET
+2020-12-17 10:10:42,461 - root - INFO - 请求url: https://uat-os.nlsaas.com/os/order/check_lock
+2020-12-17 10:10:43,252 - root - ERROR - 请求错误！接口返回状态：500
+2020-12-17 10:10:43,253 - root - INFO - 请求参数：
+2020-12-17 10:10:43,254 - root - INFO - 请求params：{'merchant_id': '10002', 'merchant_type': '1001', 'order_id': '4313', 'source': ['5']}
+2020-12-17 10:10:43,254 - root - INFO - 请求headers：{'Content-Type': 'application/json;charset=utf-8', 'token': 'E25D863200021A7BFB047481FDC29AF4', 'aid': '5365'}
+2020-12-17 10:10:43,255 - root - INFO - 检查点->：500
+2020-12-17 10:10:43,255 - root - INFO - 用例执行成功！页面返回信息：{'status': 500, 'info': '该订单正在小程序支付中，请确认后重试', 'reason': 500, 'request_id': '1e975795deee08fa3f58cc42f057687e'}
+2020-12-17 10:10:43,255 - root - INFO - 用例测试结果:   29---->   pass
+2020-12-17 10:10:43,255 - root - INFO - *******执行用例完成：-----  29  ----**********
+
+2020-12-17 10:10:43,816 - root - INFO - ********************************************************************************
+2020-12-17 10:10:43,821 - root - INFO - ************   Excel 中的 associateid 字段 为空。不做接口关联处理。  *******************
+2020-12-17 10:10:43,821 - root - INFO - ************   Excel 中的 updatadict 字段 为空。不做data数据更新处理。   *******************
+2020-12-17 10:10:43,822 - root - INFO - ************   Excel 中的 timedata 字段 为空。不做时间字段更新处理。   *******************
+2020-12-17 10:10:43,822 - root - INFO - 请求方式：POST
+2020-12-17 10:10:43,822 - root - INFO - 请求url: https://uat-os.nlsaas.com/user/logout
+2020-12-17 10:10:44,350 - root - INFO - 请求参数：{'device': [{'regid': '1507bfd3f74e1e1c2bf', 'type': '1'}, {'regid': '0690147908a7cae175df42c40a855cae0d1e', 'type': '2'}], 'merchant_type': '1001', 'merchant_id': '10002', 'order_id': ['4313'], 'order_code': ['50202012170287048842']}
+2020-12-17 10:10:44,351 - root - INFO - 请求params：{}
+2020-12-17 10:10:44,352 - root - INFO - 请求headers：{'Content-Type': 'application/json;charset=utf-8', 'token': 'E25D863200021A7BFB047481FDC29AF4', 'aid': '5365'}
+2020-12-17 10:10:44,352 - root - INFO - 检查点->：200
+2020-12-17 10:10:44,353 - root - INFO - 用例执行成功！页面返回信息：{'info': 'Success', 'status': 200, 'data': None, 'request_id': '770ce410de73617d1b3697a076637ed5'}
+2020-12-17 10:10:44,353 - root - INFO - 用例测试结果:   30---->   pass
+2020-12-17 10:10:44,353 - root - INFO - *******执行用例完成：-----  30  ----**********
+
+2020-12-17 10:10:44,811 - root - INFO - ********************************************************************************

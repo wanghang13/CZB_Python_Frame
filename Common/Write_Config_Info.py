@@ -22,26 +22,31 @@ class Write_Config():
             self.config['RUN_API']['POS_API'] = self.config['POS_API']['url_Release']
             self.config['RUN_API']['POS_OS_API'] = self.config['POS_OS_API']['url_Release']
             self.config['RUN_API']['POS_SELF_API'] = self.config['POS_SELF_API']['url_Release']
+            print('----------   环境已切换为: 「正式环境」   ----------')
         elif host == "test" or host == '1' or host == '测试':
             self.config['RUN_API']['MP_NLSAAS'] = self.config['MP_NLSAAS']['url_Test'] 
             self.config['RUN_API']['POS_API'] = self.config['POS_API']['url_Test']
             self.config['RUN_API']['POS_OS_API'] = self.config['POS_OS_API']['url_Test']
             self.config['RUN_API']['POS_SELF_API'] = self.config['POS_SELF_API']['url_Test']
+            print('----------   环境已切换为: 「测试环境」   ----------')
         elif host == "Pre-release" or host == '2' or host == '预发布':
             self.config['RUN_API']['MP_NLSAAS'] = self.config['MP_NLSAAS']['url_Pre-release'] 
             self.config['RUN_API']['POS_API'] = self.config['POS_API']['url_Pre-release']
             self.config['RUN_API']['POS_OS_API'] = self.config['POS_OS_API']['url_Pre-release']
             self.config['RUN_API']['POS_SELF_API'] = self.config['POS_SELF_API']['url_Pre-release']
+            print('----------   环境已切换为: 「预发布环境」   ----------')
         elif host == "Green-Release" or host == '3' or host == '绿色':
             self.config['RUN_API']['MP_NLSAAS'] = self.config['MP_NLSAAS']['url_Green-release'] 
             self.config['RUN_API']['POS_API'] = self.config['POS_API']['url_Green-release']
             self.config['RUN_API']['POS_OS_API'] = self.config['POS_OS_API']['url_Green-release']
             self.config['RUN_API']['POS_SELF_API'] = self.config['POS_SELF_API']['url_Green-release']
+            print('----------   环境已切换为: 「绿色环境」   ----------')
         elif host == "Blue-Release" or host == '4' or host == '蓝色':
             self.config['RUN_API']['MP_NLSAAS'] = self.config['MP_NLSAAS']['url_Blue-release'] 
             self.config['RUN_API']['POS_API'] = self.config['POS_API']['url_Blue-release']
             self.config['RUN_API']['POS_OS_API'] = self.config['POS_OS_API']['url_Blue-release']
             self.config['RUN_API']['POS_SELF_API'] = self.config['POS_SELF_API']['url_Blue-release']
+            print('----------   环境已切换为: 「蓝色环境」   ----------')
         self.config.write()
 
 # Write_Config().Switch_Host('1')

@@ -318,9 +318,15 @@ class SendRequests(object):
                         
                         if type(body) == type(''):
                             body = eval(body)
-
+                        # try:
                         r = requests.post(url = url, data = json.dumps(body) ,headers = headers)
-
+                        # except Exception as msg:
+                        #     self.logger.error("用例执行错误！错误信息：{}".format(msg))
+                        #     self.logger.info("用例测试结果:   %s---->   %s" % (test_data['id'], results["result"]))
+                        #     self.logger.info("*******执行用例完成：-----  %s  ----**********" % test_data['id'])
+                        #     results["result"], results["msg"] = "fail", "请求错误！请检查参数设置！"
+                        #     results['error'], results['times'] = "", ""
+                        #     return results
                         if test_data['url'] == '/order/quickpass/pay':
                             pass
                         if test_data['url'] == '/recharge/top_up_order':

@@ -21,16 +21,18 @@ if __name__ == "__main__":
     allure_plus_path = os.path.join(allure_plus_dir, report_file)
 
     '''
+    
     切换测试环境地址调用：Write_Config().Switch_Host() 方法。
     默认不传参 为正式环境。
-    测试环境传递： 1 OR 测试 OR test 
-    预发布环境传递： 2 OR 预发布 OR Pre-release 
+    测试环境传递： 1 OR 测试 OR test  
+    预发布环境传递： 2 OR 预发布 OR Pre-release
     绿色域名环境传递：3 OR 绿色 OR Green-Release
     绿色域名环境传递：4 OR 蓝色 OR Blue-Release
     正式环境传递： 0 OR 不传递 OR 正式
+
     '''
     
-    Write_Config().Switch_Host('2')
+    Write_Config().Switch_Host('0')
 
     # os.system(f'pytest  -v Test_Case/test_return_point --html=Test_Report/report/{report_file}-report.html')
 
