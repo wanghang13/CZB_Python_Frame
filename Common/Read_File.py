@@ -84,10 +84,16 @@ class ExcelUtil(object):
 
 if __name__ == "__main__":
     # print(globalparam.data_path)
+
     path = globalparam.data_path+'/日常冒烟测试点.xlsx'
+
     # s = ExcelUtil(path).get_xls_to_dict()
-    e = ExcelUtil(path).dict_data()
+
+    e = ExcelUtil(path,sheet_name="双屏机接口冒烟").dict_data()
+
+    print(len(e))
     print(e)
+
     # s = requests.session()
     # print(s)
     # for d in e:

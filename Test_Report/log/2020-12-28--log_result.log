@@ -1,0 +1,6 @@
+2020-12-28 20:28:49,081 - root - INFO - 第1条用例.请求方式为:POST
+2020-12-28 20:28:49,083 - root - INFO - 请求参数：{"admin_name":"TestAuto","password":"testauto6","admin_type":2,"login_type":1,"token":""}
+2020-12-28 20:28:49,882 - root - INFO - 接口case 测试通过！PASS
+2020-12-28 20:28:49,883 - root - INFO - 第2条用例.请求方式为:POST
+2020-12-28 20:28:49,885 - root - INFO - 请求参数：{"merchant_type":1001,"token":"eab780255b736c0e0eb7c272146c125ff6b566d0","merchant_id":"10002"}
+2020-12-28 20:28:50,117 - root - INFO - 接口case 测试不通过！FAIL

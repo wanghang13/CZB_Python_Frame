@@ -32,12 +32,12 @@ if __name__ == "__main__":
 
     '''
     
-    Write_Config().Switch_Host('0')
+    Write_Config().Switch_Host('1')
 
     # os.system(f'pytest  -v Test_Case/test_return_point --html=Test_Report/report/{report_file}-report.html')
 
-    os.system(f'pytest  -v  -k test_双屏机常用接口冒烟.py --html=Test_Report/report/{report_file}-report.html')
-    # os.system(f'pytest  -v  -k test_商户后台常用接口冒烟.py --html=Test_Report/report/{report_file}-report.html')
+    # os.system(f'pytest  -v  -k test_双屏机常用接口冒烟.py --html=Test_Report/report/{report_file}-report.html')
+    os.system(f'pytest  -v  -k test_商户后台常用接口冒烟.py --html=Test_Report/report/{report_file}-report.html')
     # os.system(f'pytest  -v  -k test_POS机常用接口冒烟.py --html=Test_Report/report/{report_file}-report.html')
 
 
